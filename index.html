@@ -17,13 +17,12 @@
 </head>
 <body>
 <h1>Zwift Workout Viewer</h1>
-<input type="file" id="fileInput" accept=".zwo" multiple>
 <div id="workoutCharts"></div>
 
 <script>
-const fileInput = document.getElementById('fileInput');
 const workoutChartsContainer = document.getElementById('workoutCharts');
 
+// Farbzuordnung für Leistung
 function getZoneColor(p, alpha = 1) {
   if (p < 0.60) return `rgba(108,117,125,${alpha})`;
   if (p < 0.76) return `rgba(0,123,255,${alpha})`;
@@ -33,185 +32,131 @@ function getZoneColor(p, alpha = 1) {
   return `rgba(220,53,69,${alpha})`;
 }
 
-fileInput.addEventListener('change', async (ev) => {
-  const files = Array.from(ev.target.files);
-  if (!files.length) return;
-  workoutChartsContainer.innerHTML = '';
+// Workouts laden
+async function loadWorkouts() {
+  const resp = await fetch('workouts/list.json'); // JSON-Liste aller Workouts
+  const files = await resp.json();
 
-  // Gruppiere Dateien nach Präfix vor erstem "_"
-  const groups = {};
-  for (const f of files) {
-    const base = f.name.replace(/^Eiche_/, '').replace(/\.zwo$/i, '');
-    const groupKey = base.split('_')[0];
-    if (!groups[groupKey]) groups[groupKey] = [];
-    groups[groupKey].push(f);
-  }
+  for (const fileName of files) {
+    const filePath = `workouts/${fileName}`;
+    const text = await (await fetch(filePath)).text();
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(text, "text/xml");
+    const workoutSteps = xmlDoc.querySelectorAll('workout > *:not(name)');
 
-  function interpolate(start, end, steps) {
-    const r = [];
-    for (let i = 0; i < steps; i++) r.push(start + (end - start) * (i / steps));
-    return r;
-  }
+    const data = [];
+    const stepPowers = [];
 
-  // Gruppenweise rendern
-  for (const groupName of Object.keys(groups)) {
-    // Neue Zeile als Trenner
-    const separator = document.createElement('div');
-    separator.className = 'groupRow';
-    workoutChartsContainer.appendChild(separator);
+    function interpolate(start, end, steps) {
+      const r = [];
+      for (let i = 0; i < steps; i++) r.push(start + (end - start) * (i / steps));
+      return r;
+    }
 
-    for (const file of groups[groupName]) {
-      const text = await file.text();
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(text, "text/xml");
-      const workoutSteps = xmlDoc.querySelectorAll('workout > *:not(name)');
+    for (let step of workoutSteps) {
+      const type = step.tagName;
+      const duration = parseFloat(step.getAttribute('Duration')) || 0;
+      const segmentCount = Math.max(Math.floor(duration / 5), 1);
 
-      const data = [];
-      const stepPowers = [];
-
-      for (let step of workoutSteps) {
-        const type = step.tagName;
-        const duration = parseFloat(step.getAttribute('Duration')) || 0;
-        const segmentCount = Math.max(Math.floor(duration / 5), 1);
-
-        if (type === 'SteadyState') {
-          const power = parseFloat(step.getAttribute('Power')) || 0;
-          data.push(...Array(segmentCount).fill(power));
-          stepPowers.push(...Array(segmentCount).fill().map(()=>({type, power})));
-        } else if (type === 'Warmup' || type === 'Cooldown' || type === 'Ramp') {
-          const powerLow = parseFloat(step.getAttribute('PowerLow')) || 0;
-          const powerHigh = parseFloat(step.getAttribute('PowerHigh')) || powerLow;
-          const powers = interpolate(powerLow, powerHigh, segmentCount);
-          data.push(...powers);
-          stepPowers.push(...powers.map(p=>({type, power: p})));
-        } else if (type === 'IntervalsT') {
-          const repeat = parseInt(step.getAttribute('Repeat')) || 1;
-          const onDur = parseFloat(step.getAttribute('OnDuration')) || 0;
-          const offDur = parseFloat(step.getAttribute('OffDuration')) || 0;
-          const onPower = parseFloat(step.getAttribute('OnPower')) || 0;
-          const offPower = parseFloat(step.getAttribute('OffPower')) || 0;
-          for (let r = 0; r < repeat; r++) {
-            const onCount = Math.max(Math.floor(onDur / 5),1);
-            const offCount = Math.max(Math.floor(offDur / 5),1);
-            data.push(...Array(onCount).fill(onPower));
-            stepPowers.push(...Array(onCount).fill().map(()=>({type, power:onPower})));
-            data.push(...Array(offCount).fill(offPower));
-            stepPowers.push(...Array(offCount).fill().map(()=>({type, power:offPower})));
-          }
-        } else {
-          const power = parseFloat(step.getAttribute('Power')) || 0;
-          data.push(...Array(segmentCount).fill(power));
-          stepPowers.push(...Array(segmentCount).fill().map(()=>({type, power})));
+      if (type === 'SteadyState') {
+        const power = parseFloat(step.getAttribute('Power')) || 0;
+        data.push(...Array(segmentCount).fill(power));
+        stepPowers.push(...Array(segmentCount).fill().map(()=>({type,power})));
+      } else if (type === 'Warmup' || type === 'Cooldown' || type === 'Ramp') {
+        const powerLow = parseFloat(step.getAttribute('PowerLow')) || 0;
+        const powerHigh = parseFloat(step.getAttribute('PowerHigh')) || powerLow;
+        const powers = interpolate(powerLow,powerHigh,segmentCount);
+        data.push(...powers);
+        stepPowers.push(...powers.map(p=>({type,power:p})));
+      } else if (type === 'IntervalsT') {
+        const repeat = parseInt(step.getAttribute('Repeat')) || 1;
+        const onDur = parseFloat(step.getAttribute('OnDuration')) || 0;
+        const offDur = parseFloat(step.getAttribute('OffDuration')) || 0;
+        const onPower = parseFloat(step.getAttribute('OnPower')) || 0;
+        const offPower = parseFloat(step.getAttribute('OffPower')) || 0;
+        for (let r=0; r<repeat; r++) {
+          const onCount = Math.max(Math.floor(onDur/5),1);
+          const offCount = Math.max(Math.floor(offDur/5),1);
+          data.push(...Array(onCount).fill(onPower));
+          stepPowers.push(...Array(onCount).fill().map(()=>({type,power:onPower})));
+          data.push(...Array(offCount).fill(offPower));
+          stepPowers.push(...Array(offCount).fill().map(()=>({type,power:offPower})));
         }
+      } else {
+        const power = parseFloat(step.getAttribute('Power')) || 0;
+        data.push(...Array(segmentCount).fill(power));
+        stepPowers.push(...Array(segmentCount).fill().map(()=>({type,power})));
       }
+    }
 
-      const labels = data.map((_,i)=> i * 5 / 60);
+    const labels = data.map((_,i)=> i*5/60);
 
-      let fullName = file.name.replace(/^Eiche_/, '').replace(/\.zwo$/i, '');
-      fullName = fullName.replace(/(min_)/, "$1\n");
-      fullName = fullName.replace(/_(.{2,3}TSS)/, "\n_$1");
+    const container = document.createElement('div');
+    container.className = 'workoutContainer';
 
-      const container = document.createElement('div');
-      container.className = 'workoutContainer';
+    const nameEl = document.createElement('h2');
+    nameEl.className = 'workoutName';
+    nameEl.textContent = fileName.replace(/\.zwo$/,'');
+    container.appendChild(nameEl);
 
-      const nameEl = document.createElement('h2');
-      nameEl.className = 'workoutName';
-      nameEl.textContent = fullName;
-      container.appendChild(nameEl);
+    const canvas = document.createElement('canvas');
+    container.appendChild(canvas);
+    workoutChartsContainer.appendChild(container);
 
-      const canvas = document.createElement('canvas');
-      container.appendChild(canvas);
-      workoutChartsContainer.appendChild(container);
+    const ctx = canvas.getContext('2d');
+    const maxY = Math.ceil(Math.max(...data)*10)/10;
 
-      const ctx = canvas.getContext('2d');
-      const maxY = Math.ceil(Math.max(...data) * 10) / 10;
-
-      const chart = new Chart(ctx, {
-        type: 'line',
-        data: { labels, datasets: [{
-          label:'', data,
-          tension:0.3, pointRadius:0, pointHoverRadius:6, borderWidth:1.5, fill:true,
-          pointHoverBackgroundColor: ctx => {
-            const idx = ctx.dataIndex;
-            if (idx==null) return 'rgba(0,0,0,0.8)';
-            return getZoneColor(stepPowers[idx].power, 1);
+    const chart = new Chart(ctx, {
+      type:'line',
+      data:{ labels, datasets:[{
+        label:'', data,
+        tension:0.3, pointRadius:0, pointHoverRadius:6, borderWidth:1.5, fill:true,
+        pointHoverBackgroundColor: ctx => {
+          const idx = ctx.dataIndex;
+          if (idx==null) return 'rgba(0,0,0,0.8)';
+          return getZoneColor(stepPowers[idx].power,1);
+        },
+        segment:{
+          borderColor: ctx => {
+            const s0 = stepPowers[ctx.p0DataIndex];
+            const s1 = stepPowers[ctx.p1DataIndex];
+            if (!s0 || !s1) return 'rgba(0,0,0,0)';
+            return getZoneColor(Math.max(s0.power,s1.power),1);
           },
-          segment: {
-            borderColor: ctx => {
-              const s0 = stepPowers[ctx.p0DataIndex];
-              const s1 = stepPowers[ctx.p1DataIndex];
-              if (!s0 || !s1) return 'rgba(0,0,0,0)';
-              return getZoneColor(Math.max(s0.power, s1.power), 1);
-            },
-            backgroundColor: ctx => {
-              const s0 = stepPowers[ctx.p0DataIndex];
-              const s1 = stepPowers[ctx.p1DataIndex];
-              if (!s0 || !s1) return 'rgba(0,0,0,0)';
-              return getZoneColor(Math.max(s0.power, s1.power), 0.28);
-            }
-          }
-        }]},
-        options: {
-          maintainAspectRatio:false,
-          interaction:{mode:'nearest', intersect:false},
-          plugins:{
-            legend:{display:false},
-            tooltip:{
-              enabled:true,
-              backgroundColor:'rgba(20,20,20,0.85)',
-              bodyFont:{size:11},
-              displayColors:false,
-              callbacks:{ label: item => 'Leistung: ' + Math.round(item.raw*100) + '%' }
-            }
-          },
-          scales:{
-            x:{ type:'linear', min:0, ticks:{ stepSize:5, font:{ size: 10 } }},
-            y:{ min:0.4, max:maxY, ticks:{ callback: v => Math.round(v*100)+'%', stepSize:0.1, font:{ size: 10 } } }
+          backgroundColor: ctx => {
+            const s0 = stepPowers[ctx.p0DataIndex];
+            const s1 = stepPowers[ctx.p1DataIndex];
+            if (!s0 || !s1) return 'rgba(0,0,0,0)';
+            return getZoneColor(Math.max(s0.power,s1.power),0.28);
           }
         }
-      });
+      }]}
+    });
 
-      // Hover + Tooltip
-      container.addEventListener('mousemove', (e) => {
-        const rect = canvas.getBoundingClientRect();
-        let x = e.clientX - rect.left;
-        x = Math.max(0, Math.min(x, rect.width));
-        const xVal = chart.scales.x.getValueForPixel(x);
-        let nearest = 0, minDist = Infinity;
-        chart.data.labels.forEach((lbl,i) => { const d = Math.abs(lbl - xVal); if (d < minDist) { minDist = d; nearest = i; } });
-        const active = [{ datasetIndex: 0, index: nearest }];
-        chart.tooltip.setActiveElements(active, {x, y: 0});
-        chart.update('none');
-      });
-      container.addEventListener('mouseleave', () => {
-        chart.tooltip.setActiveElements([], {x:0,y:0});
-        chart.update('none');
-      });
+    // Klick → großes Diagramm (wie vorher)
+    nameEl.addEventListener('click', () => {
+      const titleHTML = nameEl.textContent.replace(/\n/g, '<br>');
+      const dataStr = JSON.stringify(data);
+      const labelsStr = JSON.stringify(labels);
+      const stepPowersStr = JSON.stringify(stepPowers);
 
-      // Klick → großes Diagramm
-      nameEl.addEventListener('click', () => {
-        const titleHTML = fullName.replace(/\n/g, '<br>');
-        const dataStr = JSON.stringify(data);
-        const labelsStr = JSON.stringify(labels);
-        const stepPowersStr = JSON.stringify(stepPowers);
-
-        const html = `<!doctype html>
+      const html = `<!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<title>${escapeHtml(fullName)}</title>
+<title>${titleHTML}</title>
 <style>
-  html,body { height:100%; margin:0; overflow:hidden; font-family: Arial, sans-serif; }
-  body { display:flex; flex-direction:column; gap:10px; align-items:center; justify-content:flex-start; padding:10px; box-sizing:border-box; }
-  h2 { margin:0; font-size:1.1em; text-align:center; white-space:pre-line; }
-  #chartWrap { width:100vw; height:calc(100vh - 60px); display:flex; align-items:center; justify-content:center; }
-  canvas { width: calc(100vw - 20px); height: calc(100vh - 80px); }
+html,body{height:100%;margin:0;overflow:hidden;font-family:Arial,sans-serif;}
+body{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:flex-start;padding:10px;box-sizing:border-box;}
+h2{margin:0;font-size:1.1em;text-align:center;white-space:pre-line;}
+#chartWrap{width:100vw;height:calc(100vh - 60px);display:flex;align-items:center;justify-content:center;}
+canvas{width:calc(100vw - 20px);height:calc(100vh - 80px);}
 </style>
 </head>
 <body>
 <h2>${titleHTML}</h2>
 <div id="chartWrap"><canvas id="bigChart"></canvas></div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"><\/script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 (function(){
   const data = ${dataStr};
@@ -228,79 +173,43 @@ fileInput.addEventListener('change', async (ev) => {
   }
 
   const ctx = document.getElementById('bigChart').getContext('2d');
-  const maxY = Math.ceil(Math.max(...data) * 10) / 10;
+  const maxY = Math.ceil(Math.max(...data)*10)/10;
 
-  new Chart(ctx, {
+  new Chart(ctx,{
     type:'line',
-    data:{ labels, datasets:[{
-      label:'', data,
-      tension:0.22,
-      pointRadius:0,
-      pointHoverRadius:7,
-      borderWidth:2,
-      fill:true,
-      pointHoverBackgroundColor: ctx => {
+    data:{labels,datasets:[{label:'',data,tension:0.22,pointRadius:0,pointHoverRadius:7,borderWidth:2,fill:true,
+      pointHoverBackgroundColor: ctx=>{
         const idx = ctx.dataIndex;
-        if (idx == null) return 'rgba(0,0,0,0.8)';
-        return getZoneColor(stepPowers[idx].power, 1);
+        return idx!=null?getZoneColor(stepPowers[idx].power,1):'rgba(0,0,0,0.8)';
       },
       segment:{
-        borderColor: ctx => {
+        borderColor: ctx=>{
           const s0 = stepPowers[ctx.p0DataIndex];
           const s1 = stepPowers[ctx.p1DataIndex];
-          if (!s0 || !s1) return 'rgba(0,0,0,0)';
-          return getZoneColor(Math.max(s0.power, s1.power), 1);
+          return (s0&&s1)?getZoneColor(Math.max(s0.power,s1.power),1):'rgba(0,0,0,0)';
         },
-        backgroundColor: ctx => {
+        backgroundColor: ctx=>{
           const s0 = stepPowers[ctx.p0DataIndex];
           const s1 = stepPowers[ctx.p1DataIndex];
-          if (!s0 || !s1) return 'rgba(0,0,0,0)';
-          return getZoneColor(Math.max(s0.power, s1.power), 0.28);
+          return (s0&&s1)?getZoneColor(Math.max(s0.power,s1.power),0.28):'rgba(0,0,0,0)';
         }
       }
-    } ]},
-    options:{
-      responsive:true,
-      maintainAspectRatio:false,
-      plugins:{
-        legend:{ display:false },
-        tooltip:{
-          enabled:true,
-          backgroundColor:'rgba(20,20,20,0.9)',
-          displayColors:false,
-          callbacks:{ label: item => 'Leistung: ' + Math.round(item.raw*100) + '%' }
-        }
-      },
-      scales:{
-        x:{ type:'linear', min:0, ticks:{ stepSize:5 } },
-        y:{ min:0.4, max:maxY, ticks:{ callback: v => Math.round(v*100) + '%' } }
-      },
-      interaction:{ mode:'nearest', intersect:false }
-    }
+    }]}
   });
 })();
-<\/script>
+</script>
 </body>
 </html>`;
 
-        const newWin = window.open();
-        newWin.document.open();
-        newWin.document.write(html);
-        newWin.document.close();
-      });
-    }
+      const newWin = window.open();
+      newWin.document.open();
+      newWin.document.write(html);
+      newWin.document.close();
+    });
   }
-});
-
-// HTML Escape Helper
-function escapeHtml(s){
-  return String(s)
-    .replace(/&/g,'&amp;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;')
-    .replace(/'/g,'&#39;');
 }
+
+loadWorkouts();
 </script>
 </body>
 </html>
