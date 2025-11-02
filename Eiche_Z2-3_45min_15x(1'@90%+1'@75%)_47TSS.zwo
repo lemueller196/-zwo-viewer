@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kristin Armstrong</author>
+    <name>Eiche_Z2-3_45min_15x(1'@90%+1'@75%)_47TSS</name>
+    <description>Todays session is all about Strength, cycling specific strength while done on the bike. A solid 30-minute work session is planned for you including 15 alternating minutes in the Sweet Spot (90% of your FTP) at your cadence of choice followed by Strength Endurance targeting 60-65 rpms at 75% of your FTP.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <SteadyState Duration="180.00002" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="Hello and welcome to Strength Endurance + Sweet Spot!" />
+            <textevent timeoffset="0" message="Let's get rolling and start warming up. Keep your cadence comfortable here. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.69999999" pace="0">
+            <textevent timeoffset="0" message="Let's get nice and warmed up by ramping up our power output every 2 minutes." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.80000001" pace="0">
+            <textevent timeoffset="0" message="Into zone 3 now, keep relaxed and just ease into the day." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.89999998" pace="0">
+            <textevent timeoffset="0" message="Final 2min of warm up, bring your cadence up just a touch to aid in the warm up." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Nice work! That's it for today's warm up. Let's take a moment to chat about the plan for today." />
+            <textevent timeoffset="10" message="Todays session is all about Strength, cycling specific strength while done on the bike." />
+            <textevent timeoffset="20" message="A solid 30-minute work session is planned for you including 15 alternating minutes in the Sweet Spot (90% of your FTP) at your cadence of choice..." />
+            <textevent timeoffset="30" message="...followed by Strength Endurance targeting 60-65 rpms at 75% of your FTP." />
+            <textevent timeoffset="40" message="So, expect lots of changes in cadence today to keep you on your toes." />
+            <textevent timeoffset="50" message="The goal of today's session is to focus on building cycling specific strength utilizing your glutes, quads and hamstrings more than you would normally. " />
+            <textevent timeoffset="120" message="1min easy here, then we'll begin our main set - take a couple deep breaths and have a drink." />
+            <textevent timeoffset="170" message="We're starting off at 85 rpm." />
+        </SteadyState>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="0" message="Here we go, first minute Sweet Spot 90% of FTP regular cadence" />
+            <textevent timeoffset="60" message="Lets bring it down to a lower cadence here keeping it between 60-65." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="0" message="And back to your Sweet Spot. " />
+            <textevent timeoffset="60" message="If you get bogged down at all and are on ERG mode during this session please turn ERG mode off and reset the resistance.  " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="60" message="If you don't have a cadence sensor you can always count on one leg how many times your pedal goes around for 10seconds and multiply by 6. " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="0" message="Nice work!  Have you found a rhythm? " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="60" message="Again the goal is strength today!" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="60" message="Be sure to hydrate throughout todays session. You should be able to ride and drink!" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="60" message="Keep up the good work. " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="60" message="Changing cadence every minute is no easy task-- it will become much easier the more you practice. " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="0" message="Back up again to sweet spot. Make your cadence changes nice and smooth!" />
+            <textevent timeoffset="60" message="Grind it out." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="0" message="Lets should be feeling it now, we are over the half way point. " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="0" message="Do you have five more in you?" />
+            <textevent timeoffset="60" message="Of course you do!  " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="60" message="How is your form? Be sure you are pedaling smooth circles and not choppy strokes especially as you fatigue. " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="0" message="Stay strong here, you can do this!" />
+            <textevent timeoffset="60" message="Push, scrape, pull, kick - keep that cadence smooth." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="60" message="Focus!" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.75" pace="0" OverUnder="1" Cadence="85" CadenceResting="65">
+            <textevent timeoffset="0" message="Here we go, last mini set..." />
+            <textevent timeoffset="60" message="Get out of the mud you feel like you are riding in!  Be strong. " />
+        </IntervalsT>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Congratulations on completing today's session.  Your legs will feel it!" />
+            <textevent timeoffset="60" message="Take care of yourself by hydrating and refueling so you feel recovered and ready to go again for your next session!" />
+            <textevent timeoffset="90" message="Take a few more deep breaths here as we continue to return to baseline." />
+            <textevent timeoffset="170" message="See you on the next workout - Dani and Kristin." />
+        </SteadyState>
+    </workout>
+</workout_file>
