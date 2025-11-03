@@ -50,7 +50,7 @@ fileInput.addEventListener('change', (ev) => {
 
 // === Verarbeitung von GitHub-Dateien ===
 document.getElementById('loadFromGitHub').addEventListener('click', async () => {
-  workoutChartsContainer.innerHTML = '<p>Lade Workouts aus Eichelbibliothek 🌳💚</p>';
+  workoutChartsContainer.innerHTML = '<p>Lade Workouts aus Eichelbibliothek...🌳💚</p>';
 
   try {
     const apiUrl = 'https://api.github.com/repos/lemueller196/-zwo-viewer/contents/workouts';
@@ -386,6 +386,7 @@ function openBigChart(fullName, data, labels, stepPowers, fileName, fileContent)
 </script>
 </body>
 </html>
+
 
 
 
