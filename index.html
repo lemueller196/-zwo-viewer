@@ -7,23 +7,30 @@
 <style>
   body { font-family: Arial, sans-serif; padding: 20px; }
   h1 { font-size: 1.5em; margin-bottom: 10px; }
+  #controls { display:flex; gap:10px; align-items:center; margin-bottom:15px; flex-wrap:wrap; }
   #workoutCharts { display:flex; flex-wrap:wrap; gap:5px; align-items:flex-end; }
   .workoutContainer { flex:1 1 23%; max-width:23%; min-width:120px; display:flex; flex-direction:column; align-items:flex-start; text-align:left; }
   .workoutName { font-size:0.85em; margin-bottom:2px; white-space:pre-line; line-height:1.15; cursor:pointer; color:#0056b3; text-align:left; }
   .workoutName:hover { text-decoration:underline; }
   .groupRow { flex-basis:100%; height:0; margin:10px 0; }
   canvas { width:100% !important; height:150px !important; }
+  button { padding:6px 10px; border:1px solid #007bff; background:#007bff; color:white; border-radius:4px; cursor:pointer; font-size:0.9em; }
+  button:hover { background:#0056b3; }
 </style>
 </head>
 <body>
 <h1>Zwo Workout Viewer</h1>
-<input type="file" id="fileInput" accept=".zwo" multiple>
+<div id="controls">
+  <input type="file" id="fileInput" accept=".zwo" multiple>
+  <button id="loadFromGitHub">Workouts von GitHub laden</button>
+</div>
 <div id="workoutCharts"></div>
 
 <script>
 const fileInput = document.getElementById('fileInput');
 const workoutChartsContainer = document.getElementById('workoutCharts');
 
+// === Farben nach Leistungszonen ===
 function getZoneColor(p, alpha = 1) {
   if (p < 0.60) return `rgba(108,117,125,${alpha})`;
   if (p < 0.76) return `rgba(0,123,255,${alpha})`;
@@ -33,12 +40,48 @@ function getZoneColor(p, alpha = 1) {
   return `rgba(220,53,69,${alpha})`;
 }
 
-fileInput.addEventListener('change', async (ev) => {
+// === Verarbeitung lokaler Dateien ===
+fileInput.addEventListener('change', (ev) => {
   const files = Array.from(ev.target.files);
+  processWorkouts(files);
+});
+
+// === Verarbeitung von GitHub-Dateien ===
+document.getElementById('loadFromGitHub').addEventListener('click', async () => {
+  workoutChartsContainer.innerHTML = '<p>Lade Workouts von GitHub...</p>';
+
+  try {
+    const apiUrl = 'https://api.github.com/repos/lemueller196/-zwo-viewer/contents/workouts';
+    const res = await fetch(apiUrl);
+    if (!res.ok) throw new Error('GitHub API-Fehler');
+    const list = await res.json();
+
+    const zwoFiles = list.filter(f => f.name.toLowerCase().endsWith('.zwo'));
+    if (!zwoFiles.length) {
+      workoutChartsContainer.innerHTML = '<p>Keine .zwo-Dateien im GitHub-Ordner gefunden.</p>';
+      return;
+    }
+
+    const fakeFiles = [];
+    for (const f of zwoFiles) {
+      const fileUrl = f.download_url;
+      const text = await (await fetch(fileUrl)).text();
+      fakeFiles.push(new File([text], f.name, { type: 'text/plain' }));
+    }
+
+    processWorkouts(fakeFiles);
+  } catch (err) {
+    console.error(err);
+    workoutChartsContainer.innerHTML = '<p>Fehler beim Laden der Dateien von GitHub.</p>';
+  }
+});
+
+// === Hauptverarbeitungsfunktion ===
+async function processWorkouts(files) {
   if (!files.length) return;
   workoutChartsContainer.innerHTML = '';
 
-  // Gruppiere Dateien nach Präfix vor erstem "_"
+  // Gruppiere Dateien nach Präfix
   const groups = {};
   for (const f of files) {
     const base = f.name.replace(/^Eiche_/, '').replace(/\.zwo$/i, '');
@@ -47,15 +90,15 @@ fileInput.addEventListener('change', async (ev) => {
     groups[groupKey].push(f);
   }
 
+  // Hilfsfunktion für Rampen
   function interpolate(start, end, steps) {
     const r = [];
     for (let i = 0; i < steps; i++) r.push(start + (end - start) * (i / steps));
     return r;
   }
 
-  // Gruppenweise rendern
   for (const groupName of Object.keys(groups)) {
-    // Neue Zeile als Trenner
+    // Zeilen-Trenner
     const separator = document.createElement('div');
     separator.className = 'groupRow';
     workoutChartsContainer.appendChild(separator);
@@ -83,7 +126,7 @@ fileInput.addEventListener('change', async (ev) => {
           const powerHigh = parseFloat(step.getAttribute('PowerHigh')) || powerLow;
           const powers = interpolate(powerLow, powerHigh, segmentCount);
           data.push(...powers);
-          stepPowers.push(...powers.map(p=>({type, power: p})));
+          stepPowers.push(...powers.map(p=>({type, power:p})));
         } else if (type === 'IntervalsT') {
           const repeat = parseInt(step.getAttribute('Repeat')) || 1;
           const onDur = parseFloat(step.getAttribute('OnDuration')) || 0;
@@ -171,7 +214,7 @@ fileInput.addEventListener('change', async (ev) => {
         }
       });
 
-      // Hover + Tooltip
+      // Hover-Tooltip
       container.addEventListener('mousemove', (e) => {
         const rect = canvas.getBoundingClientRect();
         let x = e.clientX - rect.left;
@@ -189,13 +232,28 @@ fileInput.addEventListener('change', async (ev) => {
       });
 
       // Klick → großes Diagramm
-      nameEl.addEventListener('click', () => {
-        const titleHTML = fullName.replace(/\n/g, '<br>');
-        const dataStr = JSON.stringify(data);
-        const labelsStr = JSON.stringify(labels);
-        const stepPowersStr = JSON.stringify(stepPowers);
+      nameEl.addEventListener('click', () => openBigChart(fullName, data, labels, stepPowers));
+    }
+  }
+}
 
-        const html = `<!doctype html>
+// === Hilfsfunktionen ===
+function escapeHtml(s){
+  return String(s)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#39;');
+}
+
+function openBigChart(fullName, data, labels, stepPowers){
+  const titleHTML = fullName.replace(/\n/g, '<br>');
+  const dataStr = JSON.stringify(data);
+  const labelsStr = JSON.stringify(labels);
+  const stepPowersStr = JSON.stringify(stepPowers);
+
+  const html = `<!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
@@ -217,7 +275,6 @@ fileInput.addEventListener('change', async (ev) => {
   const data = ${dataStr};
   const labels = ${labelsStr};
   const stepPowers = ${stepPowersStr};
-
   function getZoneColor(p, alpha=1){
     if (p < 0.60) return 'rgba(108,117,125,'+alpha+')';
     if (p < 0.76) return 'rgba(0,123,255,'+alpha+')';
@@ -226,10 +283,8 @@ fileInput.addEventListener('change', async (ev) => {
     if (p < 1.18) return 'rgba(255,87,34,'+alpha+')';
     return 'rgba(220,53,69,'+alpha+')';
   }
-
   const ctx = document.getElementById('bigChart').getContext('2d');
   const maxY = Math.ceil(Math.max(...data) * 10) / 10;
-
   new Chart(ctx, {
     type:'line',
     data:{ labels, datasets:[{
@@ -239,11 +294,6 @@ fileInput.addEventListener('change', async (ev) => {
       pointHoverRadius:7,
       borderWidth:2,
       fill:true,
-      pointHoverBackgroundColor: ctx => {
-        const idx = ctx.dataIndex;
-        if (idx == null) return 'rgba(0,0,0,0.8)';
-        return getZoneColor(stepPowers[idx].power, 1);
-      },
       segment:{
         borderColor: ctx => {
           const s0 = stepPowers[ctx.p0DataIndex];
@@ -282,24 +332,10 @@ fileInput.addEventListener('change', async (ev) => {
 <\/script>
 </body>
 </html>`;
-
-        const newWin = window.open();
-        newWin.document.open();
-        newWin.document.write(html);
-        newWin.document.close();
-      });
-    }
-  }
-});
-
-// HTML Escape Helper
-function escapeHtml(s){
-  return String(s)
-    .replace(/&/g,'&amp;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;')
-    .replace(/'/g,'&#39;');
+  const newWin = window.open();
+  newWin.document.open();
+  newWin.document.write(html);
+  newWin.document.close();
 }
 </script>
 </body>
