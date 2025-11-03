@@ -43,6 +43,8 @@ function getZoneColor(p, alpha = 1) {
 // === Verarbeitung lokaler Dateien ===
 fileInput.addEventListener('change', (ev) => {
   const files = Array.from(ev.target.files);
+  // Alphabetisch sortieren
+  files.sort((a, b) => a.name.localeCompare(b.name, 'de', { sensitivity: 'base' }));
   processWorkouts(files);
 });
 
@@ -61,6 +63,9 @@ document.getElementById('loadFromGitHub').addEventListener('click', async () => 
       workoutChartsContainer.innerHTML = '<p>Keine .zwo-Dateien im GitHub-Ordner gefunden.</p>';
       return;
     }
+
+    // Alphabetisch sortieren
+    zwoFiles.sort((a, b) => a.name.localeCompare(b.name, 'de', { sensitivity: 'base' }));
 
     const fakeFiles = [];
     for (const f of zwoFiles) {
@@ -340,3 +345,4 @@ function openBigChart(fullName, data, labels, stepPowers){
 </script>
 </body>
 </html>
+
