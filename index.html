@@ -22,7 +22,7 @@
 <h1>Zwo Workout Viewer</h1>
 <div id="controls">
   <input type="file" id="fileInput" accept=".zwo" multiple>
-  <button id="loadFromGitHub">Workouts aus Eichelbibliothek laden🌳💚</button>
+  <button id="loadFromGitHub">Workouts aus Eichelbibliothek laden 🌳💚</button>
 </div>
 <div id="workoutCharts"></div>
 
@@ -50,7 +50,7 @@ fileInput.addEventListener('change', (ev) => {
 
 // === Verarbeitung von GitHub-Dateien ===
 document.getElementById('loadFromGitHub').addEventListener('click', async () => {
-  workoutChartsContainer.innerHTML = '<p>Lade Workouts von GitHub...</p>';
+  workoutChartsContainer.innerHTML = '<p>Lade Workouts aus Eichelbibliothek 🌳💚</p>';
 
   try {
     const apiUrl = 'https://api.github.com/repos/lemueller196/-zwo-viewer/contents/workouts';
@@ -386,6 +386,7 @@ function openBigChart(fullName, data, labels, stepPowers, fileName, fileContent)
 </script>
 </body>
 </html>
+
 
 
 
