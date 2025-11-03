@@ -273,6 +273,12 @@ function openBigChart(fullName, data, labels, stepPowers){
 </head>
 <body>
 <h2>${titleHTML}</h2>
+<div id="topBar" style="display:flex;justify-content:space-between;align-items:center;width:100%;max-width:900px;">
+  <h2 style="margin:0;font-size:1.1em;text-align:center;white-space:pre-line;">${titleHTML}</h2>
+  <button id="downloadBtn" style="padding:6px 12px;border:1px solid #007bff;background:#007bff;color:white;border-radius:4px;cursor:pointer;font-size:0.9em;">
+    ZWO-Datei herunterladen
+  </button>
+</div>
 <div id="chartWrap"><canvas id="bigChart"></canvas></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"><\/script>
 <script>
@@ -288,6 +294,14 @@ function openBigChart(fullName, data, labels, stepPowers){
     if (p < 1.18) return 'rgba(255,87,34,'+alpha+')';
     return 'rgba(220,53,69,'+alpha+')';
   }
+  document.getElementById('downloadBtn').addEventListener('click', () => {
+    const blob = new Blob([fileContent], {type:'text/plain'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = fileName;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
   const ctx = document.getElementById('bigChart').getContext('2d');
   const maxY = Math.ceil(Math.max(...data) * 10) / 10;
   new Chart(ctx, {
@@ -355,4 +369,3 @@ function openBigChart(fullName, data, labels, stepPowers){
 </script>
 </body>
 </html>
-
