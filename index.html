@@ -299,6 +299,16 @@ function openBigChart(fullName, data, labels, stepPowers){
       pointHoverRadius:7,
       borderWidth:2,
       fill:true,
+      pointHoverBackgroundColor: ctx => {
+          const idx = ctx.dataIndex;
+          if (idx == null) return 'rgba(0,0,0,0.8)';
+          return getZoneColor(stepPowers[idx].power, 1);
+        },
+        pointHoverBorderColor: ctx => {
+          const idx = ctx.dataIndex;
+          if (idx == null) return 'rgba(0,0,0,0.8)';
+          return getZoneColor(stepPowers[idx].power, 1);
+        },
       segment:{
         borderColor: ctx => {
           const s0 = stepPowers[ctx.p0DataIndex];
@@ -345,3 +355,4 @@ function openBigChart(fullName, data, labels, stepPowers){
 </script>
 </body>
 </html>
+
