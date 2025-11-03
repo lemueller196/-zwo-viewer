@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Stephen Gallagher</author>
+    <name>Eiche_Z4+6_48min_3x(5x(30''@130%+1'@95%)_62TSS</name>
+    <description>When you need to constantly perform small surges of power—and keep pushing hard between these surges like in a Time Trial or when in fast paceline in a group ride—you're going to need excellent lactate tolerance. The better you are at metabolizing lactate, the better your endurance. 
+
+    This session has two goals: enhance lactate tolerance, which allows you to perform at intensities above your FTP for longer, and boost your VO2 Max. This session will hold you at a high VO2 max over the majority of each set and raise your maximal aerobic capacity.
+    
+    Coach's Tip: Zwift Academy Road was developed with structure in mind. For best results, complete the workouts in order.
+    
+    This training program was designed by Stephen Gallagher and Dan Fleeman from Dig Deep Coaching. Their complete coaching approach ensures every Zwift Academy athlete learns the building blocks for successful training.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Zwift" />
+        <tag name="Academy" />
+    </tags>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.49999997" PowerHigh="0.79999995" pace="0">
+            <textevent timeoffset="0" message="Welcome to the Lactate Tolerance workout of the 2021 Zwift Academy!" />
+            <textevent timeoffset="10" message="Let's get started with a 10min progressive interval to warm up." />
+            <textevent timeoffset="20" message="Keep your cadence comfortable." />
+            <textevent timeoffset="30" message="Everyone has a goal, Zwift Academy will help you Get After It!" />
+            <textevent timeoffset="120" message="Keep easing in here. Stay relaxed as you continue to loosen up." />
+            <textevent timeoffset="240" message="Nice work so far! Hopefully you feel like your pedal stroke is becoming more fluid." />
+            <textevent timeoffset="300" message="Alright, let's take a moment to chat about the plan for today." />
+            <textevent timeoffset="310" message="This session has 2 goals: enhance lactate tolerance, which allows you to perform at intensities above your FTP for longer..." />
+            <textevent timeoffset="320" message="...and boost your VO2 max." />
+            <textevent timeoffset="330" message="This session will hold you at a high VO2 max over the majority of each set and raise your maximal aerobic capacity." />
+            <textevent timeoffset="340" message="And more specifically, we'll do 4 reps of 30sec over threshold with 60sec just under it." />
+            <textevent timeoffset="350" message="The pushes over threshold will build the level of lactate gradually in each rep." />
+            <textevent timeoffset="360" message="And the recoveries just under threshold won't allow for much, if any, combustion of it." />
+            <textevent timeoffset="370" message="This will cause a good deal of burn in your legs, and enhance your lactate 'tolerance' as a result." />
+            <textevent timeoffset="380" message="Make sense? Dealing with, and pushing through, the burn in your legs is what's on tap for today!" />
+            <textevent timeoffset="390" message="Let's carry on with the warm-up." />
+            <textevent timeoffset="540" message="1min to go here, then we'll finish the warm-up with a ramp effort." />
+            <textevent timeoffset="590" message="Lift your cadence a bit higher..." />
+        </Warmup>
+        <Ramp Duration="60.000004" PowerLow="0.80000001" PowerHigh="0.94999999" pace="0">
+            <textevent timeoffset="0" message="...and let's push a bit harder in this last minute." />
+            <textevent timeoffset="20" message="Keep your cadence high as the intensity continues to ramp up." />
+            <textevent timeoffset="50" message="10sec!" />
+        </Ramp>
+        <SteadyState Duration="240.00002" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="Nice one! Bring the effort down a touch and let's get ready for the main set." />
+            <textevent timeoffset="10" message="Have a drink, take a few deep breaths, and start getting into the right headspace." />
+            <textevent timeoffset="120" message="Remember, we're doing 3 interval sets today." />
+            <textevent timeoffset="130" message="Each will feature 30sec pushes over threshold to build lactate, and 60sec just under threshold, repeated 4 times." />
+            <textevent timeoffset="140" message="The goal is enhancing your lactate tolerance and boosting your VO2 max." />
+            <textevent timeoffset="210" message="30sec, and we're on!" />
+            <textevent timeoffset="230" message="Bring your cadence up just a bit and prepare for a surge in effort." />
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="30.000002" OffDuration="60.000004" OnPower="1.3" OffPower="0.94999993" pace="0">
+            <textevent timeoffset="0" message="HIT IT!" />
+            <textevent timeoffset="30" message="Nicely done! Bring it down just under threshold now for 60sec." />
+            <textevent timeoffset="60" message="Feeling a little burn in the legs at this point is normal, and we'll keep building that feeling throughout this set :-)" />
+            <textevent timeoffset="90" message="PUSH IT AGAIN!" />
+            <textevent timeoffset="120" message="Excellent! 2 more pushes to go. Keep the legs turning over here." />
+            <textevent timeoffset="170" message="Bring the cadence up just slightly again..." />
+            <textevent timeoffset="180" message="GO GO GO!" />
+            <textevent timeoffset="210" message="Super! The burn should be pretty noticeable now. This is how you enhance your lactate tolerance." />
+            <textevent timeoffset="220" message="KEEP GOING!" />
+            <textevent timeoffset="260" message="Last push coming up!" />
+            <textevent timeoffset="270" message="DIG!" />
+            <textevent timeoffset="300" message="Alright! Hang on now for this final minute!" />
+            <textevent timeoffset="330" message="Don't let your cadence drop now! PUSH YOURSELF!" />
+            <textevent timeoffset="350" message="GET AFTER IT!" />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Excellent work! Let's bring the effort way down now and recover for 5min." />
+            <textevent timeoffset="10" message="We'll repeat that twice more, WOOT WOOT! :-)" />
+            <textevent timeoffset="60" message="Breathe...learn to recover." />
+            <textevent timeoffset="120" message="Have a sip of fluids and let go of any tension in your upper body." />
+            <textevent timeoffset="180" message="Hopefully you're starting to feel a bit recovered now." />
+            <textevent timeoffset="240" message="1min, and we're back on for set #2! We're doing the same thing as before." />
+            <textevent timeoffset="290" message="Here we go! Get ready for a big surge in effort again!" />
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="30.000002" OffDuration="60.000004" OnPower="1.3" OffPower="0.94999993" pace="0">
+            <textevent timeoffset="0" message="BUILD THAT LACTATE LEVEL!" />
+            <textevent timeoffset="30" message="Great opening effort! We're back into the pain cave again here." />
+            <textevent timeoffset="80" message="Time to go a bit deeper...show me what you got!" />
+            <textevent timeoffset="90" message="GO GO GO!" />
+            <textevent timeoffset="120" message="Excellent! 2 more pushes left. YOU CAN DO THIS!" />
+            <textevent timeoffset="150" message="C'mon! Stay focused here and FIGHT!" />
+            <textevent timeoffset="180" message="PUSH IT!" />
+            <textevent timeoffset="210" message="Grit those teeth and keep going! Ignore the burn in your legs." />
+            <textevent timeoffset="260" message="One last push for this 2nd set coming up! MAKE ME PROUD!" />
+            <textevent timeoffset="270" message="DIG DIG DIG!" />
+            <textevent timeoffset="300" message="So great! Get through this final minute now." />
+            <textevent timeoffset="330" message="Quit staring at the clock! Turn those pedals over!" />
+            <textevent timeoffset="350" message="HOME STRETCH!" />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Phew! Those aren't getting any easier." />
+            <textevent timeoffset="10" message="Let's take another nice 5min recovery here." />
+            <textevent timeoffset="60" message="Focus on your breathing, get it under control." />
+            <textevent timeoffset="120" message="Keep lowering your heart rate." />
+            <textevent timeoffset="180" message="Relax your shoulders, keep a slight bend in the elbows, loose grip on the bars." />
+            <textevent timeoffset="240" message="1min to go! Have another sip of fluids and start to refocus." />
+            <textevent timeoffset="290" message="Ready or not, time to CRUSH this finale!" />
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="30.000002" OffDuration="60.000004" OnPower="1.3" OffPower="0.94999993" pace="0">
+            <textevent timeoffset="0" message="LAST SET! FINISH THE DAY UP STRONG!" />
+            <textevent timeoffset="30" message="Nicely done! Bring it down just under threshold again...breathe." />
+            <textevent timeoffset="90" message="PUSH IT AGAIN!" />
+            <textevent timeoffset="120" message="Excellent! 2 more surges to go and you're there! Keep the legs turning over here." />
+            <textevent timeoffset="180" message="GO GO GO!" />
+            <textevent timeoffset="210" message="Incredible! You're really building your lactate tolerance now!" />
+            <textevent timeoffset="220" message="KEEP GOING!" />
+            <textevent timeoffset="260" message="Last push coming up!" />
+            <textevent timeoffset="270" message="DIG!" />
+            <textevent timeoffset="300" message="Alright! Hang on now for this final minute!" />
+            <textevent timeoffset="330" message="Don't let your cadence drop now! PUSH YOURSELF!" />
+            <textevent timeoffset="350" message="GET AFTER IT!" />
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.55000001" PowerHigh="0.34999996" pace="0">
+            <textevent timeoffset="0" message="Incredible work today!" />
+            <textevent timeoffset="10" message="You showed you're in this to win it, and are really showing your work ethic." />
+            <textevent timeoffset="20" message="We'll take 5min to cool down now, then check this one off the list." />
+            <textevent timeoffset="120" message="Keep easing off the gas here." />
+            <textevent timeoffset="240" message="Thank you for showing up, working hard, and putting the effort in today." />
+            <textevent timeoffset="250" message="Your FTP will thank you :-)" />
+            <textevent timeoffset="260" message="Be sure to refuel and rehydrate well between sessions." />
+            <textevent timeoffset="270" message="And good luck with your remaining Zwift Academy workouts and group rides." />
+            <textevent timeoffset="280" message="You're one step closer to the Finish Line!" />
+            <textevent timeoffset="290" message="Ride On!" />
+        </Cooldown>
+    </workout>
+</workout_file>

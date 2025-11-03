@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kristin Armstrong</author>
+    <name>Eiche_Z4-6_42min_3x(2'@100@+1'@53%)+3x(2'@106%+1'@53%)+6x(30'@120%+30'@55%)_47TSS</name>
+    <description>This session is a fitness builder. We will experience time in three different training zones - Threshold, Vo2 and our Anaerobic zone. Today's session consists of 3x 2 minutes at 100% of FTP (Threshold), 3x 1 minute at 110% of FTP (VO2), and 6x :30 seconds at 120% of FTP (Anaerobic). As we increase power, we will decrease time in each effort.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <SteadyState Duration="210.00002" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="Hello and welcome to Fitness Builder. Let's get started with a warm up at a comfortable cadence." />
+            <textevent timeoffset="120" message="2 minutes in so far, nice work! Just keep easing into the day here." />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.68000001" pace="0">
+            <textevent timeoffset="0" message="Get a fan, towel and water bottle at the ready! You'll need them today :-)" />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="Pro tip: It's worth investing in a powerful fan. You'll be surprised just how hot and sweaty cycling indoors can be!" />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.82999998" pace="0">
+            <textevent timeoffset="0" message="Also, having a smartphone for the Zwift Companion app within reach is always helpful too." />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0">
+            <textevent timeoffset="0" message="Are we feeling warmed up and ready to roll? I hope so!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Quick drink of water leading in to the final part of our warm up! 3x 30second efforts." />
+            <textevent timeoffset="50" message="All right, get ready for a big surge in effort next. You can do these :30 second efforts either seated or standing" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.1" pace="0">
+            <textevent timeoffset="0" message="GO GO GO!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Great work! We take 30 seconds easy between efforts." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.1" pace="0">
+            <textevent timeoffset="0" message="HIT IT! It's all about getting our bodies warmed up for todays ride." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.55000001" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0">
+            <textevent timeoffset="0" message="Last one!" />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Great effort! That's it for today's warm up. Let's take a moment to chat about the plan for today." />
+            <textevent timeoffset="10" message="Today's ride is a fitness builder. We will experience time in three zones - Threshold - VO2 - Anaerobic" />
+            <textevent timeoffset="20" message="Today's session consists of 3x 2 minutes at 100% of FTP (Threshold), 3x 1 minute at 110% of FTP (VO2)..." />
+            <textevent timeoffset="30" message="...and 6x :30 seconds at 120% of FTP (Anaerobic)." />
+            <textevent timeoffset="40" message="Fear not though, as the intensity increases for each effort, the duration will decrease accordingly." />
+            <textevent timeoffset="50" message="We can't be mean all of the time after all :-)" />
+            <textevent timeoffset="80" message="Okay, get ready for our 1st 2min threshold effort starting in 10sec." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="1" pace="0">
+            <textevent timeoffset="0" message="Nice and steady here. Don't start off too hard and just get a feel for the output." />
+            <textevent timeoffset="60" message="There's halfway, keep it steady and stay in control here." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.52999997" pace="0">
+            <textevent timeoffset="0" message="Excellent work! Be sure to hydrate in between intervals. 1min easy, then we'll start the next one" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="1" pace="0">
+            <textevent timeoffset="0" message="Here we go, rep #2! Same as the 1st one, just aim for a steady effort." />
+            <textevent timeoffset="60" message="Remember to use your bias arrows if you need to adjust difficulty up or down. These can be found on your companion app or by swiping up on screen." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.52999997" pace="0">
+            <textevent timeoffset="0" message="Nice work, deep breath as we head into our last 2 minute effort. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="1" pace="0">
+            <textevent timeoffset="0" message="Here we go! Get the power back up again and let's hit it!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.52999997" pace="0">
+            <textevent timeoffset="0" message="Nice easy pedaling now. We'll take a 2min recovery before our next interval set." />
+            <textevent timeoffset="60" message="We are going to decrease time and increase power output for the next set - 3 x 1 minute at 110% of our FTP (VO2 work)." />
+            <textevent timeoffset="70" message="So, expect to feel these a little more compared to the FTP work, but you got it!" />
+            <textevent timeoffset="110" message="All right, get ready to increase the power again next." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.0599999" pace="0">
+            <textevent timeoffset="0" message="Here we go! Just 1min, PUSH!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.52999997" pace="0">
+            <textevent timeoffset="0" message="Super! Not too bad, right? We'll take 1 minute between these efforts as well." />
+            <textevent timeoffset="50" message="Get ready to CRUSH IT!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.0599999" pace="0">
+            <textevent timeoffset="0" message="2nd set of 3" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Nice! Make sure you hydrate between these efforts. Just 1 more to go." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.0599999" pace="0">
+            <textevent timeoffset="0" message="UP UP UP! Make this one just as good as the 1st!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Boom! Interval set #2 done and dusted. Let's take a 2 minute rest again here before our finale." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Last set of the day coming up next - 6x :30 seconds at 120% of our FTP (anaerobic zone here we come)!" />
+            <textevent timeoffset="10" message="These are going to feel almost 'easy' for the first couple, but will start to bite towards the end." />
+            <textevent timeoffset="50" message="Deep breath and get ready to crush it!" />
+        </SteadyState>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Here we go! This is where the work begins." />
+            <textevent timeoffset="30" message="Good! Quick 30 second rest in between efforts here." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="BACK ON! GO GO GO!" />
+            <textevent timeoffset="30" message="Excellent! You get the idea now.." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Keep the power up!" />
+            <textevent timeoffset="30" message="Half way - great work!" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="DIG DIG DIG!" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="We have less than one-minute of work left in our session! C'mon!" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Last One Best One!" />
+            <textevent timeoffset="30" message="We did it! Way to go. " />
+        </IntervalsT>
+        <Cooldown Duration="270" PowerLow="0.55000001" PowerHigh="0.30000001" pace="0">
+            <textevent timeoffset="0" message="Great job today! We'll start our cool down now." />
+            <textevent timeoffset="60" message="Take care of yourself by hydrating and refueling so you feel recovered and ready to go again for your next session!" />
+            <textevent timeoffset="120" message="Take a few more deep breaths here as we continue to return to baseline." />
+            <textevent timeoffset="240" message="See you on the next workout - Dani and Kristin." />
+        </Cooldown>
+    </workout>
+</workout_file>

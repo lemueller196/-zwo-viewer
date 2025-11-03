@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>ADRIÁN LÓPEZ</author>
+    <name>Eiche_Z6_52min_2x(10x(20''@140%+40''@55%))_55TSS</name>
+    <description>What are anaerobic capacity efforts? Today you will find out. Simply put, it's short intense sprint efforts that build large amounts of lactate. Today you have 2 rounds of 10 x 20 seconds on, 40 seconds off. Do this workout if you want to improve your anaerobic capacity.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="zprotraining" />
+    </tags>
+    <workout>
+        <Warmup Duration="480.00003" PowerLow="0.55000001" PowerHigh="0.69999999" pace="0">
+            <textevent timeoffset="0" message="Welcome to Zwift's Pro Training Camp." />
+            <textevent timeoffset="10" message="Let's get started with an easy warm-up. Keep your cadence comfortable." />
+            <textevent timeoffset="20" message="In this training series we feature workouts from the world's best cycling teams." />
+            <textevent timeoffset="30" message="Giving YOU the chance to train like a pro." />
+            <textevent timeoffset="40" message="Today's workout is from the INEOS Grenadiers and focuses on anaerobic capacity efforts." />
+            <textevent timeoffset="50" message="Anaerobic capacity or (AC) is the maximal amount of energy that can be generated over a given period of time using anaerobic sources of energy." />
+            <textevent timeoffset="60" message="For today that means 2 rounds of 10 x 20 seconds on, 40 seconds off." />
+            <textevent timeoffset="70" message="The 'On' efforts will be near max." />
+            <textevent timeoffset="80" message="The 'Off' efforts will be very easy." />
+            <textevent timeoffset="90" message="But first we've got an extended warm up to complete." />
+            <textevent timeoffset="100" message="Take the next few minutes easy before we get into it." />
+        </Warmup>
+        <SteadyState Duration="420.00003" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="The next 10 minutes of this warm up will break down as follows." />
+            <textevent timeoffset="10" message="7 minutes at the top of zone 2." />
+            <textevent timeoffset="20" message="2 minutes at zone 4 and finally 1 minute at zone 5." />
+            <textevent timeoffset="30" message="This type of extended warm up is critical before starting high intensity efforts." />
+            <textevent timeoffset="40" message="It gets the blood and oxygen flowing to all the right muscles." />
+            <textevent timeoffset="120" message="It's important to drink early and often when taking on big indoor sessions." />
+            <textevent timeoffset="130" message="Keep your water bottle handy for this one." />
+            <textevent timeoffset="390" message="Great job so far. We are stepping up the effort soon." />
+            <textevent timeoffset="400" message="Up next 90% for 2 min." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.89999998" pace="0">
+            <textevent timeoffset="0" message="Add a little more pressure to the pedals." />
+            <textevent timeoffset="10" message="Keep the cadence smooth and steady." />
+            <textevent timeoffset="60" message="Halfway." />
+            <textevent timeoffset="100" message="We are stepping the effort up again in 20 seconds." />
+            <textevent timeoffset="110" message="105% of FTP for 1 min. " />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.05" pace="0">
+            <textevent timeoffset="0" message="Push the effort up again." />
+            <textevent timeoffset="10" message="Bring up the cadence." />
+            <textevent timeoffset="40" message="Almost there. Keep pushing!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Nice work." />
+            <textevent timeoffset="30" message="You should be fully warmed up now." />
+            <textevent timeoffset="40" message="At least I hope you are, we've got some big efforts on deck." />
+            <textevent timeoffset="160" message="1st round of 10 x 20 seconds hard, 40 seconds easy up next." />
+            <textevent timeoffset="170" message="Get ready for a big effort." />
+        </SteadyState>
+        <IntervalsT Repeat="10" OnDuration="20" OffDuration="40" OnPower="1.4" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Push, push, push." />
+            <textevent timeoffset="20" message="Nice work. These are going to come at you fast." />
+            <textevent timeoffset="30" message="Recover as much as possible." />
+            <textevent timeoffset="60" message="Up, up, up!" />
+            <textevent timeoffset="80" message="Ease up." />
+            <textevent timeoffset="120" message="Let's go!" />
+            <textevent timeoffset="140" message="3 down, 7 to go." />
+            <textevent timeoffset="150" message="Quick drink of water." />
+            <textevent timeoffset="180" message="Back on it!" />
+            <textevent timeoffset="200" message="Back to recovery." />
+            <textevent timeoffset="210" message="Coming up to halfway." />
+            <textevent timeoffset="240" message="Go, go, go!" />
+            <textevent timeoffset="260" message="Nice work, 5 down, 5 to go." />
+            <textevent timeoffset="300" message="Power to the pedals." />
+            <textevent timeoffset="320" message="You're crushing this session." />
+            <textevent timeoffset="330" message="Keep up the good work." />
+            <textevent timeoffset="360" message="Let's go! Stay strong." />
+            <textevent timeoffset="380" message="Come off the power." />
+            <textevent timeoffset="390" message="Spin out those legs." />
+            <textevent timeoffset="420" message="Last 3! You can do it." />
+            <textevent timeoffset="440" message="Almost done with this round." />
+            <textevent timeoffset="480" message="Final 2 reps." />
+            <textevent timeoffset="500" message="Quick drink before the final effort." />
+            <textevent timeoffset="540" message="Last one!" />
+            <textevent timeoffset="560" message="Great job, you've earned a big break." />
+            <textevent timeoffset="590" message="Big recovery up next." />
+        </IntervalsT>
+        <SteadyState Duration="360.00003" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="That was some impressive riding." />
+            <textevent timeoffset="10" message="Anaerobic capacity efforts are never easy, but you dug deep and got through it." />
+            <textevent timeoffset="20" message="You've got a big recovery here." />
+            <textevent timeoffset="30" message="I want you to feel fully recovered before starting round 2." />
+            <textevent timeoffset="300" message="Alright, round 2 is coming up." />
+            <textevent timeoffset="310" message="Same pattern as before, 10 x 20 seconds on, 40 seconds off." />
+            <textevent timeoffset="350" message="Grab one last sip of water before we jump in." />
+        </SteadyState>
+        <IntervalsT Repeat="10" OnDuration="20" OffDuration="40" OnPower="1.4" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Push, push, push." />
+            <textevent timeoffset="20" message="Nice work, with these big efforts the recovery is going to feel short." />
+            <textevent timeoffset="30" message="Hang in there." />
+            <textevent timeoffset="40" message="Recover as much as you can." />
+            <textevent timeoffset="60" message="Up, up, up!" />
+            <textevent timeoffset="80" message="Ease up." />
+            <textevent timeoffset="120" message="Let's go!" />
+            <textevent timeoffset="140" message="3 down, 7 to go." />
+            <textevent timeoffset="150" message="Sip of fluid here, then get ready to go again." />
+            <textevent timeoffset="180" message="Back on it!" />
+            <textevent timeoffset="200" message="Recovery." />
+            <textevent timeoffset="210" message="Coming up to halfway." />
+            <textevent timeoffset="240" message="Go, go, go!" />
+            <textevent timeoffset="260" message="Amazing! You're halfway done." />
+            <textevent timeoffset="300" message="Get on top of those pedals." />
+            <textevent timeoffset="320" message="You've done this before, you can do it again." />
+            <textevent timeoffset="330" message="Keep up the good work." />
+            <textevent timeoffset="360" message="Let's go! Stay strong." />
+            <textevent timeoffset="380" message="Off the power." />
+            <textevent timeoffset="390" message="Deep breaths here, almost done." />
+            <textevent timeoffset="420" message="Last 3! You can do it." />
+            <textevent timeoffset="440" message="Almost done with this round." />
+            <textevent timeoffset="480" message="Final 2 efforts." />
+            <textevent timeoffset="500" message="Quick drink before the final effort." />
+            <textevent timeoffset="540" message="Last one!" />
+            <textevent timeoffset="560" message="Great job." />
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.64999998" PowerHigh="0.5" pace="0">
+            <textevent timeoffset="0" message="Great session." />
+            <textevent timeoffset="10" message="You've made some serious gains today." />
+            <textevent timeoffset="20" message="Anaerobic capacity efforts certainly are't easy, but you crushed it." />
+            <textevent timeoffset="30" message="Take the next few minutes to cool down." />
+            <textevent timeoffset="260" message="Thanks for riding with us today." />
+            <textevent timeoffset="270" message="Check out the rest of the INEOS Grenadiers workouts..." />
+            <textevent timeoffset="280" message="and enjoy training camp." />
+            <textevent timeoffset="290" message="Ride On!" />
+        </Cooldown>
+    </workout>
+</workout_file>

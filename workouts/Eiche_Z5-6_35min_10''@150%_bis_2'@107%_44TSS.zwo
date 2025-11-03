@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kristin Armstrong</author>
+    <name>Eiche_Z5-6_35min_10''@150% bis 2'@107%_44TSS</name>
+    <description>Welcome to Half Hour of Power! Half Hour Of Power is a fast and fun ride with what appears to be inconsistent power efforts, but is actually calculated training. Each power interval is followed by a recovery interval of equal time. As the power intervals' intensities decrease, the duration increases. This is a fun challenge for the body and mind, all while improving overall fitness!</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <SteadyState Duration="30.000002" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Welcome to Half Hour of Power!" />
+            <textevent timeoffset="10" message="Kristin Armstrong here to guide you for today's workout." />
+            <textevent timeoffset="20" message="Let's start with a ramp style warmup as we talk about the plan for today..." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.64999998" pace="0">
+            <textevent timeoffset="0" message="Are you crunched for time and prefer to get in a longer ride but have to settle for 35 minutes?" />
+            <textevent timeoffset="10" message="Half Hour of Power will leave you feeling filled with energy and satisfied, just wait!" />
+            <textevent timeoffset="20" message="First of all, congratulations for choosing to spend 35 minutes of your day focused on you." />
+            <textevent timeoffset="30" message="You'll get the most out of each minute of your day with this workout." />
+            <textevent timeoffset="40" message="Half Hour Of Power is a fast and fun ride of what appear to be inconsistent power efforts" />
+            <textevent timeoffset="50" message="But it's actually very precise, starting in the neuromuscular power zone and then heading down to work in the VO2 Max Zone!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="Efforts today start off short and sweet with explosive power, and as the intensity decreases, the segments extend in duration." />
+            <textevent timeoffset="15" message="Each power interval is followed by a recovery interval of equal time." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.85000002" pace="0">
+            <textevent timeoffset="0" message="The recovery intervals should allow you time to regulate your breathing rate, and for your heart rate to stabilise before engaging in more work." />
+            <textevent timeoffset="15" message="As the power intervals' intensities decrease, the duration increases." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.94999999" pace="0">
+            <textevent timeoffset="0" message="This is a fun challenge for the body and mind, all while improving overall fitness!" />
+            <textevent timeoffset="20" message="Finish this warm up at the arch. Next, we've got a short recovery." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Nice work! Grab a sip here. Hydration is key to recovery and performance." />
+            <textevent timeoffset="10" message="Form check: Are your shoulders and elbows relaxed?" />
+            <textevent timeoffset="20" message="Are you holding your breath in anticipation of the work ahead? If so, try to breathe out and relax." />
+            <textevent timeoffset="30" message="Is your pedal stroke smooth and efficient? Not just pedaling to pedal but pedaling with intention?" />
+            <textevent timeoffset="40" message="Take a deep breath. Relax your shoulders and contract your core. Guide your motion with your heels to keep smooth pedal strokes." />
+            <textevent timeoffset="50" message="Sounds like you are ready to roll! Start pedaling quicker. We've got a big surge at the arch! " />
+        </SteadyState>
+        <SteadyState Duration="10" Power="1.51" pace="0">
+            <textevent timeoffset="0" message="Big power here! Every second counts. " />
+        </SteadyState>
+        <SteadyState Duration="20" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Easy pedaling!" />
+        </SteadyState>
+        <SteadyState Duration="15.000001" Power="1.51" pace="0">
+            <textevent timeoffset="0" message="Again, adding five seconds!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="And relax. Be sure to hydrate throughout today's ride. " />
+        </SteadyState>
+        <SteadyState Duration="20" Power="1.51" pace="0">
+            <textevent timeoffset="0" message="Let's go! Make sure your core is engaged!" />
+            <textevent timeoffset="10" message="Doing so will help you produce the recommended power. Often times we underestimate the power of our core - this is your foundation!" />
+        </SteadyState>
+        <SteadyState Duration="40" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Nice work. How are you feeling? So far, so good?" />
+            <textevent timeoffset="10" message="Grab a sip! You've deserved this rest." />
+            <textevent timeoffset="30" message="Get ready to sprint again! Stay seated for this one." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.45" pace="0">
+            <textevent timeoffset="0" message="Up! Up! Up!" />
+            <textevent timeoffset="10" message="Stay seated. Hone in your focus, it's easy for the mind to drift. " />
+            <textevent timeoffset="20" message="All the way to the arch! " />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Relax and get your breathing rate to come down as quickly as you can." />
+            <textevent timeoffset="20" message="If you are tracking heart rate, this is an added metric to pay attention to." />
+            <textevent timeoffset="30" message="How quickly are you recovering? Is your heart rate coming down between efforts, or stabilizing?" />
+            <textevent timeoffset="45" message="Get ready for another sprint! Start increasing your cadence." />
+        </SteadyState>
+        <SteadyState Duration="40" Power="1.3" pace="0">
+            <textevent timeoffset="0" message="Let's go!" />
+            <textevent timeoffset="10" message="As the duration of each segment becomes longer be sure to keep within the power range." />
+            <textevent timeoffset="20" message="Not too hard, not too easy. Try to stay around the recommended power." />
+            <textevent timeoffset="30" message="All the way to the arch!" />
+        </SteadyState>
+        <SteadyState Duration="80" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Nice work." />
+            <textevent timeoffset="10" message="Pick one area to focus on during these final segments. What's your focus? Maybe your posture or steady pedal strokes?" />
+            <textevent timeoffset="20" message="This is a great way to focus on your energy instead of on your legs burning. " />
+            <textevent timeoffset="50" message="Remember to hydrate during these rest intervals!" />
+            <textevent timeoffset="70" message="Here we go! Let's get ready to increase the power." />
+        </SteadyState>
+        <SteadyState Duration="45.000004" Power="1.21" pace="0">
+            <textevent timeoffset="0" message="Increase the power!" />
+            <textevent timeoffset="10" message="Solid pace and effort here!" />
+            <textevent timeoffset="20" message="Go back and reset to your best form. " />
+            <textevent timeoffset="35" message="Almost there. Finish strong on this interval!" />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Nice work!" />
+            <textevent timeoffset="10" message="Hydrate, move your body around and prepare for the final two segments of this block. " />
+            <textevent timeoffset="50" message="Get ready for the one minute of power coming up next! " />
+            <textevent timeoffset="80" message="Start increasing your cadence here." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.1" pace="0">
+            <textevent timeoffset="0" message="Up! Up! Up!" />
+            <textevent timeoffset="10" message="You've got this!" />
+            <textevent timeoffset="30" message="Stay strong and focused!" />
+            <textevent timeoffset="45" message="All the way to the arch!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Amazing work! Let's recover." />
+            <textevent timeoffset="10" message="Recovery is a crucial component of your workouts." />
+            <textevent timeoffset="20" message="The work to rest ratio will depend on what energy system you are working to improve. " />
+            <textevent timeoffset="30" message="We're working in high-intensity zones with these intervals and the recovery intervals are just as important." />
+            <textevent timeoffset="70" message="Next up, we've got our longest effort interval with two minutes in zone five." />
+            <textevent timeoffset="80" message="Remember to maintain your solid posture, and smooth and steady pedal strokes." />
+            <textevent timeoffset="100" message="Okay, let's get ready to increase the power." />
+            <textevent timeoffset="110" message="Start pedaling slightly faster. Every pedal stroke counts!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="1.0700001" pace="0">
+            <textevent timeoffset="0" message="Here we go! Stay focused." />
+            <textevent timeoffset="10" message="Still working over threshold! Settle into your pace and keep the pressure on your pedals. " />
+            <textevent timeoffset="60" message="Nice work! Halfway to the arch. You're doing great!" />
+            <textevent timeoffset="80" message="Keep breathing. Almost there!" />
+            <textevent timeoffset="110" message="Finish at the arch! You've got this!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.47999999" pace="0">
+            <textevent timeoffset="0" message="Nice work! " />
+            <textevent timeoffset="10" message="Well deserved break here. You've just crushed over half of today's workout!" />
+            <textevent timeoffset="20" message="Grab a sip of water and get in control of your breathing." />
+            <textevent timeoffset="50" message="Feel your heart rate starting to slow down. That's a great sign." />
+            <textevent timeoffset="60" message="The quicker your heart rate recovers after an effort, the more 'in shape' you are." />
+            <textevent timeoffset="70" message="Keep enjoying this recovery!" />
+            <textevent timeoffset="120" message="One minute away from the second half of Half Hour of Power." />
+            <textevent timeoffset="130" message="Let's begin getting the mind and body connected and ready to get back to work." />
+            <textevent timeoffset="140" message="The first four efforts will be out of the saddle, big strong moves." />
+            <textevent timeoffset="150" message="When you rise out of your saddle, try to stay stable. Don't sway side to side." />
+            <textevent timeoffset="160" message="Okay, let's get ready to attack these sprints!" />
+            <textevent timeoffset="170" message="Start increasing your cadence here. Time to shine!" />
+        </SteadyState>
+        <SteadyState Duration="10" Power="1.51" pace="0">
+            <textevent timeoffset="0" message="Big power, out of the saddle! " />
+        </SteadyState>
+        <SteadyState Duration="20" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Good form when out of the saddle includes weight off of the handle bars... " />
+            <textevent timeoffset="10" message="... and hips should be shifted back to the point where you can barely feel the tip of your saddle in the upper thigh. Get ready!" />
+        </SteadyState>
+        <SteadyState Duration="15.000001" Power="1.51" pace="0">
+            <textevent timeoffset="0" message="Let's go, big attack!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="And relax! Are you in control of your pedals?" />
+            <textevent timeoffset="10" message="When you are standing out of your saddle, it's normal to have lower cadence (RPMs). Stay focused on producing power." />
+            <textevent timeoffset="20" message="Get ready to stand up again. Start increasing your cadence." />
+        </SteadyState>
+        <SteadyState Duration="20" Power="1.51" pace="0">
+            <textevent timeoffset="0" message="Let's go! Another opportunity here to practice and perfect your form. " />
+        </SteadyState>
+        <SteadyState Duration="40" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="And relax. Last one standing, coming up next. " />
+            <textevent timeoffset="10" message="You have time to grab a sip of water." />
+            <textevent timeoffset="30" message="Get ready to stand up at the arch!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.45" pace="0">
+            <textevent timeoffset="0" message="Let's go. Hold on for the entire 30 seconds. " />
+            <textevent timeoffset="20" message="All the way through the arch! " />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Nice work! Let's recover here." />
+            <textevent timeoffset="10" message="How are you feeling? Four segments down, four to go." />
+            <textevent timeoffset="20" message="How are you adjusting your mind to stay in the game?" />
+            <textevent timeoffset="30" message="Having a mantra is a powerful tool. What are you telling yourself throughout your effort?" />
+            <textevent timeoffset="40" message="All right, let's get ready to increase the power. We'll stay seated for this next one." />
+            <textevent timeoffset="50" message="Start pedaling slightly faster to prepare for the surge." />
+        </SteadyState>
+        <SteadyState Duration="40" Power="1.3" pace="0">
+            <textevent timeoffset="0" message="Go! Go! Go! Stay seated!" />
+            <textevent timeoffset="25" message="All the way to the arch. You got this!" />
+        </SteadyState>
+        <SteadyState Duration="80" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Nice effort! Grab a sip." />
+            <textevent timeoffset="10" message="Recenter your breathing here." />
+            <textevent timeoffset="20" message="Did you pick a mantra to repeat? Was it a positive one?" />
+            <textevent timeoffset="50" message="Check in on your form here. Get ready to surge again!" />
+            <textevent timeoffset="60" message="This next one is 45 seconds. Don't burn yourself out in the first ten seconds." />
+            <textevent timeoffset="70" message="Start increasing your cadence. It's showtime!" />
+        </SteadyState>
+        <SteadyState Duration="45.000004" Power="1.21" pace="0">
+            <textevent timeoffset="0" message="Big power!" />
+            <textevent timeoffset="10" message="Get to your wattage goal and fine tune." />
+            <textevent timeoffset="30" message="Keep pushing! Almost there!" />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Amazing work! Recovery time." />
+            <textevent timeoffset="10" message="Big, deep breath! As the segments get longer, it's important to come as close as possible to the wattage goal. " />
+            <textevent timeoffset="50" message="How's your form doing? Are you keeping your shoulders relaxed and your core engaged?" />
+            <textevent timeoffset="60" message="A solid form is important to prevent injuries and maximize your power output." />
+            <textevent timeoffset="70" message="Okay, get ready, we're powering through the next arch!" />
+            <textevent timeoffset="80" message="Start pedaling slightly quicker here." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.1" pace="0">
+            <textevent timeoffset="0" message="Up! Up! Up! One minute here!" />
+            <textevent timeoffset="20" message="Stay focused. Relaxed shoulders. Strong core. Keep breathing." />
+            <textevent timeoffset="45" message="Nice work! Keep the power up until the arch!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="And relax!" />
+            <textevent timeoffset="10" message="Amazing work! We've got only one intensity effort left!" />
+            <textevent timeoffset="20" message="Grab a sip, towel off, recenter your breathing." />
+            <textevent timeoffset="60" message="Good, feel your heart rate slowing down." />
+            <textevent timeoffset="70" message="Okay, get ready. The LAST intensity effort is coming up next!" />
+            <textevent timeoffset="90" message="Last opportunity. Bring in the perfect form, pedaling stroke, mantra, and go crush it!" />
+            <textevent timeoffset="100" message="The effort is two minutes. Don't burn yourself out in the first ten seconds, but empty the tank!" />
+            <textevent timeoffset="110" message="One last time. Start increasing your cadence here." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="1.0700001" pace="0">
+            <textevent timeoffset="0" message="Here we go! Get into the power you can maintain for two minutes." />
+            <textevent timeoffset="10" message="You should feel like you've emptied the tank by the end of this interval." />
+            <textevent timeoffset="30" message="Stay focused - every pedal stroke counts!" />
+            <textevent timeoffset="60" message="Halfway there! Give it all you've got now!" />
+            <textevent timeoffset="80" message="Visualize yourself crossing the finish line." />
+            <textevent timeoffset="100" message="Everything you've got!" />
+            <textevent timeoffset="110" message="All the way to the arch. Finish STRONG!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Yes! You did it!" />
+            <textevent timeoffset="10" message="Way to go! You've just boosted your strength and cardio big time today! " />
+            <textevent timeoffset="30" message="Be sure to recover after today's session." />
+            <textevent timeoffset="40" message="The intensity of today's ride will affect you for days to come if you don't repair and refuel your engine. " />
+            <textevent timeoffset="60" message="Take your time to cooldown here. Feel free to stay for a little bit longer after this workout if you have time." />
+            <textevent timeoffset="90" message="You can always come back to this workout when you want a short and effective workout to boost your strength and endurance." />
+            <textevent timeoffset="100" message="Until next time!" />
+            <textevent timeoffset="110" message="Ride On." />
+        </SteadyState>
+    </workout>
+</workout_file>

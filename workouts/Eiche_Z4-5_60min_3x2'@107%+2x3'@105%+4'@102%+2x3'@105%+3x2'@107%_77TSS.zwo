@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Dan Plews</author>
+    <name>Eiche_Z4-5_60min_3x2'@107%+2x3'@105%+4'@102%+2x3'@105%+3x2'@107%_77TSS</name>
+    <description>By now you should have already been through several short intervals, so now we're getting into long intervals. Typically, long intervals include anything where the reps are greater than 1 minute in duration. Compared to short intervals, the intensity typically isn't as high as short intervals — though it's still higher than FTP. In such intervals, the neuromuscular system is targeted to a lesser extent, with more focus being on anaerobic and particularly aerobic systems. For triathletes, these are the sessions you should be including in your main preparatory block before a competition. Make sure you have fresh legs and are ready to go for this one.
+
+	For WHOOP users - This workout is ideally done on a Green Recovery day. These FTP intervals will challenge you and result in a higher strain score. If you aren’t well recovered, get some rest and come back to this workout on another day.
+	</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="zatri2021" />
+    </tags>
+    <workout>
+        <Warmup Duration="240.00002" PowerLow="0.34999996" PowerHigh="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Welcome back to the Zwift Academy Tri 2021." />
+            <textevent timeoffset="10" message="You're back with me, Coach Dan, and today we're looking at developing VO2 max." />
+            <textevent timeoffset="60" message="Long VO2 max intervals are great for working not only VO2 max, but also your cycling efficiency." />
+            <textevent timeoffset="70" message="If you improve at these types of intervals, you're also likely to improve your triathlon cycling performance." />
+            <textevent timeoffset="80" message="Before we begin with the main set, we've got a progressive warm-up." />
+            <textevent timeoffset="100" message="Everyone has a goal, Zwift Academy will help you Get After It!" />
+            <textevent timeoffset="120" message="Feeling a bit warmer? Let's keep moving here." />
+            <textevent timeoffset="180" message="Todays session consists of a pyramid, moving from 2 to 3 to 4 minutes, before going back down. All of which is above FTP power." />
+            <textevent timeoffset="190" message="But don't worry, we only have to do the 4-minute interval once...I guess I was in a good mood today :)" />
+            <textevent timeoffset="210" message="Before we get into the main set, however, we have a short preparatory set." />
+            <textevent timeoffset="220" message="This consists of 30, 20, and 10 seconds at 102%, 105%, and 107% of FTP." />
+        </Warmup>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.02" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Step on it! Find that power." />
+            <textevent timeoffset="15" message="Halfway there." />
+            <textevent timeoffset="35" message="Spin the legs here." />
+            <textevent timeoffset="45" message="Next, we're going to do 20 seconds at 105%." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="20" OffDuration="40" OnPower="1.05" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Let's go!" />
+            <textevent timeoffset="20" message="Awesome, I can see you're starting to loosen up." />
+            <textevent timeoffset="30" message="Last 10 seconds, then into recovery." />
+            <textevent timeoffset="40" message="Ease it down." />
+            <textevent timeoffset="50" message="Last rep here, but we're hitting the big power this time." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="10" OffDuration="50.000004" OnPower="1.0700001" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Open it up!" />
+            <textevent timeoffset="10" message="Nice! Great effort." />
+            <textevent timeoffset="25" message="Ready for the main course?" />
+            <textevent timeoffset="40" message="I knew you would be. Let's do it!" />
+            <textevent timeoffset="50" message="10 seconds before the main set begins." />
+        </IntervalsT>
+        <IntervalsT Repeat="3" OnDuration="120.00001" OffDuration="120.00001" OnPower="1.0700001" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="First up, 2 minutes at 107% of FTP." />
+            <textevent timeoffset="10" message="This is going to be fun!" />
+            <textevent timeoffset="30" message="Settle in here, and search for a high rpm, above 85 rpm at least." />
+            <textevent timeoffset="60" message="Great work, halfway there." />
+            <textevent timeoffset="100" message="All the way, finish up now." />
+            <textevent timeoffset="120" message="Well done! That's one down." />
+            <textevent timeoffset="140" message="Try and keep the cadence high during these recovery periods." />
+            <textevent timeoffset="230" message="Let's get ready for another one of these." />
+            <textevent timeoffset="240" message="GET AFTER IT!" />
+            <textevent timeoffset="300" message="Great work, halfway through." />
+            <textevent timeoffset="360" message="And...easy!" />
+            <textevent timeoffset="380" message="Well done — time for one more of these 2-minute reps." />
+            <textevent timeoffset="465" message="Ok, start thinking about bringing up the cadence." />
+            <textevent timeoffset="475" message="Last 2-minute rep of this set coming up. Let's do it!" />
+            <textevent timeoffset="540" message="Looking great, halfway through here." />
+            <textevent timeoffset="600" message="And easy!" />
+            <textevent timeoffset="610" message="Great work. Next, we're stepping down the intensity, but stepping up on duration." />
+            <textevent timeoffset="710" message="3-minute reps here, but we're moving down to 105% of FTP." />
+        </IntervalsT>
+        <IntervalsT Repeat="2" OnDuration="180.00002" OffDuration="120.00001" OnPower="1.05" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Power up! This first minute is going to be tasty!" />
+            <textevent timeoffset="30" message="The cadence is open here, but try to keep it somewhere between 85–100 rpm." />
+            <textevent timeoffset="90" message="AWESOME, halfway through this rep. You're looking great." />
+            <textevent timeoffset="180" message="Nice work, let's take in some good recovery here." />
+            <textevent timeoffset="230" message="During these higher intensity efforts, it can be hard to keep in the aero position." />
+            <textevent timeoffset="240" message="Just do the best you can." />
+            <textevent timeoffset="250" message="For these types of sessions, I would rather you hit the correct power without being aero if that's what it takes." />
+            <textevent timeoffset="300" message="Here we go! 3 minutes on rep number 2!" />
+            <textevent timeoffset="390" message="Keep pushing here, you're doing great" />
+            <textevent timeoffset="450" message="Last 30 seconds! Keep smooth all the way through" />
+            <textevent timeoffset="485" message="PHEW! This is starting to tickle!" />
+            <textevent timeoffset="495" message="You're doing great." />
+            <textevent timeoffset="550" message="Just as before, we're increasing the duration but slightly reducing intensity as we move into a 4-minute rep." />
+            <textevent timeoffset="590" message="Ok, let it rip! 4 minutes at 102% of FTP." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="240.00002" OffDuration="120.00001" OnPower="1.02" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Settle in and find that power." />
+            <textevent timeoffset="20" message="As the intensity drops, you may find it easier to stay in the aero position." />
+            <textevent timeoffset="60" message="Ok, 1 min down. I can see you've settled in nicely here." />
+            <textevent timeoffset="100" message="Keep smooth, this shouldn't feel forced." />
+            <textevent timeoffset="120" message="Halfway, keep it going." />
+            <textevent timeoffset="180" message="I know it hurts, that's the whole idea." />
+            <textevent timeoffset="190" message="VO2 max training is hard, but really beneficial." />
+            <textevent timeoffset="230" message="Last 10 seconds, keep pushing through." />
+            <textevent timeoffset="245" message="Awesome, that's the longest rep done and dusted." />
+            <textevent timeoffset="255" message="It's all downhill from here… kind of :)" />
+            <textevent timeoffset="300" message="The next bit should feel familiar, as we're going to do the 3-minute and 2-minute reps again." />
+            <textevent timeoffset="350" message="Let's go, back into 3-minute reps...BOOM!" />
+        </IntervalsT>
+        <IntervalsT Repeat="2" OnDuration="180.00002" OffDuration="120.00001" OnPower="1.05" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Power up once more! GET AFTER IT!" />
+            <textevent timeoffset="30" message="Yeah, it's a little harder the second time through, but you've got this!" />
+            <textevent timeoffset="90" message="AWESOME! Halfway through this rep. You're looking great." />
+            <textevent timeoffset="180" message="Nice work! Keep the rpm up. Take drink if you need it." />
+            <textevent timeoffset="300" message="Here we go! 3-min rep number 2!" />
+            <textevent timeoffset="310" message="Settle in and find that power." />
+            <textevent timeoffset="390" message="Keep pushing here, you're doing great" />
+            <textevent timeoffset="450" message="Last 30 seconds, keep smooth all the way through" />
+            <textevent timeoffset="485" message="PHEW! Simply amazing" />
+            <textevent timeoffset="495" message="You're doing great." />
+            <textevent timeoffset="550" message="Let's mentally prepare for this last portion." />
+            <textevent timeoffset="590" message="Ok, let it rip! 2 minutes at 107% of FTP" />
+        </IntervalsT>
+        <IntervalsT Repeat="3" OnDuration="120.00001" OffDuration="120.00001" OnPower="1.0700001" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Last set now. 2 minutes at 107% of FTP." />
+            <textevent timeoffset="10" message="Now the show really starts." />
+            <textevent timeoffset="30" message="Well done, this is where the gains are made!" />
+            <textevent timeoffset="60" message="Great work, halfway here." />
+            <textevent timeoffset="100" message="All the way, finish it up." />
+            <textevent timeoffset="120" message="Well done! Spin it out, take a drink." />
+            <textevent timeoffset="230" message="Right, let's get ready for another one of these." />
+            <textevent timeoffset="240" message="Let's pick the power now and find the optimal cadence." />
+            <textevent timeoffset="300" message="Great work, halfway through." />
+            <textevent timeoffset="360" message="And easy!" />
+            <textevent timeoffset="380" message="Well done, the final rep of the day coming up. You're CRUSHING this session." />
+            <textevent timeoffset="465" message="Bring up the cadence and get ready for more." />
+            <textevent timeoffset="475" message="Last 2-minute rep of this set coming up. Let's do it!" />
+            <textevent timeoffset="540" message="Looking great, halfway through here." />
+            <textevent timeoffset="570" message="Amazing work! Last 30 seconds here, push all the way!" />
+            <textevent timeoffset="600" message="NICE!" />
+            <textevent timeoffset="610" message="Wow, what a session. You did amazing!" />
+            <textevent timeoffset="630" message="We'll complete our 2-minute recovery here before completing a 3-minute cooldown." />
+        </IntervalsT>
+        <Cooldown Duration="180.00002" PowerLow="0.55000001" PowerHigh="0.34999996" pace="0">
+            <textevent timeoffset="0" message="What a set! Did you get all your stars?" />
+            <textevent timeoffset="10" message="Pretty brutal right? VO2 max training is hard, but worth it." />
+            <textevent timeoffset="20" message="You will thank me later :)." />
+            <textevent timeoffset="60" message="Make sure you complete this cooldown, since doing so after such an intense session will help your recovery." />
+            <textevent timeoffset="80" message="For a good progression of this session, increase the number of reps so you start at 4 x 2 minutes, then 2 x 4 minutes. But that's not for the faint of heart!" />
+            <textevent timeoffset="120" message="Remember to get your running workouts done too for this year's Zwift Academy Tri!" />
+            <textevent timeoffset="160" message="Well done on the cooldown, and excellent job on a great session." />
+            <textevent timeoffset="170" message="See you next time." />
+        </Cooldown>
+    </workout>
+</workout_file>

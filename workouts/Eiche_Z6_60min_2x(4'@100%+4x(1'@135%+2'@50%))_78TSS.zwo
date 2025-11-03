@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kevin Poulton</author>
+    <name>Eiche_Z6_60min_2x(4'@100%+4x(1'@135%+2'@50%))_78TSS</name>
+    <description>Anaerobic efforts are a guaranteed part of MTB riding. They come thick and fast during an off-road ride, often being produced at a low cadence.
+
+To add to the specificity of the workout, the anaerobic efforts are completed immediately after 4min threshold effort.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="Riding off-road will require you to produce multiple high power efforts." />
+            <textevent timeoffset="60" message="Quite often the terrain will dictate that these efforts are produced at a low cadence." />
+            <textevent timeoffset="100" message="Today, we are going to hit the big numbers!" />
+            <textevent timeoffset="150" message="First we need to warm up those fast twitch fibers." />
+            <textevent timeoffset="170" message="Aim to hit a high cadence in these warmup sprints." />
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="10" OffDuration="50.000004" OnPower="1.75" OffPower="0.5" pace="0">
+            <textevent timeoffset="40" message="As you warmup, your cadence should naturally increase." />
+            <textevent timeoffset="100" message="Try to hit a higher cadence this time." />
+        </IntervalsT>
+        <SteadyState Duration="180.00002" Power="0.69999999" pace="0">
+            <textevent timeoffset="20" message="A gentle steady state effort to continue the warmup." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.5" pace="0">
+            <textevent timeoffset="100" message="This time we step up the power a little for the steady state effort." />
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.85000002" pace="0">
+            <textevent timeoffset="40" message="Aim to pedal with a cadence a little higher than normal here." />
+            <textevent timeoffset="100" message="Ahead of you is some hard work." />
+            <textevent timeoffset="120" message="There's no denying it's going to hurt." />
+            <textevent timeoffset="140" message="But it's well within your capabilities." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="40" message="Preceding the anaerobic efforts is a 4min threshold effort." />
+            <textevent timeoffset="60" message="This will have the effect of building lactate above resting levels before the high intensity." />
+            <textevent timeoffset="160" message="Let's get into the hard work!" />
+        </SteadyState>
+        <Ramp Duration="240.00002" PowerLow="0.95449996" PowerHigh="1.0445" pace="0">
+            <textevent timeoffset="30" message="The power gradually builds." />
+            <textevent timeoffset="80" message="Self select your cadence during this interval." />
+            <textevent timeoffset="140" message="For the anaerobic intervals there is a target cadence of 80." />
+            <textevent timeoffset="210" message="Lactate is well above resting level now!" />
+            <textevent timeoffset="230" message="Ready for the 1st effort." />
+        </Ramp>
+        <IntervalsT Repeat="4" OnDuration="60.000004" OffDuration="120.00001" OnPower="1.35" OffPower="0.5" pace="0" Cadence="80" CadenceResting="90">
+            <textevent timeoffset="10" message="Hit that target cadence of 80rpm." />
+            <textevent timeoffset="40" message="Keep the power up! You've got this." />
+            <textevent timeoffset="80" message="Just a short recovery period before we go again." />
+            <textevent timeoffset="170" message="Into the 2nd effort now." />
+            <textevent timeoffset="190" message="Hit the target cadence." />
+            <textevent timeoffset="220" message="This is the level of intensity required to power over the climbs outdoors." />
+            <textevent timeoffset="300" message="That's 2 down, 2 to go!" />
+            <textevent timeoffset="370" message="Straight to 80rpm." />
+            <textevent timeoffset="390" message="Stand on the pedals if you have to." />
+            <textevent timeoffset="500" message="Last effort of this block. Make this your best one!" />
+            <textevent timeoffset="550" message="Straight to 80rpm" />
+            <textevent timeoffset="570" message="Big power from you!" />
+            <textevent timeoffset="660" message="Great work! That was a big block of work." />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="Have a good recovery period here." />
+            <textevent timeoffset="60" message="You've worked hard for it." />
+            <textevent timeoffset="200" message="In MTB riding, the anaerobic efforts come thick and fast." />
+            <textevent timeoffset="230" message="Here we go with the 2nd block of work." />
+            <textevent timeoffset="270" message="Just like before, we open with a threshold effort." />
+        </SteadyState>
+        <Ramp Duration="240.00002" PowerLow="0.95000005" PowerHigh="1.05" pace="0">
+            <textevent timeoffset="30" message="The power gradually builds." />
+            <textevent timeoffset="80" message="Self select your cadence during this interval." />
+            <textevent timeoffset="140" message="For the anaerobic intervals there is a target cadence of 80." />
+            <textevent timeoffset="210" message="Lactate is well above resting level now!" />
+            <textevent timeoffset="230" message="Ready for the 1st effort." />
+        </Ramp>
+        <IntervalsT Repeat="4" OnDuration="60.000004" OffDuration="120.00001" OnPower="1.35" OffPower="0.5" pace="0" Cadence="80" CadenceResting="90">
+            <textevent timeoffset="10" message="Hit that target cadence of 80rpm." />
+            <textevent timeoffset="40" message="Keep the power up! You've got this." />
+            <textevent timeoffset="80" message="Just a short recovery period before we go again." />
+            <textevent timeoffset="170" message="Into the 2nd effort now." />
+            <textevent timeoffset="190" message="Hit the target cadence." />
+            <textevent timeoffset="220" message="This is the level of intensity required to power over the climbs outdoors." />
+            <textevent timeoffset="300" message="That's 2 down, 2 to go!" />
+            <textevent timeoffset="370" message="Straight to 80rpm." />
+            <textevent timeoffset="390" message="Stand on the pedals if you have to." />
+            <textevent timeoffset="500" message="Last effort of this block. Make this your best one!" />
+            <textevent timeoffset="550" message="Straight to 80rpm" />
+            <textevent timeoffset="570" message="Big power from you!" />
+            <textevent timeoffset="660" message="Great work! That was a big block of work." />
+        </IntervalsT>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="Fantastic workout from you." />
+            <textevent timeoffset="60" message="That was some very good power you hit." />
+            <textevent timeoffset="90" message="You may experience some muscle soreness in the coming days." />
+            <textevent timeoffset="200" message="Give yourself a day or two of recovery before your next high intensity session." />
+        </SteadyState>
+    </workout>
+</workout_file>

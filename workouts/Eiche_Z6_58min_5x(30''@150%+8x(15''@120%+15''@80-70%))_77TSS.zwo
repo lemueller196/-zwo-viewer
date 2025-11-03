@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Zwift</author>
+    <name>Eiche_Z6_58min_5x(30''@150%+8x(15''@120%+15''@80-70%))_77TSS</name>
+    <description>A zone 6 microburst workout with an initial longer effort to mimic the demands of a Zwift race start. ERG off for the micro efforts.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="480.00003" PowerLow="0.49999997" PowerHigh="0.79999995" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="Welcome to this week's Zwift race start workout!" />
+            <textevent timeoffset="10" message="Let's get started with an 8min warmup and we'll chat about today in a few minutes." />
+            <textevent timeoffset="240" message="Hopefully you feel a little warmer here, let's chat about the plan for today." />
+            <textevent timeoffset="250" message="Today we'll mimic the specific demands of a Zwift race start." />
+            <textevent timeoffset="260" message="We'll do so by having a very hard 30sec effort to start." />
+            <textevent timeoffset="270" message="Then, perform 8 short, but hard efforts to keep the pressure on." />
+            <textevent timeoffset="280" message="These are known as 'microbursts' since they are only 15sec long with equal rest between." />
+            <textevent timeoffset="290" message="Let's carry on with the warmup." />
+            <textevent timeoffset="450" message="Next up, we have 3 high cadence efforts to ensure the legs are awake." />
+            <textevent timeoffset="470" message="Aim for 100+ RPM for these next efforts." />
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="GO GO GO! Remember I want high cadence here!" />
+            <textevent timeoffset="30" message="Excellent work. Now lower your cadence to something more comfortable." />
+            <textevent timeoffset="50" message="Spin the legs up again..." />
+            <textevent timeoffset="60" message="And GO GO GO!" />
+            <textevent timeoffset="90" message="Excellent work! Just 1 more to go." />
+        </IntervalsT>
+        <SteadyState Duration="120.00001" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="All right, let's take a couple more minutes easy and get ready for the main set." />
+            <textevent timeoffset="60" message="1min to go, then we're on!" />
+            <textevent timeoffset="70" message="It's best to have ERG off for these efforts." />
+            <textevent timeoffset="80" message="Remember you can turn ERG off from the Zwift Companion app, or using your keyboard." />
+            <textevent timeoffset="90" message="And do your best to hit the target wattage, but don't get frustrated if you can't hit it perfectly." />
+            <textevent timeoffset="110" message="All right, start spinning the legs up and get ready for a hard effort. Aim for 100+ RPM." />
+            <textevent timeoffset="0" message="." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.5" pace="0">
+            <textevent timeoffset="0" message="GO GO GO! Imagine you're sprinting off the line in a Zwift race." />
+        </SteadyState>
+        <IntervalsT Repeat="8" OnDuration="15.000001" OffDuration="15.000001" OnPower="1.2" OffPower="0.80000001" pace="0">
+            <textevent timeoffset="0" message="Bring the power down just a touch, keep the cadence high!" />
+            <textevent timeoffset="15" message="Great! Lower your cadence to bring the power down." />
+            <textevent timeoffset="30" message="SURGE! Fast cadence again!" />
+            <textevent timeoffset="45" message="Bring the cadence down again." />
+            <textevent timeoffset="60" message="FAST FEET!" />
+            <textevent timeoffset="75" message="Slow the legs down...You get the idea now." />
+            <textevent timeoffset="90" message="UP UP UP!" />
+            <textevent timeoffset="120" message="Halfway through this! Keep it up!" />
+            <textevent timeoffset="180" message="C'mon! Just 1 more minute to go!" />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Phew! Nicely done with that 1st interval. You can turn ERG back on if you like." />
+            <textevent timeoffset="10" message="We're going to take a full 5min break in between those." />
+            <textevent timeoffset="20" message="We'll catch up with 1min to go." />
+            <textevent timeoffset="240" message="All right, 1min to go! Take some deep breaths, start to refocus, and shut ERG off again." />
+            <textevent timeoffset="270" message="We're going to repeat the same thing with a hard surge to start, then microbursts." />
+            <textevent timeoffset="290" message="Let's start spinning the legs up again, aim for 100+ RPM ideally." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.5" pace="0">
+            <textevent timeoffset="0" message="Get off the line FAST!" />
+        </SteadyState>
+        <IntervalsT Repeat="8" OnDuration="15.000001" OffDuration="15.000001" OnPower="1.3" OffPower="0.69999999" pace="0">
+            <textevent timeoffset="0" message="Good! Now settle into the group." />
+            <textevent timeoffset="15" message="Slow the legs down." />
+            <textevent timeoffset="30" message="Quickly back up to speed!" />
+            <textevent timeoffset="45" message="Slow down again...Breathe." />
+            <textevent timeoffset="60" message="Let's go!" />
+            <textevent timeoffset="120" message="FAST FEET! Don't slow down here." />
+            <textevent timeoffset="180" message="Just 1min to go! You can do this!" />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Superb! Let's take 5min easy again here and catch up with 1min to go :-)" />
+            <textevent timeoffset="240" message="Hopefully you're recovered by now, if not keep taking those deep breaths." />
+            <textevent timeoffset="250" message="And make sure ERG is off now." />
+            <textevent timeoffset="290" message="Ready? Start spinning those legs up..." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.5" pace="0">
+            <textevent timeoffset="0" message="And GO GO GO! Get off the line quickly!" />
+        </SteadyState>
+        <IntervalsT Repeat="8" OnDuration="15.000001" OffDuration="15.000001" OnPower="1.2" OffPower="0.80000001" pace="0">
+            <textevent timeoffset="0" message="Great job! Stay with the group now." />
+            <textevent timeoffset="15" message="Ease off the gas." />
+            <textevent timeoffset="30" message="SURGE! Stay with the group!" />
+            <textevent timeoffset="45" message="Ease up again, lots of pace changes in this group." />
+            <textevent timeoffset="60" message="GO GO GO!" />
+            <textevent timeoffset="120" message="Keep the pressure on!" />
+            <textevent timeoffset="180" message="Don't let any gaps form! UP UP!" />
+            <textevent timeoffset="210" message="LAST EFFORT!" />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="You are crushing these today! That's 3 down and just 2 to go." />
+            <textevent timeoffset="10" message="Let's take a nice 5min recovery again here, make sure you're drinking." />
+            <textevent timeoffset="240" message="Take a couple deep breaths and shake out the upper body." />
+            <textevent timeoffset="250" message="We're more than halfway through this, you can get to the end!" />
+            <textevent timeoffset="260" message="Make sure ERG is off." />
+            <textevent timeoffset="290" message="Spin those legs up!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.5" pace="0">
+            <textevent timeoffset="0" message="UP UP UP!" />
+        </SteadyState>
+        <IntervalsT Repeat="8" OnDuration="15.000001" OffDuration="15.000001" OnPower="1.3" OffPower="0.69999999" pace="0">
+            <textevent timeoffset="0" message="Excellent work! Keep the pressure on!" />
+            <textevent timeoffset="15" message="Steady..." />
+            <textevent timeoffset="30" message="GO GO GO!" />
+            <textevent timeoffset="45" message="Ease up, stay in control." />
+            <textevent timeoffset="60" message="Attack! GO GO!" />
+            <textevent timeoffset="120" message="PUSH IT! Get to the end of this!" />
+            <textevent timeoffset="180" message="Just 1min left and you're DONE! GO GO!" />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="So good! You are handling these efforts very well." />
+            <textevent timeoffset="10" message="Let's take it easy for a bit now and freshen up for our finale today." />
+            <textevent timeoffset="240" message="1min to go before we start the last interval for today!" />
+            <textevent timeoffset="250" message="This is where all the hard work pays off, make me proud!" />
+            <textevent timeoffset="290" message="Spin the legs up!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.5" pace="0">
+            <textevent timeoffset="0" message="ATTACK! Get off the line quick!" />
+        </SteadyState>
+        <IntervalsT Repeat="8" OnDuration="15.000001" OffDuration="15.000001" OnPower="1.2" OffPower="0.80000001" pace="0">
+            <textevent timeoffset="0" message="Keep the pressure on! C'mon now!" />
+            <textevent timeoffset="30" message="SURGE! GO GO GO!" />
+            <textevent timeoffset="60" message="GO! Be aggressive here!" />
+            <textevent timeoffset="120" message="UP UP UP! Just a few surges left!" />
+            <textevent timeoffset="180" message="C'mon! You can do this!" />
+            <textevent timeoffset="210" message="FINAL BURST! GIVE IT EVERYTHING!" />
+        </IntervalsT>
+        <Cooldown Duration="180.00002" PowerLow="0.55000001" PowerHigh="0.34999996" pace="0">
+            <textevent timeoffset="0" message="Wow! Incredible work today with those efforts." />
+            <textevent timeoffset="10" message="Those are very difficult, but great bang for the buck and specific to Zwift racing." />
+            <textevent timeoffset="20" message="We'll spend a few minutes cooling down now, then check off another workout." />
+            <textevent timeoffset="30" message="See you next time :-)" />
+        </Cooldown>
+    </workout>
+</workout_file>

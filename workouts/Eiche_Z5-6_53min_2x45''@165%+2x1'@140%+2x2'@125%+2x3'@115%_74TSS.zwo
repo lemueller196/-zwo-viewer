@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Shayne Gaffney</author>
+    <name>Eiche_Z5-6_53min_2x45''@165%+2x1'@140%+2x2'@125%+2x3'@115%_74TSS</name>
+    <description>This workout is designed to improve your power over durations ranging from 45 seconds to 3 minutes, focusing on the intense efforts needed to make an attack. You'll tackle several high-intensity intervals with enough recovery time to ensure you can give your maximum effort in each one.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="480.00003" PowerLow="0.44999996" PowerHigh="0.64999998" pace="0">
+            <textevent timeoffset="0" message="Welcome to the Attack the Bunch workout of Zwift Camp: Baseline!" />
+            <textevent timeoffset="15" message="Zwift Camp: Baseline was designed to guide you to discover your strengths and kickstart consistent habits." />
+            <textevent timeoffset="30" message="Today, we're focusing on building power for durations between 45 seconds and 3 minutes." />
+            <textevent timeoffset="60" message="Your attacking ability is your capacity to perform high-intensity efforts even when tired." />
+            <textevent timeoffset="80" message="As the duration of the efforts increases, the target power will decrease." />
+            <textevent timeoffset="95" message="And the duration of the recovery segments will increase as we move to longer efforts to give you an optimal balance." />
+            <textevent timeoffset="130" message="As you warm up, think about the focus of today's session: Building explosive power and endurance." />
+            <textevent timeoffset="160" message="An attacking cyclist needs to maintain high power output over short durations to break away from the pack or chase down a breakaway." />
+            <textevent timeoffset="180" message="Visualize yourself in a race, making that decisive attack. Today's workout is all about making that vision a reality." />
+            <textevent timeoffset="195" message="Our 45-second and 60-second segments are just like when you're leading an attack." />
+            <textevent timeoffset="210" message="An attack is an attempt to create a breakaway and separate yourself from the peloton." />
+            <textevent timeoffset="225" message="Our 2-minute and 3-minute efforts are just like if you were driving the pace to stay away from the peloton." />
+            <textevent timeoffset="240" message="These longer segments are where you'll show both your mental and physical strength and endurance." />
+            <textevent timeoffset="260" message="Keep the cadence smooth and steady. We'll keep gradually increasing the intensity as we move into the main set." />
+            <textevent timeoffset="280" message="Before moving to the next set, let's find a solid posture to use our energy efficiently today." />
+            <textevent timeoffset="295" message="On your next exhale, relax your shoulders and bend your elbows slightly..." />
+            <textevent timeoffset="315" message="Take another deep breath and engage your core muscles..." />
+            <textevent timeoffset="330" message="Maintain that strong posture throughout the workout. It will help maximize your power output." />
+            <textevent timeoffset="400" message="Coming up next are 3 x 30 second primers to wake up your fast-twitch muscles ahead of the attacks!" />
+            <textevent timeoffset="460" message="Deep breaths, and get ready to explode into action for those primers!" />
+        </Warmup>
+        <SteadyState Duration="30.000002" Power="1" pace="0" Cadence="95">
+            <textevent timeoffset="0" message="Up! Up! Up!" />
+            <textevent timeoffset="10" message="Lock in that 95 RPM cadence, and dial up the power." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.5" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Nicely done, now ease off and let the cadence drop to about 85 RPM." />
+            <textevent timeoffset="20" message="In 10 seconds, we'll ramp up again. Get ready!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" Cadence="100">
+            <textevent timeoffset="0" message="Let's pick up the pace! Faster cadence and add more power!" />
+            <textevent timeoffset="10" message="Try to hold steady, avoid swaying side to side in the saddle." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.5" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Great job! Now bring the effort and cadence back down." />
+            <textevent timeoffset="20" message="In 10 seconds, we'll push for the final cadence and power increase." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.2" pace="0" Cadence="105">
+            <textevent timeoffset="0" message="Here we go! Speed it up and add even more power!" />
+            <textevent timeoffset="20" message="Nice work! Keep your power until the arch." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Excellent! Ease off the effort and cadence..." />
+            <textevent timeoffset="15" message="Grab a sip. Time to relax before the main set." />
+            <textevent timeoffset="30" message="Optimal cadence is unique to everyone, but try to keep it above 85 RPM to stay ready for the next set." />
+            <textevent timeoffset="80" message="Imagine that you're riding comfortably behind your teammate in a race, waiting for the perfect moment to attack..." />
+            <textevent timeoffset="100" message="Your team believes in you to create a breakaway!" />
+            <textevent timeoffset="130" message="Next up, we're ramping the power up for 2 x 45 seconds at 165% of your FTP." />
+            <textevent timeoffset="150" message="You've got what it takes. Get ready for the attacks ahead!" />
+            <textevent timeoffset="170" message="Start bringing that cadence back up. Let's go to work!" />
+        </SteadyState>
+        <SteadyState Duration="45.000004" Power="1.65" pace="0">
+            <textevent timeoffset="0" message="Let's go! Drive power through your pedals!" />
+            <textevent timeoffset="20" message="Stay strong, stay focused. You've got this!" />
+            <textevent timeoffset="35" message="Final push, finish strong!" />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Great effort! Recover now, keep spinning easy, and prepare for the next interval." />
+            <textevent timeoffset="20" message="Deep breaths, let your heart rate come down." />
+            <textevent timeoffset="50" message="We're ramping up the power again at the arch." />
+            <textevent timeoffset="60" message="Imagine you're preparing to attack the field again. Work hard to get a gap on the peloton." />
+            <textevent timeoffset="80" message="Start increasing your cadence. Show them what you've got!" />
+        </SteadyState>
+        <SteadyState Duration="45.000004" Power="1.65" pace="0">
+            <textevent timeoffset="0" message="GO! Another 45 seconds at 165% FTP. Push even harder this time!" />
+            <textevent timeoffset="15" message="You're stronger than you think. Keep that power steady!" />
+            <textevent timeoffset="35" message="Almost there. Stay focused!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Great job! You've created a gap on the peloton with a small group of riders!" />
+            <textevent timeoffset="15" message="Keep your legs spinning and take deep breaths." />
+            <textevent timeoffset="30" message="Were you able to keep a strong posture and smooth pedal strokes in these last efforts?" />
+            <textevent timeoffset="95" message="Start mentally preparing for the next effort. You've got a breakaway and you need to work to keep it." />
+            <textevent timeoffset="110" message="Next up, we'll be tackling 2 x 60-second efforts with a 2 minute recovery between them." />
+            <textevent timeoffset="125" message="The efforts are longer, but the power is lower and the recovery is also longer!" />
+            <textevent timeoffset="155" message="Imagine that you're working in a strong breakaway, sharing the workload with other riders." />
+            <textevent timeoffset="170" message="Start increasing your cadence. It's almost your turn to drive the pace. Get ready!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.4" pace="0">
+            <textevent timeoffset="0" message="Up! Up! Up! Drive power through those pedals." />
+            <textevent timeoffset="30" message="Halfway there! Keep pushing!" />
+            <textevent timeoffset="50" message="Final push! Hold that power!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Great effort! Recover fully now. Spin easy and get ready for the next interval." />
+            <textevent timeoffset="20" message="For optimal recovery, try to keep your cadence at least above 85 RPM." />
+            <textevent timeoffset="50" message="Refocus on your posture here: Shoulders relaxed, elbows bent slightly and core engaged." />
+            <textevent timeoffset="95" message="Visualize yourself still working strong with your breakaway companions." />
+            <textevent timeoffset="110" message="Start increasing your cadence. It's your turn to drive the pace again at the arch!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.4" pace="0">
+            <textevent timeoffset="0" message="Go! Go! Go! Find your rhythm and maintain that power!" />
+            <textevent timeoffset="10" message="Every pedal stroke counts!" />
+            <textevent timeoffset="30" message="Halfway there. Stay focused!" />
+            <textevent timeoffset="50" message="Final push. Keep that power steady!" />
+        </SteadyState>
+        <SteadyState Duration="240.00002" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Fantastic job! You've increased the gap on the peloton even more!" />
+            <textevent timeoffset="15" message="Now, let's focus on a full recovery. Spin easy and take deep breaths." />
+            <textevent timeoffset="90" message="Feel your heart rate starting to come down. Let your body relax and recover." />
+            <textevent timeoffset="120" message="Use this time to mentally prepare for the next challenge." />
+            <textevent timeoffset="165" message="Coming up, we'll envision another scenario..." />
+            <textevent timeoffset="180" message="Another group of riders counter attacked and now have a small gap on the peloton." />
+            <textevent timeoffset="195" message="Your team missed out on the break, and you've been tasked with bringing your team back to the front." />
+            <textevent timeoffset="210" message="Take a deep breath here... Imagine positioning yourself at the front of the peloton. Get ready to make a big chase!" />
+            <textevent timeoffset="230" message="Start increasing your cadence. You've got this!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="1.25" pace="0">
+            <textevent timeoffset="0" message="Let's go! It's show time. Get to that target power!" />
+            <textevent timeoffset="15" message="This is where your endurance really comes into play. Stay strong!" />
+            <textevent timeoffset="30" message="Find your rhythm and hold that power. You're doing great!" />
+            <textevent timeoffset="60" message="You're halfway there! Keep your effort strong and consistent." />
+            <textevent timeoffset="70" message="Form check: Are your shoulders relaxed and core engaged?" />
+            <textevent timeoffset="110" message="Last push — stay focused and finish strong!" />
+        </SteadyState>
+        <SteadyState Duration="150" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Fantastic effort! Spin easy and take a short recovery now." />
+            <textevent timeoffset="15" message="Again, maintain your cadence above 85 RPM to recover while staying ready for the next effort." />
+            <textevent timeoffset="70" message="You're boosting your strength and endurance with this workout. Stay focused!" />
+            <textevent timeoffset="90" message="Let's prepare for the next effort..." />
+            <textevent timeoffset="105" message="We've got a short climb coming on the horizon." />
+            <textevent timeoffset="120" message="You're still at the front of the peloton and your teammates are all positioned behind you." />
+            <textevent timeoffset="130" message="Other riders are working with you to chase the front of the race, and you're almost there!" />
+            <textevent timeoffset="140" message="Use this short climb to close the final gap to the breakaway. Let's turn it up at the arch!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="1.25" pace="0">
+            <textevent timeoffset="0" message="Here we go again! Ramp it up and find your rhythm!" />
+            <textevent timeoffset="15" message="One more 2-minute effort at 125% FTP. Stay focused and push through!" />
+            <textevent timeoffset="60" message="Halfway through, keep that power up, you're doing great!" />
+            <textevent timeoffset="110" message="Final push — finish strong, almost there!" />
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Great work! You closed the gap. The peloton is all back together again!" />
+            <textevent timeoffset="15" message="Now, it's time to fully recover!" />
+            <textevent timeoffset="30" message="Take deep breaths here... in through your nose and out through your mouth." />
+            <textevent timeoffset="45" message="Let your heart rate come down gradually. Feel your muscles relaxing." />
+            <textevent timeoffset="60" message="How did those last 2-minute efforts feel?" />
+            <textevent timeoffset="85" message="These efforts boost your endurance to keep a breakaway going or to chase one down." />
+            <textevent timeoffset="110" message="If the shorter efforts are easier for you, it's a sign that your attacking power is your strength." />
+            <textevent timeoffset="130" message="If the longer efforts are easier for you, it's a sign that endurance is your strength." />
+            <textevent timeoffset="150" message="Halfway through this recovery. Use this time to clear your mind and get ready for the next effort." />
+            <textevent timeoffset="235" message="Next up are 2 x 3 minute efforts with 3 minutes of recovery in between." />
+            <textevent timeoffset="250" message="This is where you really show your strength and endurance!" />
+            <textevent timeoffset="270" message="Imagine that you have another climb right on the horizon." />
+            <textevent timeoffset="290" message="Your team wants you to increase the pace at the climb to see who responds, or who looks tired. Get ready!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="1.15" pace="0">
+            <textevent timeoffset="0" message="Here we go! Time to make everyone work to stay with you over the climb!" />
+            <textevent timeoffset="15" message="Stay focused. This is where you build sustained power!" />
+            <textevent timeoffset="90" message="You're halfway through, keep that power up!" />
+            <textevent timeoffset="120" message="Coming up to the top of the climb now, and the peloton is trying to keep up!" />
+            <textevent timeoffset="150" message="Last 30 seconds, push through to the end!" />
+            <textevent timeoffset="170" message="Final push — finish strong!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Incredible work! You've made it to the top!" />
+            <textevent timeoffset="15" message="Recover fully now, spin easy and prepare for the final effort." />
+            <textevent timeoffset="40" message="How was this last effort? Were you able to keep up the pace?" />
+            <textevent timeoffset="90" message="Imagine that you've got one last chance to push the pace of the race." />
+            <textevent timeoffset="125" message="You'll soon ramp up the pace to place your sprinter in a good position to win the race at the finish." />
+            <textevent timeoffset="140" message="Your teammate is following your pace." />
+            <textevent timeoffset="155" message="Your goal is to get in a good position with your teammates on your wheel." />
+            <textevent timeoffset="170" message="Start increasing your cadence. It's your last effort. Give it all you've got!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="1.15" pace="0">
+            <textevent timeoffset="0" message="Here we go! Keep that pace up!" />
+            <textevent timeoffset="15" message="One last 3-minute effort. Let's give it everything to finish strong!" />
+            <textevent timeoffset="40" message="Form check: Are your shoulders relaxed and core engaged?" />
+            <textevent timeoffset="60" message="One pedal stroke at a time. This is where the magic happens!" />
+            <textevent timeoffset="90" message="Halfway through, stay strong and keep that power steady!" />
+            <textevent timeoffset="120" message="Your legs might be burning, but your mind is stronger. Stay focused!" />
+            <textevent timeoffset="150" message="Final push. Bring it home, you're almost done!" />
+            <textevent timeoffset="170" message="Your teammates will take over the leadout at the arch. Get them there!" />
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.55000001" PowerHigh="0.34999996" pace="0">
+            <textevent timeoffset="0" message="Yes! You've done it! Your job is done. Relax, and let yourself drift back through the peloton." />
+            <textevent timeoffset="30" message="You see your teammate raise their hands in the air as they cross the finish line. Your team won!" />
+            <textevent timeoffset="60" message="Great work today! You've built a stronger base for your attacking efforts." />
+            <textevent timeoffset="80" message="Reflect on today's session and think about how you can apply this power in your next race." />
+            <textevent timeoffset="100" message="Those 45 to 60 second efforts were focused on building your power to attack." />
+            <textevent timeoffset="110" message="And those longer efforts were focused on building the strength and endurance to drive the pace." />
+            <textevent timeoffset="130" message="Those who are good at attacking are great at performing these efforts repeatedly at high-intensity." />
+            <textevent timeoffset="150" message="You can always come back to this workout if you want to work on building strength in these areas." />
+            <textevent timeoffset="180" message="Keep spinning easy, let your heart rate settle." />
+            <textevent timeoffset="200" message="This cooldown is just as important as the workout itself." />
+            <textevent timeoffset="230" message="As you continue to recover, think about your goals for the season. You've taken a step forward today." />
+            <textevent timeoffset="250" message="Remember, Zwift Camp: Baseline is a check-in on your fitness to help you train smarter for the season." />
+            <textevent timeoffset="290" message="Ride on." />
+        </Cooldown>
+    </workout>
+</workout_file>

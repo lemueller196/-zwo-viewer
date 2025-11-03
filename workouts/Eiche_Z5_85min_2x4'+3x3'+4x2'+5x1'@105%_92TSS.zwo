@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>TrainSharp Cycle Coaching</author>
+    <name>Eiche_Z5_85min_2x4'+3x3'+4x2'+5x1'@105%_92TSS</name>
+    <description>This Pulling Pyramid session is designed to lift your FTP from above, by riding at powers slightly above your 20 minute best. The reduced recovery times will force you to clear the lactate accumulated after each interval.  Start with a good warm up, then straight into the main intervals. The intervals are as follows: 2 x 4 mins, 3 x 3 mins, 4 x 2 mins, 5 x 1 mins - the recovery periods are equal to the duration of the intervals (4/3/2/1 minute). This is another hard session so make sure you are fueled, motivated and well hydrated.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Today's" />
+        <tag name="Plan" />
+    </tags>
+    <workout>
+        <Warmup Duration="900.00006" PowerLow="0.30000004" PowerHigh="0.89999998" pace="0">
+            <textevent timeoffset="0" message="Warm Up - Progressive Warm up through the zones for the duration. Sip on your bottle and take a gel if you wish during the warm up." />
+        </Warmup>
+        <IntervalsT Repeat="2" OnDuration="240.00002" OffDuration="240.00002" OnPower="1.05" OffPower="0.30000001" pace="0">
+            <textevent timeoffset="0" message="Threshold Pulling (2, 4's) - 2 x 4 minutes at your 20 minute power - The first two intervals should feel manageable." duration="30" />
+        </IntervalsT>
+        <IntervalsT Repeat="3" OnDuration="180.00002" OffDuration="180.00002" OnPower="1.05" OffPower="0.30000001" pace="0">
+            <textevent timeoffset="0" message="Threshold Pulling (3, 3's) - Perhaps the hardest block of the session, 3 minutes is long enough for you to start to suffer but 3 minutes recovery will fly by." duration="30" />
+        </IntervalsT>
+        <IntervalsT Repeat="4" OnDuration="120.00001" OffDuration="120.00001" OnPower="1.05" OffPower="0.30000001" pace="0">
+            <textevent timeoffset="0" message="Threshold Pulling (4, 2's) - Keep the power consistent through the efforts, lifting the power 10% if you feel you are able and going to complete the session comfortably." duration="30" />
+        </IntervalsT>
+        <IntervalsT Repeat="5" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.05" OffPower="0.30000001" pace="0">
+            <textevent timeoffset="0" message="Threshold Pulling (5, 1's) - Final block and the finish line is in sight. Nail these last efforts!" duration="30" />
+        </IntervalsT>
+        <Cooldown Duration="600" PowerLow="0.45999998" PowerHigh="0.30000001" pace="0">
+            <textevent timeoffset="0" message="Cool Down - Take it nice and easy for the final 10 minutes. Well done on completing this session." duration="30" />
+        </Cooldown>
+    </workout>
+</workout_file>

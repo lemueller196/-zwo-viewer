@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kristin Armstrong</author>
+    <name>Eiche_Z6_39min_10x(1'@120%+1'@50%)_50TSS</name>
+    <description>Todays ride consists of 10x 1 minute, aka minute on's minute off's. This is somewhat of a a HIIT style workout. For 20 minutes (including recovery) you will be asked to put in their best efforts on each of the one minutes. This session an incredible way to get quality in during a short amount of time. Again, mix it up if you would like with seated and standing keeping efforts in the correct zone. Change is seen quickly if you incorporate this type of workout once a week or once every two weeks.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="600" PowerLow="0.5" PowerHigh="0.89999998" pace="0">
+            <textevent timeoffset="0" message="Welcome to Minute On Minute Off! Let's get started with a progressive warm up to get the legs ready." />
+            <textevent timeoffset="10" message="Keep your cadence comfortable here and ensure you have a fan, fluid, and towel handy." />
+            <textevent timeoffset="180" message="Steady as you go now ramping up through the zones. Stay relaxed." />
+            <textevent timeoffset="300" message="There's halfway through the warm up. Let's chat about what's on tap for today." />
+            <textevent timeoffset="310" message="Todays ride consists of 10x 1 minute, aka minute on's minute off's." />
+            <textevent timeoffset="320" message="This is somewhat of a a HIIT style workout." />
+            <textevent timeoffset="330" message="For 20 minutes (including recovery) you will be asked to put in their best efforts on each of the one minutes." />
+            <textevent timeoffset="340" message="This session an incredible way to get quality in during a short amount of time." />
+            <textevent timeoffset="350" message="Feel free to mix it up if you would like with seated and standing keeping efforts in the correct zone." />
+            <textevent timeoffset="360" message="Change is seen quickly if you incorporate this type of workout once a week or once every two weeks :-)" />
+            <textevent timeoffset="370" message="Let's carry on with the warm up." />
+            <textevent timeoffset="540" message="60sec left, then we'll bring it down easy for a minute." />
+        </Warmup>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Grab some water and get ready for our final 3x 30 second short efforts!" />
+        </SteadyState>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Here we go! You choose, in or out of the saddle. " />
+            <textevent timeoffset="30" message="The purpose is to continue warming up your body. By no means does this need to be all out!" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.1" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Hit it!" />
+            <textevent timeoffset="30" message="Breathe, 1 more of these to go to complete the warm up" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="30.000002" OffDuration="30.000002" OnPower="1.2" OffPower="0.55000001" pace="0">
+            <textevent timeoffset="0" message="GO GO GO!" />
+            <textevent timeoffset="30" message="Excellent!" />
+        </IntervalsT>
+        <SteadyState Duration="120.00001" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Two minutes of recovery here!  Let's take advantage of this time, drink and spin easy." />
+            <textevent timeoffset="60" message="60sec to go, then we'll begin our minute efforts. Shake things out a bit." />
+        </SteadyState>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="0" message="Here we go!  Stay strong throughout the next 20-minutes." />
+            <textevent timeoffset="60" message="Not too bad, right?" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="0" message="Let's go again! You got this!" />
+            <textevent timeoffset="60" message="Great work! Have a drink here." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="60" message="How are you feeling? Be sure to use the &quot;bias&quot; arrow keys to adjust difficulty. Up or Down..." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="0" message="Great Work!" />
+            <textevent timeoffset="60" message="TIP: your difficulty can be adjusted at any time during your session. These are just micro adjustments. " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="0" message="Keep the power up! It's normal to feel a little fatigue by now, FIGHT IT!" />
+            <textevent timeoffset="60" message="Another one checked off the list :-)." />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="60" message="We are over half way through our session!  You got this! " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="60" message="On these last few 1-minute efforts focus on your cadence. What is happening, is it the same as sets 1-4. increasing or decreasing?" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="60" message="Nice work! Let's not forget to hydrate. " />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="0" message="Keep your cadence up! PUSH PUSH!" />
+        </IntervalsT>
+        <IntervalsT Repeat="1" OnDuration="60.000004" OffDuration="60.000004" OnPower="1.2" OffPower="0.5" pace="0">
+            <textevent timeoffset="0" message="Last minute!" />
+            <textevent timeoffset="60" message="Yes! It's time to recover. GREAT WORK TODAY!" />
+        </IntervalsT>
+        <SteadyState Duration="180.00002" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Let's continue to spin the legs our to make sure they feel nice and flushed for the cool down." />
+            <textevent timeoffset="60" message="Take care of yourself by hydrating and refueling so you feel recovered and ready to go again for your next session!" />
+            <textevent timeoffset="90" message="Take a few more deep breaths here as we continue to return to baseline." />
+            <textevent timeoffset="170" message="See you on the next workout - Dani and Kristin." />
+        </SteadyState>
+    </workout>
+</workout_file>

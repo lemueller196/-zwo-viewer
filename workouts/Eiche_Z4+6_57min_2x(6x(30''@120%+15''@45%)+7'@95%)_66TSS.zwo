@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kevin Poulton</author>
+    <name>Eiche_Z4+6_57min_2x(6x(30''@120%+15''@45%)+7'@95%)_66TSS</name>
+    <description>Another high intensity workout today. The stochastic nature of MTB riding requires you to turn the power on and then off in quick succession. Quite often leading into a threshold type of effort. Sustaining threshold power for long periods is a hard workout. Performing micro intervals leading into this effort gives the session another element of specificity.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="420.00003" PowerLow="0.5" PowerHigh="0.75" pace="0">
+            <textevent timeoffset="30" message="Back into high intensity work today, with some zone 4 work." />
+            <textevent timeoffset="60" message="As always though, a great workout starts off with a good warm up." />
+            <textevent timeoffset="90" message="Be sure to start the warm up nice and easy, and spin the legs at a cadence that feels comfortable." />
+            <textevent timeoffset="120" message="The main set today consists of micro intervals leading into a sustained zone 4 effort." />
+            <textevent timeoffset="150" message="But first, we keep ramping the power up in our warmup." />
+            <textevent timeoffset="300" message="Being able to produce explosive power repeatedly is critical in MTB riding." />
+            <textevent timeoffset="330" message="Today's session will have you doing just that." />
+        </Warmup>
+        <SteadyState Duration="60.000004" Power="0.5" pace="0">
+            <textevent timeoffset="10" message="To continue the warmup we step into some 1min efforts." />
+            <textevent timeoffset="40" message="But the power is just touching on threshold, so it won't be a problem for you." />
+        </SteadyState>
+        <IntervalsT Repeat="5" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.89999998" OffPower="0.69999999" pace="0">
+            <textevent timeoffset="0" message="Spin the legs up to a comfortable fast cadence here." />
+            <textevent timeoffset="20" message="But no bouncing in the saddle." />
+            <textevent timeoffset="60" message="The efforts are only short." />
+            <textevent timeoffset="80" message="And with the 1min easy you should be fully recovered for the next." />
+            <textevent timeoffset="140" message="These &quot;warmup&quot; intervals are an ideal session on their own." />
+            <textevent timeoffset="160" message="The increase in power should be enough to increase your rate of breathing." />
+            <textevent timeoffset="180" message="A good sign that your body is under a little stress." />
+            <textevent timeoffset="200" message="Just 3 more of these to go." />
+            <textevent timeoffset="260" message="The real hard work is waiting ahead for you." />
+            <textevent timeoffset="320" message="Micro intervals are a different way of targeting VO2 fitness." />
+            <textevent timeoffset="340" message="Into the final 2 efforts now." />
+            <textevent timeoffset="460" message="Last one!" />
+        </IntervalsT>
+        <SteadyState Duration="60.000004" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="A quick breather, then we have a steady zone 3 effort." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.88" pace="0">
+            <textevent timeoffset="30" message="Find a nice rhythm here." />
+            <textevent timeoffset="60" message="This is a comfortable effort for you." />
+            <textevent timeoffset="120" message="Keep your cadence at a high level for you." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="Let's talk about the work ahead." />
+            <textevent timeoffset="20" message="We have a set of micro intervals leading into a long threshold effort." />
+            <textevent timeoffset="40" message="The micro efforts will build lactate up." />
+            <textevent timeoffset="60" message="Then we will be working hard to maintain the threshold power with this level of lactate." />
+            <textevent timeoffset="80" message="Be sure to spin up to a high cadence before each micro interval starts." />
+            <textevent timeoffset="100" message="Let's get this started!" />
+        </SteadyState>
+        <IntervalsT Repeat="6" OnDuration="15.000001" OffDuration="30.000002" OnPower="0.44999999" OffPower="1.2" pace="0">
+            <textevent timeoffset="0" message="Ready to bring the cadence up" />
+            <textevent timeoffset="20" message="Now hit the target power!" />
+            <textevent timeoffset="50" message="The recovery is short." />
+            <textevent timeoffset="80" message="Keep this pattern of work going." />
+            <textevent timeoffset="110" message="Hit the same cadence for each effort." />
+            <textevent timeoffset="140" message="You should be feeling the pressure building." />
+            <textevent timeoffset="170" message="We don't expect you to be recovering with the time provided." />
+            <textevent timeoffset="200" message="Remember, we are stepping straight into a threshold effort." />
+            <textevent timeoffset="230" message="Into the last effort, then we TT!" />
+        </IntervalsT>
+        <SteadyState Duration="420.00003" Power="0.94999999" pace="0">
+            <textevent timeoffset="20" message="Ok, settle into a nice rhythm." />
+            <textevent timeoffset="80" message="Try to catch your breath and recover a little." />
+            <textevent timeoffset="140" message="This is a long effort, but you're in control." />
+            <textevent timeoffset="200" message="We are just under your threshold, so your lactate levels won't be climbing any higher." />
+            <textevent timeoffset="230" message="In fact, you should be clearing some of the lactate at this level." />
+            <textevent timeoffset="360" message="Into the final minute now. You've got this." />
+            <textevent timeoffset="400" message="Strong all the way to the finish." />
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.5" pace="0">
+            <textevent timeoffset="0" message="All right, bring that power way down to recovery now, keep that cadence comfortable." />
+            <textevent timeoffset="30" message="Great work so far! This is very effective training." />
+            <textevent timeoffset="60" message="Breath... Relax here. Improve your recovery skills." />
+            <textevent timeoffset="120" message="How did the longer work interval feel for you?" />
+            <textevent timeoffset="200" message="Are you ready to go again?" />
+            <textevent timeoffset="240" message="You know what you're up for this time." />
+            <textevent timeoffset="280" message="Let's do it!" />
+        </SteadyState>
+        <IntervalsT Repeat="6" OnDuration="15.000001" OffDuration="30.000002" OnPower="0.44999999" OffPower="1.2" pace="0">
+            <textevent timeoffset="0" message="Ready to bring the cadence up" />
+            <textevent timeoffset="20" message="Now hit the target power!" />
+            <textevent timeoffset="50" message="The recovery is short." />
+            <textevent timeoffset="80" message="Keep this pattern of work going." />
+            <textevent timeoffset="110" message="Hit the same cadence for each effort." />
+            <textevent timeoffset="140" message="You should be feeling the pressure building." />
+            <textevent timeoffset="170" message="We don't expect you to be recovering with the time provided." />
+            <textevent timeoffset="200" message="Remember, we are stepping straight into a threshold effort." />
+            <textevent timeoffset="230" message="Into the last effort, then we TT!" />
+        </IntervalsT>
+        <SteadyState Duration="420.00003" Power="0.94999999" pace="0">
+            <textevent timeoffset="20" message="Ok, settle into a nice rhythm." />
+            <textevent timeoffset="80" message="Try to catch your breath and recover a little." />
+            <textevent timeoffset="140" message="This is a long effort, but you're in control." />
+            <textevent timeoffset="200" message="We are just under your threshold, so your lactate levels won't be climbing any higher." />
+            <textevent timeoffset="230" message="In fact, you should be clearing some of this lactate at this level." />
+            <textevent timeoffset="360" message="Into the final minute now. You've got this." />
+            <textevent timeoffset="400" message="Strong all the way to the finish." />
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="Great work! That was a super high quality effort and you really showed your merit there." />
+            <textevent timeoffset="60" message="That was a TOUGH session today, but you handled it so well!" />
+            <textevent timeoffset="90" message="Hopefully, today's session provided a range of ideas you can use in your VO2max training." />
+            <textevent timeoffset="120" message="Enjoy some time just spinning down now." />
+        </SteadyState>
+    </workout>
+</workout_file>

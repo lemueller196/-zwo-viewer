@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Arne Mueller (via TrainingPeaks)</author>
+    <name>Eiche_Z5-6_80min_5x(1.30'@123%+3.30'@110%)_107TSS</name>
+    <description>Mal wieder die Norweger...Ronnestad et al. (2019) haben sich auf Grund von Beobachtungen in der Praxis (die Radprofis von Lotto-Visma sind ihre Intervalle immer intensiver angefahren) überlegt, inwiefern dies einen Einfluss auf die Anpassung haben könnte. Das Ergebnis war verblüffend: Intervalle die schneller bzw. intensiver angefahren werden, zeigen deutlich längere Zeiten im Bereich von 90% der VO2max und höher - also genau das wir erreichen wollen. Zudem wurden die Intervalle subjektiv als weniger intensiv bewertet, weil nach dem intensiven Start die Leistung abfällt. Für uns wäre sehr interessant inwiefern sich diese Intervalle mit den 30/15ern vergleichen lässt. Dazu aber demnächst mehr ;)!</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="600" PowerLow="0.34999996" PowerHigh="0.55000001" pace="0" />
+        <SteadyState Duration="240.00002" Power="0.82999998" pace="0" />
+        <SteadyState Duration="180.00002" Power="0.88" pace="0" />
+        <SteadyState Duration="180.00002" Power="0.93000001" pace="0" />
+        <SteadyState Duration="60.000004" Power="1" pace="0" />
+        <SteadyState Duration="300" Power="0.52999997" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.23" pace="0" />
+        <SteadyState Duration="210.00002" Power="1.1" pace="0" />
+        <SteadyState Duration="300" Power="0.52999997" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.23" pace="0" />
+        <SteadyState Duration="210.00002" Power="1.1" pace="0" />
+        <SteadyState Duration="300" Power="0.52999997" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.23" pace="0" />
+        <SteadyState Duration="210.00002" Power="1.1" pace="0" />
+        <SteadyState Duration="300" Power="0.52999997" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.23" pace="0" />
+        <SteadyState Duration="210.00002" Power="1.1" pace="0" />
+        <SteadyState Duration="300" Power="0.52999997" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.23" pace="0" />
+        <SteadyState Duration="210.00002" Power="1.1" pace="0" />
+        <SteadyState Duration="300" Power="0.52999997" pace="0" />
+        <SteadyState Duration="240.00002" Power="0.60000002" pace="0" />
+    </workout>
+</workout_file>

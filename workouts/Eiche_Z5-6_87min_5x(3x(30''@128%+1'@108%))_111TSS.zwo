@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Arne Mueller (via TrainingPeaks)</author>
+    <name>Eiche_Z5-6_87min_5x(3x(30''@128%+1'@108%))_111TSS</name>
+    <description>Vermutlich die "Hölle auf Erden" wenn es um Intervalle geht, ABER nach Bossi et al. (2019) - übrigens mit Ronnestad gemeinsam - effektiver als konstante 5x5min Intervalle. Auch hier wird wieder eine höhere Ausschöpfung der VO2max (&gt;90% VO2max) erreicht. Auch hier wissen wir allerdings nicht inwiefern sich diese Intervalle mit den Intervallen mit intensivem Start vergleichen lassen - wir bleiben da aber am Ball. Fazit: Variabilität in Intervallen scheinen in Breite und wiederholt effektiver zu sein als konstante Intervalle.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="1200" PowerLow="0.34999996" PowerHigh="0.55000001" pace="0" />
+        <SteadyState Duration="180.00002" Power="0.60000002" pace="0" />
+        <SteadyState Duration="180.00002" Power="0.69999999" pace="0" />
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" />
+        <SteadyState Duration="180.00002" Power="0.89999998" pace="0" />
+        <SteadyState Duration="300" Power="0.55000001" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60" Power="1.0845" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.08" pace="0" />
+        <SteadyState Duration="300" Power="0.55000001" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.08" pace="0" />
+        <SteadyState Duration="300" Power="0.55000001" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.08" pace="0" />
+        <SteadyState Duration="300" Power="0.55000001" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.08" pace="0" />
+        <SteadyState Duration="300" Power="0.55000001" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="60.000004" Power="1.08" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.28" pace="0" />
+        <SteadyState Duration="90.000008" Power="1.08" pace="0" />
+        <SteadyState Duration="300" Power="0.55000001" pace="0" />
+    </workout>
+</workout_file>
