@@ -237,7 +237,10 @@ async function processWorkouts(files) {
       });
 
       // Klick → großes Diagramm
-      nameEl.addEventListener('click', () => openBigChart(fullName, data, labels, stepPowers));
+      nameEl.addEventListener('click', async () => {
+		const text = await file.text();
+		openBigChart(fullName, data, labels, stepPowers, file.name, text);
+	  });
     }
   }
 }
@@ -252,11 +255,13 @@ function escapeHtml(s){
     .replace(/'/g,'&#39;');
 }
 
-function openBigChart(fullName, data, labels, stepPowers){
+function openBigChart(fullName, data, labels, stepPowers, fileName, fileContent){
   const titleHTML = fullName.replace(/\n/g, '<br>');
   const dataStr = JSON.stringify(data);
   const labelsStr = JSON.stringify(labels);
   const stepPowersStr = JSON.stringify(stepPowers);
+  const fileNameStr = JSON.stringify(fileName);
+  const fileContentStr = JSON.stringify(fileContent);
 
   const html = `<!doctype html>
 <html lang="de">
@@ -285,6 +290,9 @@ function openBigChart(fullName, data, labels, stepPowers){
   const data = ${dataStr};
   const labels = ${labelsStr};
   const stepPowers = ${stepPowersStr};
+  const fileName = ${fileNameStr};
+  const fileContent = ${fileContentStr};
+
   function getZoneColor(p, alpha=1){
     if (p < 0.60) return 'rgba(108,117,125,'+alpha+')';
     if (p < 0.76) return 'rgba(0,123,255,'+alpha+')';
@@ -293,16 +301,25 @@ function openBigChart(fullName, data, labels, stepPowers){
     if (p < 1.18) return 'rgba(255,87,34,'+alpha+')';
     return 'rgba(220,53,69,'+alpha+')';
   }
+
+  // Download-Button aktivieren
+  const _zwoBlob = new Blob([fileContent], { type: 'text/plain' });
+  const _zwoUrl = URL.createObjectURL(_zwoBlob);
+
   document.getElementById('downloadBtn').addEventListener('click', () => {
-    const blob = new Blob([fileContent], {type:'text/plain'});
     const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = fileName;
+    a.href = _zwoUrl;
+    a.download = fileName || 'workout.zwo';
     a.click();
-    URL.revokeObjectURL(a.href);
   });
+
+  window.addEventListener('unload', () => {
+    URL.revokeObjectURL(_zwoUrl);
+  });
+
   const ctx = document.getElementById('bigChart').getContext('2d');
   const maxY = Math.ceil(Math.max(...data) * 10) / 10;
+
   new Chart(ctx, {
     type:'line',
     data:{ labels, datasets:[{
@@ -313,15 +330,15 @@ function openBigChart(fullName, data, labels, stepPowers){
       borderWidth:2,
       fill:true,
       pointHoverBackgroundColor: ctx => {
-          const idx = ctx.dataIndex;
-          if (idx == null) return 'rgba(0,0,0,0.8)';
-          return getZoneColor(stepPowers[idx].power, 1);
-        },
-        pointHoverBorderColor: ctx => {
-          const idx = ctx.dataIndex;
-          if (idx == null) return 'rgba(0,0,0,0.8)';
-          return getZoneColor(stepPowers[idx].power, 1);
-        },
+        const idx = ctx.dataIndex;
+        if (idx == null) return 'rgba(0,0,0,0.8)';
+        return getZoneColor(stepPowers[idx].power, 1);
+      },
+      pointHoverBorderColor: ctx => {
+        const idx = ctx.dataIndex;
+        if (idx == null) return 'rgba(0,0,0,0.8)';
+        return getZoneColor(stepPowers[idx].power, 1);
+      },
       segment:{
         borderColor: ctx => {
           const s0 = stepPowers[ctx.p0DataIndex];
@@ -336,7 +353,7 @@ function openBigChart(fullName, data, labels, stepPowers){
           return getZoneColor(Math.max(s0.power, s1.power), 0.28);
         }
       }
-    } ]},
+    }]},
     options:{
       responsive:true,
       maintainAspectRatio:false,
@@ -360,6 +377,7 @@ function openBigChart(fullName, data, labels, stepPowers){
 <\/script>
 </body>
 </html>`;
+
   const newWin = window.open();
   newWin.document.open();
   newWin.document.write(html);
@@ -368,4 +386,3 @@ function openBigChart(fullName, data, labels, stepPowers){
 </script>
 </body>
 </html>
-
