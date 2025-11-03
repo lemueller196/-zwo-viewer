@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Zwift</author>
+    <name>Eiche_Aktivierung_30min_4x15''@115%+3x3'@95%_31TSS</name>
+    <description>One final tune-up to keep the legs sharp and the mind and body fresh before you take on your Fondo!</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="300" PowerLow="0.55449998" PowerHigh="0.75450003" pace="0">
+            <textevent timeoffset="30" message="This is the third and final workout of Wk4 of our Zwift Fondo training plan." />
+            <textevent timeoffset="90" message="This workout is designed to sharpen you up just a bit before tomorrow's big effort." />
+            <textevent timeoffset="150" message="A few short bursts to prime the pump then 3x3min steady race pace." />
+            <textevent timeoffset="270" message="And getting ready here for a few 15s intervals at 115%..." />
+        </Warmup>
+        <IntervalsT Repeat="4" OnDuration="15.000001" OffDuration="45.000004" OnPower="1.1544999" OffPower="0.75449997" pace="0">
+            <textevent timeoffset="34" message="And a little bit of short and hard stuff to prime the pump." />
+            <textevent timeoffset="147" message="Just remembering how to keep those muscles firing here. Nothing crazy." />
+        </IntervalsT>
+        <IntervalsT Repeat="3" OnDuration="180.00002" OffDuration="180.00002" OnPower="0.95449996" OffPower="0.55449998" pace="0">
+            <textevent timeoffset="86" message="And a few 3min intervals here up near race power. Just remembering how it feels." />
+            <textevent timeoffset="277" message="Nice and light for this one. Just spinning it out in between." />
+            <textevent timeoffset="444" message="Back onto your race pace. Feeling the groove here." />
+            <textevent timeoffset="636" message="Smooth and light now. Easy recovery." />
+            <textevent timeoffset="807" message="And one last bit of work. Smooth pressure to the pedals." />
+            <textevent timeoffset="972" message="And done. Easy now and getting ready for the cool-down." />
+        </IntervalsT>
+        <Cooldown Duration="180.00002" PowerLow="0.55449998" PowerHigh="0.45449996" pace="0">
+            <textevent timeoffset="15" message="And we are done! Just spint it out here." />
+            <textevent timeoffset="80" message="And final bit of cool-down. Just flushing it out." />
+            <textevent timeoffset="120" message="Tomorrow is FONDO DAY! Have Fun and RIDE ON!" />
+        </Cooldown>
+    </workout>
+</workout_file>
