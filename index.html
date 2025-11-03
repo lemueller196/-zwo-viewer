@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
 <title>Zwo Workout Viewer</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js"></script>
 <style>
   body { font-family: Arial, sans-serif; padding: 20px; }
   h1 { font-size: 1.5em; margin-bottom: 10px; }
@@ -13,11 +14,15 @@
   .workoutName:hover { text-decoration:underline; }
   .groupRow { flex-basis:100%; height:0; margin:10px 0; }
   canvas { width:100% !important; height:150px !important; }
+  #buttons { display:flex; gap:10px; align-items:center; margin-bottom:10px; }
 </style>
 </head>
 <body>
 <h1>Zwo Workout Viewer</h1>
-<input type="file" id="fileInput" accept=".zwo" multiple>
+<div id="buttons">
+  <input type="file" id="fileInput" accept=".zwo" multiple>
+  <button id="onedriveBtn">Aus OneDrive-Ordner auswählen</button>
+</div>
 <div id="workoutCharts"></div>
 
 <script>
@@ -33,12 +38,47 @@ function getZoneColor(p, alpha = 1) {
   return `rgba(220,53,69,${alpha})`;
 }
 
+// ==== OneDrive Integration ====
+document.getElementById('onedriveBtn').addEventListener('click', () => {
+  const odOptions = {
+    clientId: "7b9ebc2b-3914-4d57-8948-dc44dac322a9",
+    action: "download",
+    multiSelect: true,
+    advanced: {
+      redirectUri: window.location.origin,
+      queryParameters: {
+        shareUrl: "https://bimanagementglw-my.sharepoint.com/:f:/g/personal/mueller_bimanagement_de/El2OBZhtQGREinDZ8hv9FEgBoMmoqVJdifbLqKPYiFntUQ?e=HpEfQ9"
+      },
+      filter: ".zwo"
+    },
+    success: async function (files) {
+      const fetchedFiles = [];
+      for (const file of files.value) {
+        const url = file["@microsoft.graph.downloadUrl"];
+        const name = file.name;
+        const resp = await fetch(url);
+        const text = await resp.text();
+        const f = new File([text], name, { type: "text/xml" });
+        fetchedFiles.push(f);
+      }
+      // Übergib Dateien an dein bestehendes Handling
+      const dt = new DataTransfer();
+      fetchedFiles.forEach(f => dt.items.add(f));
+      fileInput.files = dt.files;
+      fileInput.dispatchEvent(new Event('change'));
+    },
+    cancel: function () { console.log("OneDrive Auswahl abgebrochen."); },
+    error: function (e) { console.error("Fehler beim OneDrive-Zugriff:", e); }
+  };
+  OneDrive.open(odOptions);
+});
+// ==== Ende OneDrive Integration ====
+
 fileInput.addEventListener('change', async (ev) => {
   const files = Array.from(ev.target.files);
   if (!files.length) return;
   workoutChartsContainer.innerHTML = '';
 
-  // Gruppiere Dateien nach Präfix vor erstem "_"
   const groups = {};
   for (const f of files) {
     const base = f.name.replace(/^Eiche_/, '').replace(/\.zwo$/i, '');
@@ -53,9 +93,7 @@ fileInput.addEventListener('change', async (ev) => {
     return r;
   }
 
-  // Gruppenweise rendern
   for (const groupName of Object.keys(groups)) {
-    // Neue Zeile als Trenner
     const separator = document.createElement('div');
     separator.className = 'groupRow';
     workoutChartsContainer.appendChild(separator);
@@ -65,7 +103,6 @@ fileInput.addEventListener('change', async (ev) => {
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(text, "text/xml");
       const workoutSteps = xmlDoc.querySelectorAll('workout > *:not(name)');
-
       const data = [];
       const stepPowers = [];
 
@@ -83,7 +120,7 @@ fileInput.addEventListener('change', async (ev) => {
           const powerHigh = parseFloat(step.getAttribute('PowerHigh')) || powerLow;
           const powers = interpolate(powerLow, powerHigh, segmentCount);
           data.push(...powers);
-          stepPowers.push(...powers.map(p=>({type, power: p})));
+          stepPowers.push(...powers.map(p=>({type, power:p})));
         } else if (type === 'IntervalsT') {
           const repeat = parseInt(step.getAttribute('Repeat')) || 1;
           const onDur = parseFloat(step.getAttribute('OnDuration')) || 0;
@@ -106,19 +143,16 @@ fileInput.addEventListener('change', async (ev) => {
       }
 
       const labels = data.map((_,i)=> i * 5 / 60);
-
       let fullName = file.name.replace(/^Eiche_/, '').replace(/\.zwo$/i, '');
       fullName = fullName.replace(/(min_)/, "$1\n");
       fullName = fullName.replace(/_(.{2,3}TSS)/, "\n_$1");
 
       const container = document.createElement('div');
       container.className = 'workoutContainer';
-
       const nameEl = document.createElement('h2');
       nameEl.className = 'workoutName';
       nameEl.textContent = fullName;
       container.appendChild(nameEl);
-
       const canvas = document.createElement('canvas');
       container.appendChild(canvas);
       workoutChartsContainer.appendChild(container);
@@ -170,129 +204,10 @@ fileInput.addEventListener('change', async (ev) => {
           }
         }
       });
-
-      // Hover + Tooltip
-      container.addEventListener('mousemove', (e) => {
-        const rect = canvas.getBoundingClientRect();
-        let x = e.clientX - rect.left;
-        x = Math.max(0, Math.min(x, rect.width));
-        const xVal = chart.scales.x.getValueForPixel(x);
-        let nearest = 0, minDist = Infinity;
-        chart.data.labels.forEach((lbl,i) => { const d = Math.abs(lbl - xVal); if (d < minDist) { minDist = d; nearest = i; } });
-        const active = [{ datasetIndex: 0, index: nearest }];
-        chart.tooltip.setActiveElements(active, {x, y: 0});
-        chart.update('none');
-      });
-      container.addEventListener('mouseleave', () => {
-        chart.tooltip.setActiveElements([], {x:0,y:0});
-        chart.update('none');
-      });
-
-      // Klick → großes Diagramm
-      nameEl.addEventListener('click', () => {
-        const titleHTML = fullName.replace(/\n/g, '<br>');
-        const dataStr = JSON.stringify(data);
-        const labelsStr = JSON.stringify(labels);
-        const stepPowersStr = JSON.stringify(stepPowers);
-
-        const html = `<!doctype html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<title>${escapeHtml(fullName)}</title>
-<style>
-  html,body { height:100%; margin:0; overflow:hidden; font-family: Arial, sans-serif; }
-  body { display:flex; flex-direction:column; gap:10px; align-items:center; justify-content:flex-start; padding:10px; box-sizing:border-box; }
-  h2 { margin:0; font-size:1.1em; text-align:center; white-space:pre-line; }
-  #chartWrap { width:100vw; height:calc(100vh - 60px); display:flex; align-items:center; justify-content:center; }
-  canvas { width: calc(100vw - 20px); height: calc(100vh - 80px); }
-</style>
-</head>
-<body>
-<h2>${titleHTML}</h2>
-<div id="chartWrap"><canvas id="bigChart"></canvas></div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"><\/script>
-<script>
-(function(){
-  const data = ${dataStr};
-  const labels = ${labelsStr};
-  const stepPowers = ${stepPowersStr};
-
-  function getZoneColor(p, alpha=1){
-    if (p < 0.60) return 'rgba(108,117,125,'+alpha+')';
-    if (p < 0.76) return 'rgba(0,123,255,'+alpha+')';
-    if (p < 0.90) return 'rgba(40,167,69,'+alpha+')';
-    if (p < 1.05) return 'rgba(255,193,7,'+alpha+')';
-    if (p < 1.18) return 'rgba(255,87,34,'+alpha+')';
-    return 'rgba(220,53,69,'+alpha+')';
-  }
-
-  const ctx = document.getElementById('bigChart').getContext('2d');
-  const maxY = Math.ceil(Math.max(...data) * 10) / 10;
-
-  new Chart(ctx, {
-    type:'line',
-    data:{ labels, datasets:[{
-      label:'', data,
-      tension:0.22,
-      pointRadius:0,
-      pointHoverRadius:7,
-      borderWidth:2,
-      fill:true,
-      pointHoverBackgroundColor: ctx => {
-        const idx = ctx.dataIndex;
-        if (idx == null) return 'rgba(0,0,0,0.8)';
-        return getZoneColor(stepPowers[idx].power, 1);
-      },
-      segment:{
-        borderColor: ctx => {
-          const s0 = stepPowers[ctx.p0DataIndex];
-          const s1 = stepPowers[ctx.p1DataIndex];
-          if (!s0 || !s1) return 'rgba(0,0,0,0)';
-          return getZoneColor(Math.max(s0.power, s1.power), 1);
-        },
-        backgroundColor: ctx => {
-          const s0 = stepPowers[ctx.p0DataIndex];
-          const s1 = stepPowers[ctx.p1DataIndex];
-          if (!s0 || !s1) return 'rgba(0,0,0,0)';
-          return getZoneColor(Math.max(s0.power, s1.power), 0.28);
-        }
-      }
-    } ]},
-    options:{
-      responsive:true,
-      maintainAspectRatio:false,
-      plugins:{
-        legend:{ display:false },
-        tooltip:{
-          enabled:true,
-          backgroundColor:'rgba(20,20,20,0.9)',
-          displayColors:false,
-          callbacks:{ label: item => 'Leistung: ' + Math.round(item.raw*100) + '%' }
-        }
-      },
-      scales:{
-        x:{ type:'linear', min:0, ticks:{ stepSize:5 } },
-        y:{ min:0.4, max:maxY, ticks:{ callback: v => Math.round(v*100) + '%' } }
-      },
-      interaction:{ mode:'nearest', intersect:false }
-    }
-  });
-})();
-<\/script>
-</body>
-</html>`;
-
-        const newWin = window.open();
-        newWin.document.open();
-        newWin.document.write(html);
-        newWin.document.close();
-      });
     }
   }
 });
 
-// HTML Escape Helper
 function escapeHtml(s){
   return String(s)
     .replace(/&/g,'&amp;')
@@ -304,5 +219,3 @@ function escapeHtml(s){
 </script>
 </body>
 </html>
-
-
