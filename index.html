@@ -1,222 +1,120 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="utf-8" />
-<title>Zwo Workout Viewer</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script type="text/javascript" src="https://js.live.net/v7.2/OneDrive.js"></script>
-<style>
-  body { font-family: Arial, sans-serif; padding: 20px; }
-  h1 { font-size: 1.5em; margin-bottom: 10px; }
-  #workoutCharts { display:flex; flex-wrap:wrap; gap:5px; align-items:flex-end; }
-  .workoutContainer { flex:1 1 23%; max-width:23%; min-width:120px; display:flex; flex-direction:column; align-items:flex-start; text-align:left; }
-  .workoutName { font-size:0.85em; margin-bottom:2px; white-space:pre-line; line-height:1.15; cursor:pointer; color:#0056b3; text-align:left; }
-  .workoutName:hover { text-decoration:underline; }
-  .groupRow { flex-basis:100%; height:0; margin:10px 0; }
-  canvas { width:100% !important; height:150px !important; }
-  #buttons { display:flex; gap:10px; align-items:center; margin-bottom:10px; }
-</style>
+  <meta charset="UTF-8">
+  <title>ZWO Workout Viewer</title>
+  <script src="https://js.live.net/v7.2/OneDrive.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+    h1 { color: #005f73; }
+    button, input[type="file"] { margin-top: 10px; }
+    .file-entry {
+      margin-top: 8px;
+      cursor: pointer;
+      color: #0056b3;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-<h1>Zwo Workout Viewer</h1>
-<div id="buttons">
+  <h1>ZWO Workout Viewer</h1>
+  <p>Wähle lokale .zwo-Dateien oder lade aus OneDrive:</p>
+
   <input type="file" id="fileInput" accept=".zwo" multiple>
   <button id="onedriveBtn">Aus OneDrive-Ordner auswählen</button>
-</div>
-<div id="workoutCharts"></div>
 
-<script>
-const fileInput = document.getElementById('fileInput');
-const workoutChartsContainer = document.getElementById('workoutCharts');
+  <h2>Geladene Workouts</h2>
+  <div id="fileList"></div>
 
-function getZoneColor(p, alpha = 1) {
-  if (p < 0.60) return `rgba(108,117,125,${alpha})`;
-  if (p < 0.76) return `rgba(0,123,255,${alpha})`;
-  if (p < 0.90) return `rgba(40,167,69,${alpha})`;
-  if (p < 1.05) return `rgba(255,193,7,${alpha})`;
-  if (p < 1.18) return `rgba(255,87,34,${alpha})`;
-  return `rgba(220,53,69,${alpha})`;
-}
+  <script>
+    const fileInput = document.getElementById("fileInput");
+    const fileList = document.getElementById("fileList");
 
-// ==== OneDrive Integration ====
-document.getElementById('onedriveBtn').addEventListener('click', () => {
-  const odOptions = {
-    clientId: "7b9ebc2b-3914-4d57-8948-dc44dac322a9",
-    action: "download",
-    multiSelect: true,
-    advanced: {
-      redirectUri: https://lemueller196.github.io/-zwo-viewer/,
-      queryParameters: {
-        shareUrl: "https://bimanagementglw-my.sharepoint.com/:f:/g/personal/mueller_bimanagement_de/El2OBZhtQGREinDZ8hv9FEgBoMmoqVJdifbLqKPYiFntUQ?e=HpEfQ9"
-      },
-      filter: ".zwo"
-    },
-    success: async function (files) {
-      const fetchedFiles = [];
-      for (const file of files.value) {
-        const url = file["@microsoft.graph.downloadUrl"];
-        const name = file.name;
-        const resp = await fetch(url);
-        const text = await resp.text();
-        const f = new File([text], name, { type: "text/xml" });
-        fetchedFiles.push(f);
+    // Lokale Dateien laden
+    fileInput.addEventListener("change", (event) => {
+      const files = event.target.files;
+      for (const file of files) {
+        const reader = new FileReader();
+        reader.onload = (e) => showWorkout(file.name, e.target.result);
+        reader.readAsText(file);
       }
-      // Übergib Dateien an dein bestehendes Handling
-      const dt = new DataTransfer();
-      fetchedFiles.forEach(f => dt.items.add(f));
-      fileInput.files = dt.files;
-      fileInput.dispatchEvent(new Event('change'));
-    },
-    cancel: function () { console.log("OneDrive Auswahl abgebrochen."); },
-    error: function (e) { console.error("Fehler beim OneDrive-Zugriff:", e); }
-  };
-  OneDrive.open(odOptions);
-});
-// ==== Ende OneDrive Integration ====
+    });
 
-fileInput.addEventListener('change', async (ev) => {
-  const files = Array.from(ev.target.files);
-  if (!files.length) return;
-  workoutChartsContainer.innerHTML = '';
-
-  const groups = {};
-  for (const f of files) {
-    const base = f.name.replace(/^Eiche_/, '').replace(/\.zwo$/i, '');
-    const groupKey = base.split('_')[0];
-    if (!groups[groupKey]) groups[groupKey] = [];
-    groups[groupKey].push(f);
-  }
-
-  function interpolate(start, end, steps) {
-    const r = [];
-    for (let i = 0; i < steps; i++) r.push(start + (end - start) * (i / steps));
-    return r;
-  }
-
-  for (const groupName of Object.keys(groups)) {
-    const separator = document.createElement('div');
-    separator.className = 'groupRow';
-    workoutChartsContainer.appendChild(separator);
-
-    for (const file of groups[groupName]) {
-      const text = await file.text();
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(text, "text/xml");
-      const workoutSteps = xmlDoc.querySelectorAll('workout > *:not(name)');
-      const data = [];
-      const stepPowers = [];
-
-      for (let step of workoutSteps) {
-        const type = step.tagName;
-        const duration = parseFloat(step.getAttribute('Duration')) || 0;
-        const segmentCount = Math.max(Math.floor(duration / 5), 1);
-
-        if (type === 'SteadyState') {
-          const power = parseFloat(step.getAttribute('Power')) || 0;
-          data.push(...Array(segmentCount).fill(power));
-          stepPowers.push(...Array(segmentCount).fill().map(()=>({type, power})));
-        } else if (type === 'Warmup' || type === 'Cooldown' || type === 'Ramp') {
-          const powerLow = parseFloat(step.getAttribute('PowerLow')) || 0;
-          const powerHigh = parseFloat(step.getAttribute('PowerHigh')) || powerLow;
-          const powers = interpolate(powerLow, powerHigh, segmentCount);
-          data.push(...powers);
-          stepPowers.push(...powers.map(p=>({type, power:p})));
-        } else if (type === 'IntervalsT') {
-          const repeat = parseInt(step.getAttribute('Repeat')) || 1;
-          const onDur = parseFloat(step.getAttribute('OnDuration')) || 0;
-          const offDur = parseFloat(step.getAttribute('OffDuration')) || 0;
-          const onPower = parseFloat(step.getAttribute('OnPower')) || 0;
-          const offPower = parseFloat(step.getAttribute('OffPower')) || 0;
-          for (let r = 0; r < repeat; r++) {
-            const onCount = Math.max(Math.floor(onDur / 5),1);
-            const offCount = Math.max(Math.floor(offDur / 5),1);
-            data.push(...Array(onCount).fill(onPower));
-            stepPowers.push(...Array(onCount).fill().map(()=>({type, power:onPower})));
-            data.push(...Array(offCount).fill(offPower));
-            stepPowers.push(...Array(offCount).fill().map(()=>({type, power:offPower})));
-          }
-        } else {
-          const power = parseFloat(step.getAttribute('Power')) || 0;
-          data.push(...Array(segmentCount).fill(power));
-          stepPowers.push(...Array(segmentCount).fill().map(()=>({type, power})));
-        }
-      }
-
-      const labels = data.map((_,i)=> i * 5 / 60);
-      let fullName = file.name.replace(/^Eiche_/, '').replace(/\.zwo$/i, '');
-      fullName = fullName.replace(/(min_)/, "$1\n");
-      fullName = fullName.replace(/_(.{2,3}TSS)/, "\n_$1");
-
-      const container = document.createElement('div');
-      container.className = 'workoutContainer';
-      const nameEl = document.createElement('h2');
-      nameEl.className = 'workoutName';
-      nameEl.textContent = fullName;
-      container.appendChild(nameEl);
-      const canvas = document.createElement('canvas');
-      container.appendChild(canvas);
-      workoutChartsContainer.appendChild(container);
-
-      const ctx = canvas.getContext('2d');
-      const maxY = Math.ceil(Math.max(...data) * 10) / 10;
-
-      const chart = new Chart(ctx, {
-        type: 'line',
-        data: { labels, datasets: [{
-          label:'', data,
-          tension:0.3, pointRadius:0, pointHoverRadius:6, borderWidth:1.5, fill:true,
-          pointHoverBackgroundColor: ctx => {
-            const idx = ctx.dataIndex;
-            if (idx==null) return 'rgba(0,0,0,0.8)';
-            return getZoneColor(stepPowers[idx].power, 1);
+    // OneDrive Picker
+    document.getElementById("onedriveBtn").addEventListener("click", () => {
+      const odOptions = {
+        clientId: "7b9ebc2b-3914-4d57-8948-dc44dac322a9",
+        action: "download",
+        multiSelect: true,
+        advanced: {
+          redirectUri: "https://lemueller196.github.io/-zwo-viewer/",
+          queryParameters: {
+            shareUrl: "https://bimanagementglw-my.sharepoint.com/:f:/g/personal/mueller_bimanagement_de/El2OBZhtQGREinDZ8hv9FEgBoMmoqVJdifbLqKPYiFntUQ?e=HpEfQ9"
           },
-          segment: {
-            borderColor: ctx => {
-              const s0 = stepPowers[ctx.p0DataIndex];
-              const s1 = stepPowers[ctx.p1DataIndex];
-              if (!s0 || !s1) return 'rgba(0,0,0,0)';
-              return getZoneColor(Math.max(s0.power, s1.power), 1);
-            },
-            backgroundColor: ctx => {
-              const s0 = stepPowers[ctx.p0DataIndex];
-              const s1 = stepPowers[ctx.p1DataIndex];
-              if (!s0 || !s1) return 'rgba(0,0,0,0)';
-              return getZoneColor(Math.max(s0.power, s1.power), 0.28);
-            }
+          filter: ".zwo"
+        },
+        success: async function (files) {
+          for (const file of files.value) {
+            const url = file["@microsoft.graph.downloadUrl"];
+            const name = file.name;
+            const resp = await fetch(url);
+            const text = await resp.text();
+            showWorkout(name, text);
           }
-        }]},
-        options: {
-          maintainAspectRatio:false,
-          interaction:{mode:'nearest', intersect:false},
-          plugins:{
-            legend:{display:false},
-            tooltip:{
-              enabled:true,
-              backgroundColor:'rgba(20,20,20,0.85)',
-              bodyFont:{size:11},
-              displayColors:false,
-              callbacks:{ label: item => 'Leistung: ' + Math.round(item.raw*100) + '%' }
-            }
-          },
-          scales:{
-            x:{ type:'linear', min:0, ticks:{ stepSize:5, font:{ size: 10 } }},
-            y:{ min:0.4, max:maxY, ticks:{ callback: v => Math.round(v*100)+'%', stepSize:0.1, font:{ size: 10 } } }
-          }
+        },
+        cancel: function () {
+          console.log("Auswahl abgebrochen");
+        },
+        error: function (e) {
+          console.error("OneDrive Fehler:", e);
+          alert("Fehler beim Zugriff auf OneDrive: " + e.message);
         }
-      });
+      };
+      OneDrive.open(odOptions);
+    });
+
+    // Workout-Liste
+    function showWorkout(name, xmlText) {
+      const div = document.createElement("div");
+      div.className = "file-entry";
+      div.textContent = name;
+      div.addEventListener("click", () => openWorkoutInNewTab(name, xmlText));
+      fileList.appendChild(div);
     }
-  }
-});
 
-function escapeHtml(s){
-  return String(s)
-    .replace(/&/g,'&amp;')
-    .replace(/</g,'&lt;')
-    .replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;')
-    .replace(/'/g,'&#39;');
-}
-</script>
+    // Neues Tab mit Workout anzeigen
+    function openWorkoutInNewTab(name, xmlText) {
+      const newWin = window.open();
+      if (!newWin) {
+        alert("Bitte Pop-ups für diese Seite erlauben!");
+        return;
+      }
+      const html = `
+        <!DOCTYPE html>
+        <html lang="de">
+        <head>
+          <meta charset="UTF-8">
+          <title>${name}</title>
+          <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background: #fff; }
+            pre { white-space: pre-wrap; background: #f1f1f1; padding: 1em; border-radius: 5px; }
+          </style>
+        </head>
+        <body>
+          <h2>${name}</h2>
+          <pre>${escapeHtml(xmlText)}</pre>
+        </body>
+        </html>`;
+      newWin.document.write(html);
+      newWin.document.close();
+    }
+
+    function escapeHtml(text) {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    }
+  </script>
 </body>
 </html>
-
