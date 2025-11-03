@@ -280,7 +280,6 @@ function openBigChart(fullName, data, labels, stepPowers){
   const data = ${dataStr};
   const labels = ${labelsStr};
   const stepPowers = ${stepPowersStr};
-
   function getZoneColor(p, alpha=1){
     if (p < 0.60) return 'rgba(108,117,125,'+alpha+')';
     if (p < 0.76) return 'rgba(0,123,255,'+alpha+')';
@@ -289,48 +288,32 @@ function openBigChart(fullName, data, labels, stepPowers){
     if (p < 1.18) return 'rgba(255,87,34,'+alpha+')';
     return 'rgba(220,53,69,'+alpha+')';
   }
-
   const ctx = document.getElementById('bigChart').getContext('2d');
   const maxY = Math.ceil(Math.max(...data) * 10) / 10;
-
   new Chart(ctx, {
     type:'line',
-    data:{ 
-      labels, 
-      datasets:[{
-        label:'', 
-        data,
-        tension:0.22,
-        pointRadius:0,
-        pointHoverRadius:7,
-        borderWidth:2,
-        fill:true,
-        pointHoverBackgroundColor: ctx => {
-          const idx = ctx.dataIndex;
-          if (idx == null) return 'rgba(0,0,0,0.8)';
-          return getZoneColor(stepPowers[idx].power, 1);
+    data:{ labels, datasets:[{
+      label:'', data,
+      tension:0.22,
+      pointRadius:0,
+      pointHoverRadius:7,
+      borderWidth:2,
+      fill:true,
+      segment:{
+        borderColor: ctx => {
+          const s0 = stepPowers[ctx.p0DataIndex];
+          const s1 = stepPowers[ctx.p1DataIndex];
+          if (!s0 || !s1) return 'rgba(0,0,0,0)';
+          return getZoneColor(Math.max(s0.power, s1.power), 1);
         },
-        pointHoverBorderColor: ctx => {
-          const idx = ctx.dataIndex;
-          if (idx == null) return 'rgba(0,0,0,0.8)';
-          return getZoneColor(stepPowers[idx].power, 1);
-        },
-        segment:{
-          borderColor: ctx => {
-            const s0 = stepPowers[ctx.p0DataIndex];
-            const s1 = stepPowers[ctx.p1DataIndex];
-            if (!s0 || !s1) return 'rgba(0,0,0,0)';
-            return getZoneColor(Math.max(s0.power, s1.power), 1);
-          },
-          backgroundColor: ctx => {
-            const s0 = stepPowers[ctx.p0DataIndex];
-            const s1 = stepPowers[ctx.p1DataIndex];
-            if (!s0 || !s1) return 'rgba(0,0,0,0)';
-            return getZoneColor(Math.max(s0.power, s1.power), 0.28);
-          }
+        backgroundColor: ctx => {
+          const s0 = stepPowers[ctx.p0DataIndex];
+          const s1 = stepPowers[ctx.p1DataIndex];
+          if (!s0 || !s1) return 'rgba(0,0,0,0)';
+          return getZoneColor(Math.max(s0.power, s1.power), 0.28);
         }
-      }]
-    },
+      }
+    } ]},
     options:{
       responsive:true,
       maintainAspectRatio:false,
@@ -351,7 +334,7 @@ function openBigChart(fullName, data, labels, stepPowers){
     }
   });
 })();
-</script>
+<\/script>
 </body>
 </html>`;
   const newWin = window.open();
@@ -362,6 +345,3 @@ function openBigChart(fullName, data, labels, stepPowers){
 </script>
 </body>
 </html>
-
-
-
