@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>D.Rowe (Rowe&amp;King)</author>
+    <name>Eiche_Z3-5_40min_4x1'@80%+4x45''@100%+4x30''@105%_27TSS</name>
+    <description>This session is a progression from the 30 minute Start-Stop workout where you will tackle 3 blocks of 4 efforts, with each block's effort increasing in intensity but decreasing in duration.
+
+Each block roughly equates to the same training stress, but just varying type of stress and effort.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="INTERVALS" />
+        <tag name="Prenatal" />
+    </tags>
+    <workout>
+        <Warmup Duration="300" PowerLow="0.25450003" PowerHigh="0.70449996" pace="0">
+            <textevent timeoffset="10" message="Welcome to Start-Stop! We'll start today with a 5min warm up" />
+            <textevent timeoffset="20" message="This workout is part of Baby on Board, designed by Dani Rowe and Kristin Armstrong" />
+            <textevent timeoffset="30" message="This series is designed to keep you active throughout pregnancy" />
+            <textevent timeoffset="40" message="by providing you with 12 weeks of 30-40 minute structured workouts" />
+            <textevent timeoffset="150" message="Hopefully you're starting to warm up a bit now, let's take a moment and chat about today's workout." />
+            <textevent timeoffset="160" message="This session is a progression from the 30 minute Start-Stop workout where you will tackle 3 blocks of 4 efforts..." />
+            <textevent timeoffset="170" message="...with each block's effort increasing in intensity but decreasing in duration." />
+            <textevent timeoffset="180" message="Each block roughly equates to the same training stress, but just varying type of stress and effort." />
+            <textevent timeoffset="190" message="Block 1 is 1min zone 3 efforts." />
+            <textevent timeoffset="200" message="Block 2 is 45sec zone 4 efforts." />
+            <textevent timeoffset="210" message="And block 3 is 30sec zone 5 efforts." />
+            <textevent timeoffset="220" message="We'll also take longer rests between efforts as the intensity increases :-)" />
+            <textevent timeoffset="230" message="The key to training during pregnancy is consistency - little and often" />
+            <textevent timeoffset="240" message="As a guide - you should always be able to hold a conversation during these workouts" />
+            <textevent timeoffset="250" message="Keep an eye on your heart rate - you should not be anywhere near your max" />
+            <textevent timeoffset="260" message="It is vital that your core body temperature doesn't get too high. Make sure you have a fan blasting and keep hydrated" />
+            <textevent timeoffset="270" message="Listen to your body, and don't worry if you need to lower the FTP bias during these workouts to complete" />
+            <textevent timeoffset="290" message="We are straight into the first 1min effort - let's go!" />
+        </Warmup>
+        <IntervalsT Repeat="4" OnDuration="60.000004" OffDuration="60.000004" OnPower="0.80449992" OffPower="0.40450001" pace="0">
+            <textevent timeoffset="0" message="The first block contains 1 minute efforts, with 1 minute rest between each effort" />
+            <textevent timeoffset="60" message="Great opening effort. Let's take 1min easy now and get ready for the next rep." />
+            <textevent timeoffset="120" message="Back to work again, keep your form rock solid for these." />
+            <textevent timeoffset="180" message="Nice work! That's 2 down and 2 to go." />
+            <textevent timeoffset="300" message="Remember to keep drinking - little and often" />
+            <textevent timeoffset="360" message="Focus on keeping your upper body still and generating all the power through your legs" />
+            <textevent timeoffset="400" message="Try and think about your pedaling style - you want to try and produce power throughout the whole pedal stroke" />
+            <textevent timeoffset="430" message="Pull up on the pedals and 'drag them around' as well as pushing down on the downstroke" />
+        </IntervalsT>
+        <SteadyState Duration="180.00002" Power="0.45604166" pace="0">
+            <textevent timeoffset="10" message="Recovery time - a brief chance to recover and switch off from the structure " />
+            <textevent timeoffset="100" message="Don't forget to keep drinking - little and often" />
+            <textevent timeoffset="150" message="The next block is harder in intensity but 15 seconds shorter in duration" />
+            <textevent timeoffset="170" message="Get ready for a hard surge in effort." />
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="45.000004" OffDuration="75" OnPower="1.0044999" OffPower="0.40450001" pace="0">
+            <textevent timeoffset="45" message="You may well be used to producing more power than this, fairly easily" />
+            <textevent timeoffset="55" message="But being pregnant is not to be underestimated" />
+            <textevent timeoffset="65" message="Your body is working hard to produce a baby, so don't expect to be as strong a cyclist during these times" />
+            <textevent timeoffset="110" message="Rep #2 is just ahead, get ready!" />
+            <textevent timeoffset="250" message="Don't worry if you have to lower your bias - this is about completing a structured workout, not working to your absolute max" />
+            <textevent timeoffset="290" message="Great work - keep an eye on your heart rate. How is it responding?" />
+            <textevent timeoffset="300" message="Is your heart rate dropping during the recovery?" />
+            <textevent timeoffset="390" message="Golden rule is - listen to your body" />
+            <textevent timeoffset="440" message="Make sure your fan is cranked right up. It's important to keep cool during pregnancy" />
+        </IntervalsT>
+        <SteadyState Duration="180.00002" Power="0.45449999" pace="0">
+            <textevent timeoffset="10" message="Back in to recovery mode - likely you won't be crying out for this rest but take it anyway" />
+            <textevent timeoffset="100" message="A nice opportunity to sit up and stretch out. It's not the most natural position to be sat on a bike during pregnancy" />
+            <textevent timeoffset="150" message="Once again, the intensity nudges up a little to 105% of FTP for the next block" />
+            <textevent timeoffset="160" message="But the efforts are only 30 seconds each" />
+            <textevent timeoffset="170" message="Here we go!" />
+        </SteadyState>
+        <IntervalsT Repeat="4" OnDuration="30.000002" OffDuration="90.000008" OnPower="1.0545" OffPower="0.40450001" pace="0">
+            <textevent timeoffset="5" message="Final block now - 30 second efforts at 105% of FTP" />
+            <textevent timeoffset="30" message="With long recovery periods of 1 minute 30 seconds at 40% of FTP" />
+            <textevent timeoffset="120" message="If you feel you want to get out of the saddle for the 30 second efforts, then do so!" />
+            <textevent timeoffset="140" message="Do whatever you need to do, to produce the required power" />
+            <textevent timeoffset="230" message="There is no target cadence today - do what feels natural to you" />
+            <textevent timeoffset="250" message="Stay focused on your breathing - your heart rate should never be close to max. If it is lower your bias" />
+            <textevent timeoffset="300" message="Big deep breaths to get plenty of oxygen in your lungs" />
+            <textevent timeoffset="365" message="You are doing so well - keep it going" />
+            <textevent timeoffset="400" message="Job done - that's all the efforts complete" />
+            <textevent timeoffset="176" message="Just the cool down to go. Congratulations - you smashed it" />
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.65449995" PowerHigh="0.3545" pace="0">
+            <textevent timeoffset="20" message="Good work - that's Start-Stop complete!" />
+            <textevent timeoffset="90" message="Remember, the key to fitness is consistency - little and often" />
+            <textevent timeoffset="140" message="How do you feel on your bike at the moment? Comfortable?" />
+            <textevent timeoffset="155" message="As your body changes through pregnancy, you may need to tweak your position by flipping your stem" />
+            <textevent timeoffset="170" message="Flip your stem upside down, to raise your handlebars which should give your bump more space" />
+            <textevent timeoffset="185" message="This is something that we (Dani and Kristin) both did, which helped massively" />
+            <textevent timeoffset="220" message="You should not have felt excessively hot during today's workout" />
+            <textevent timeoffset="240" message="It's vital that your core body temperature doesn't get too high during pregnancy" />
+            <textevent timeoffset="290" message="See you on the next workout - Dani and Kristin" />
+        </Cooldown>
+    </workout>
+</workout_file>

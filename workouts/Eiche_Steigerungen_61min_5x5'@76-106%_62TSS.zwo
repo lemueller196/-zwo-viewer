@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kevin Poulton</author>
+    <name>Eiche_Steigerungen_61min_5x5'@76-106%_62TSS</name>
+    <description>Working your way into the longer climbs requires good pacing and the ability to lift the power towards the crest. In this session we roll up some 5min climbs, with the final 2min being where the gradient and power kicks up.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="20" message="Being able to climb well is an important aspect of MTB riding." />
+            <textevent timeoffset="60" message="Quite often a longer climb requires you to pace yourself on the lower slopes." />
+            <textevent timeoffset="80" message="And then you need to deep over the top." />
+            <textevent timeoffset="100" message="In this session, we replicate this demand by incorporating some high power, low cadence climbing." />
+            <textevent timeoffset="160" message="But first we warm up." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.60000002" pace="0">
+            <textevent timeoffset="10" message="These early efforts step up in intensity." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.64999998" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.81" pace="0">
+            <textevent timeoffset="10" message="Pretty comfortable for you." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.09" pace="0">
+            <textevent timeoffset="10" message="A quick minute above threshold!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.5" pace="0">
+            <textevent timeoffset="20" message="To complete the warm up we perform a steady state threshold effort." />
+        </SteadyState>
+        <SteadyState Duration="240.00002" Power="0.89999998" pace="0">
+            <textevent timeoffset="20" message="Completing blocks of threshold work is always advantageous." />
+            <textevent timeoffset="40" message="Don't fight it. Embrace it!" />
+            <textevent timeoffset="100" message="The hard work is in the main set today." />
+            <textevent timeoffset="200" message="Today is all about pacing on climbs." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="We start out on the early slopes with no target cadence." />
+            <textevent timeoffset="50" message="But the power gradually ramps up." />
+            <textevent timeoffset="70" message="Before we hit the upper slopes where the gradient increases and so too does the race to the top." />
+            <textevent timeoffset="170" message="Let's get into the 1st effort." />
+        </SteadyState>
+        <Ramp Duration="180.00002" PowerLow="0.75999999" PowerHigh="0.91000009" pace="0">
+            <textevent timeoffset="30" message="Choose your own cadence here as the power gradually increases." />
+            <textevent timeoffset="50" message="Position yourself on the bike as you would climbing outdoors." />
+            <textevent timeoffset="70" message="Sitting towards the back of the saddle with hands on top of the bars." />
+            <textevent timeoffset="100" message="You're looking strong." />
+            <textevent timeoffset="170" message="Now we race to the top!" />
+        </Ramp>
+        <Ramp Duration="120.00001" PowerLow="0.91000009" PowerHigh="1.0599999" pace="0" Cadence="75">
+            <textevent timeoffset="10" message="Hit the target rpm of 70." />
+            <textevent timeoffset="30" message="Stay seated to keep traction in the dirt." />
+            <textevent timeoffset="60" message="Drive the power from your core and glutes." />
+            <textevent timeoffset="80" message="Going above threshold now as we near the top. " />
+            <textevent timeoffset="120" message="There's the top. Keep the pressure on right up to the line." />
+        </Ramp>
+        <SteadyState Duration="240.00002" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="Nice work!" />
+            <textevent timeoffset="90" message="That was a strong effort on the climb." />
+            <textevent timeoffset="120" message="Easy pedaling here before we hit the next climb." />
+            <textevent timeoffset="230" message="Here we go into the next climb." />
+        </SteadyState>
+        <Ramp Duration="180.00002" PowerLow="0.75999999" PowerHigh="0.91000009" pace="0">
+            <textevent timeoffset="30" message="Chose your own cadence here as the power gradually increases." />
+            <textevent timeoffset="50" message="Position yourself on the bike as you would climbing outdoors." />
+            <textevent timeoffset="70" message="Sitting towards the back of the saddle with hands on top of the bars." />
+            <textevent timeoffset="100" message="You're looking strong." />
+            <textevent timeoffset="170" message="Now we race to the top!" />
+        </Ramp>
+        <Ramp Duration="120.00001" PowerLow="0.91000009" PowerHigh="1.0599999" pace="0" Cadence="75">
+            <textevent timeoffset="10" message="Hit the target rpm of 70." />
+            <textevent timeoffset="30" message="Stay seated to keep traction in the dirt." />
+            <textevent timeoffset="60" message="Drive the power from your core and glutes." />
+            <textevent timeoffset="80" message="Going above threshold now as we near the top. " />
+            <textevent timeoffset="120" message="There's the top. Keep the pressure on right up to the line." />
+        </Ramp>
+        <SteadyState Duration="240.00002" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="How was that one?" />
+            <textevent timeoffset="90" message="That was a strong effort on the climb." />
+            <textevent timeoffset="120" message="Easy pedaling here before we hit the next climb." />
+            <textevent timeoffset="230" message="Here we go into the next climb." />
+        </SteadyState>
+        <Ramp Duration="180.00002" PowerLow="0.75999999" PowerHigh="0.91000009" pace="0">
+            <textevent timeoffset="30" message="Chose your own cadence here as the power gradually increases." />
+            <textevent timeoffset="50" message="Position yourself on the bike as you would climbing outdoors." />
+            <textevent timeoffset="70" message="Sitting towards the back of the saddle with hands on top of the bars." />
+            <textevent timeoffset="100" message="What's your chosen cadence for the lower slopes?" />
+            <textevent timeoffset="170" message="Now we race to the top!" />
+        </Ramp>
+        <Ramp Duration="120.00001" PowerLow="0.91000009" PowerHigh="1.0599999" pace="0" Cadence="75">
+            <textevent timeoffset="10" message="Hit the target rpm of 70." />
+            <textevent timeoffset="30" message="Stay seated to keep traction in the dirt." />
+            <textevent timeoffset="60" message="Drive the power from your core and glutes." />
+            <textevent timeoffset="80" message="Going above threshold now as we near the top. " />
+            <textevent timeoffset="120" message="There's the top. Keep the pressure on right up to the line." />
+        </Ramp>
+        <SteadyState Duration="240.00002" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="How was that one?" />
+            <textevent timeoffset="90" message="That was a strong effort on the climb." />
+            <textevent timeoffset="120" message="Easy pedaling here before we hit the next climb." />
+            <textevent timeoffset="230" message="Here we go into the next climb." />
+        </SteadyState>
+        <Ramp Duration="180.00002" PowerLow="0.75999999" PowerHigh="0.91000009" pace="0">
+            <textevent timeoffset="30" message="Chose your own cadence here as the power gradually increases." />
+            <textevent timeoffset="50" message="Position yourself on the bike as you would climbing outdoors." />
+            <textevent timeoffset="70" message="Sitting towards the back of the saddle with hands on top of the bars." />
+            <textevent timeoffset="100" message="You're looking strong." />
+            <textevent timeoffset="170" message="Now we race to the top!" />
+        </Ramp>
+        <Ramp Duration="120.00001" PowerLow="0.91000009" PowerHigh="1.0599999" pace="0" Cadence="75">
+            <textevent timeoffset="10" message="Hit the target rpm of 70." />
+            <textevent timeoffset="30" message="Stay seated to keep traction in the dirt." />
+            <textevent timeoffset="60" message="Drive the power from your core and glutes." />
+            <textevent timeoffset="80" message="Going above threshold now as we near the top. " />
+            <textevent timeoffset="120" message="There's the top. Keep the pressure on right up to the line." />
+        </Ramp>
+        <SteadyState Duration="240.00002" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="How was that one?" />
+            <textevent timeoffset="90" message="That was a strong effort on the climb." />
+            <textevent timeoffset="120" message="Easy pedaling here before we hit the next climb." />
+            <textevent timeoffset="230" message="Last climb for the day!" />
+        </SteadyState>
+        <Ramp Duration="180.00002" PowerLow="0.75999999" PowerHigh="0.91000009" pace="0">
+            <textevent timeoffset="30" message="Has your chosen cadence for the early part changed throughout the session?" />
+            <textevent timeoffset="50" message="Fatigue will generally decrease your chosen cadence." />
+            <textevent timeoffset="100" message="You're looking strong." />
+            <textevent timeoffset="170" message="Now we race to the top!" />
+        </Ramp>
+        <Ramp Duration="120.00001" PowerLow="0.91000009" PowerHigh="1.0599999" pace="0" Cadence="75">
+            <textevent timeoffset="10" message="Hit the target rpm of 70." />
+            <textevent timeoffset="30" message="Stay seated to keep traction in the dirt." />
+            <textevent timeoffset="60" message="Drive the power from your core and glutes." />
+            <textevent timeoffset="80" message="Going above threshold now as we near the top. " />
+            <textevent timeoffset="120" message="There's the top. Keep the pressure on right up to the line." />
+        </Ramp>
+        <SteadyState Duration="240.00002" Power="0.5" pace="0">
+            <textevent timeoffset="30" message="Nice work today." />
+            <textevent timeoffset="90" message="That was a hard session." />
+            <textevent timeoffset="110" message="But very effective for your outdoor riding." />
+        </SteadyState>
+    </workout>
+</workout_file>

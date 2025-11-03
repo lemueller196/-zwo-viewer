@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kevin Poulton</author>
+    <name>Eiche_Z3-4_76min_2x(10x(1.30'@90%+30''@110%))_90TSS</name>
+    <description>Warm up then complete 2 x 20min SST efforts @ 90%. Every 90sec increase power to 110% for 30sec. 10min recovery between intervals. Cool down.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <SteadyState Duration="60.000004" Power="0.5" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.52999997" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.56" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.58999997" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.62" pace="0">
+            <textevent timeoffset="30" message="Just 2 x 20min intervals today, but the constant surging adds an extra stimulus." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.63999999" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.67000002" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.69999999" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.73000002" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.75999999" pace="0" />
+        <SteadyState Duration="180.00002" Power="0.55000001" pace="0">
+            <textevent timeoffset="60" message="The baseline power for the interval is 90%." />
+            <textevent timeoffset="70" message="But every 90sec, you will surge up to 110%" />
+            <textevent timeoffset="170" message="Ready to start." />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0">
+            <textevent timeoffset="30" message="Start with a cadence you feel you can maintain throughout the 20min" />
+            <textevent timeoffset="80" message="Up a gear or 2 for the 30sec surge." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0">
+            <textevent timeoffset="10" message="Observe your HR after each 30sec surge. Is it returning the to same value, or steadily increasing?" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0">
+            <textevent timeoffset="45" message="Halfway. Just 5 to go!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0">
+            <textevent timeoffset="45" message="1 more, then a recovery period." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="600" Power="0.55000001" pace="0">
+            <textevent timeoffset="540" message="Ready for the 2nd set." />
+            <textevent timeoffset="580" message="Again, observe your HR throughout the interval." />
+        </SteadyState>
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0">
+            <textevent timeoffset="10" message="How are the legs?" />
+            <textevent timeoffset="40" message="Just 7 more efforts!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="90.000008" Power="0.89999998" pace="0" />
+        <SteadyState Duration="30.000002" Power="1.1" pace="0" />
+        <SteadyState Duration="180.00002" Power="0.55000001" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.75999999" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.73000002" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.69999999" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.67000002" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.63999999" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.62" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.58999997" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.56" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.52999997" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.5" pace="0" />
+    </workout>
+</workout_file>

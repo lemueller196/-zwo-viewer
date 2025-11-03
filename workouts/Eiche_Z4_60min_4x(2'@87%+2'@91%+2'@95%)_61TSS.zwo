@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Zwift</author>
+    <name>Eiche_Z4_60min_4x(2'@87%+2'@91%+2'@95%)_61TSS</name>
+    <description>We're in a recovery week here, but still have some "work" to do. The sweet spot is a great zone to work during a recovery week as we won't be heading above the threshold zone at all, so no stress, right? Seriously though, these should be somewhat comfortable builds and if at any point they feel overtly "hard" you should come down on the watts just a bit to allow recovery.
+
+As with any workout we want to focus on smooth riding, efficient pedal strokes, and a quiet upper body as we work. The Sweet Spot zone is one we need to be comfortable in for gravel, so get ya some!</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="540" PowerLow="0.44999996" PowerHigh="0.64999998" pace="0">
+            <textevent timeoffset="0" message="Nice and easy warm up for today. How the legs feeling?" />
+        </Warmup>
+        <SteadyState Duration="10" Power="0.80000001" pace="0">
+            <textevent timeoffset="0" message="Some real, real short builds here up to threshold. " />
+        </SteadyState>
+        <SteadyState Duration="10" Power="0.89999998" pace="0" />
+        <SteadyState Duration="10" Power="1" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="I told you they were short! that was easy. " />
+        </SteadyState>
+        <SteadyState Duration="10" Power="0.80000001" pace="0">
+            <textevent timeoffset="0" message="So easy, we should do it again!" />
+        </SteadyState>
+        <SteadyState Duration="10" Power="0.89999998" pace="0">
+            <textevent timeoffset="0" message="(and 3 more times after this)" />
+        </SteadyState>
+        <SteadyState Duration="10" Power="1" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="Good stuff. " />
+        </SteadyState>
+        <SteadyState Duration="10" Power="0.80000001" pace="0">
+            <textevent timeoffset="0" message="Are we keeping smooth as we build the efforts here?" />
+        </SteadyState>
+        <SteadyState Duration="10" Power="0.89999998" pace="0" />
+        <SteadyState Duration="10" Power="1" pace="0">
+            <textevent timeoffset="0" message="If not, try harder! To try less hard!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="EZ. " />
+        </SteadyState>
+        <SteadyState Duration="10" Power="0.80000001" pace="0">
+            <textevent timeoffset="0" message="Yes, 2 more. " />
+        </SteadyState>
+        <SteadyState Duration="10" Power="0.89999998" pace="0" />
+        <SteadyState Duration="10" Power="1" pace="0">
+            <textevent timeoffset="0" message="Smooth here!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.60000002" pace="0" />
+        <SteadyState Duration="10" Power="0.80000001" pace="0">
+            <textevent timeoffset="0" message="Last one, best one!" />
+        </SteadyState>
+        <SteadyState Duration="10" Power="0.89999998" pace="0" />
+        <SteadyState Duration="10" Power="1" pace="0" />
+        <SteadyState Duration="60.000004" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="Nice and long break here before we get into the zone. " />
+        </SteadyState>
+        <SteadyState Duration="240.00002" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="Can't wait to get into that sweet spot? Didn't think so. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.87" pace="0">
+            <textevent timeoffset="0" message="Ok, first build here. Starting at 87%. Easy yeah?" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.91000003" pace="0">
+            <textevent timeoffset="0" message="It shouldn't feel too bad. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.94999999" pace="0">
+            <textevent timeoffset="0" message="Let it come, be smooth. " />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="See, that wasn't too bad. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.87" pace="0">
+            <textevent timeoffset="0" message="Get those legs moving!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.91000003" pace="0">
+            <textevent timeoffset="0" message="Smooth cadence as we go!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.94999999" pace="0">
+            <textevent timeoffset="0" message="Nice work, 2 more minutes right on the line of &quot;hard&quot;. " />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="EZ, EZ. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.87" pace="0">
+            <textevent timeoffset="0" message="Are you loving your sweet spot?" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.91000003" pace="0">
+            <textevent timeoffset="0" message="You've got to learn to. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.94999999" pace="0">
+            <textevent timeoffset="0" message="Keep those RPM's up and love it!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="Easy times here. Just one more to go!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.88" pace="0">
+            <textevent timeoffset="0" message="Just a touch more watts this last one. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.93000001" pace="0">
+            <textevent timeoffset="0" message="If I hadn't have told you, you wouldn't have noticed. Right?" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.97000003" pace="0">
+            <textevent timeoffset="0" message="Come on now! Only 2 minutes to go." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.60000002" pace="0">
+            <textevent timeoffset="0" message="Nice work today. Not &quot;easy&quot; but not overly hard I hope. " />
+        </SteadyState>
+        <Cooldown Duration="210.00002" PowerLow="0.55000001" PowerHigh="0.44999999" pace="0">
+            <textevent timeoffset="0" message="Find your smooth pedal stroke again if you lost it along the way." />
+        </Cooldown>
+    </workout>
+</workout_file>

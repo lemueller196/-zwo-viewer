@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Chris Opie </author>
+    <name>Eiche_Aktivierung_16min__16TSS</name>
+    <description>
+        This session is the ultimate warm-up, designed and led by Sir Bradley Wiggins. Use this warm-up before all your training sessions or events to boost your cycling performance!
+
+        These workouts have been designed and tested by some of the best cyclists in the world. Olympians and World Champions such as Sir Bradley Wiggins, Fabian Cancellara, Dame Sarah Storey and Kristin Armstrong.</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="FTP" />
+        <tag name="Intervals" />
+    </tags>
+    <workout>
+        <SteadyState Duration="120.00001" Power="0.47999999" pace="0">
+            <textevent timeoffset="0" message="Welcome to Ultimate Warm Up." />
+            <textevent timeoffset="10" message="This is a great workout to warm up before a race." />
+            <textevent timeoffset="30" message="It's Race Day! Let's fire up the engine." />
+            <textevent timeoffset="90" message="We'll be lifting the intensity every 2 minutes." />
+            <textevent timeoffset="60" message="We’ll begin with a gentle effort, gradually ramping up to VO2 max intensity." />
+            <textevent timeoffset="80" message="Get in your zone here. Find your rhythm." />
+            <textevent timeoffset="100" message="Get into a solid posture: Relax your shoulders, bend your elbows slightly and contract your core." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.57999998" pace="0">
+            <textevent timeoffset="0" message="Here comes the first increase in effort!" />
+            <textevent timeoffset="30" message="Try to stay smooth as the intensity rises. Smooth, controlled pedaling." />
+            <textevent timeoffset="90" message="30 seconds to go before we bump it up another level." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.68000001" pace="0">
+            <textevent timeoffset="0" message="Let your body adapt to the effort, find a comfortable cadence. Around 90 RPM works well for me." />
+            <textevent timeoffset="30" message="Smooth is fast. Stay controlled as the intensity rises." />
+            <textevent timeoffset="75" message="45 seconds left here. How is your cadence?" />
+            <textevent timeoffset="85" message="Try pedaling slightly faster with each ramp-up in intensity." />
+            <textevent timeoffset="100" message="You should start feeling your muscles warming up now." />
+            <textevent timeoffset="110" message="Get ready to bump up the intensity again at the arch." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.77999997" pace="0">
+            <textevent timeoffset="0" message="This is where the muscle activation starts to happen. This is key to a good warm up." />
+            <textevent timeoffset="45" message="You should be feeling your breathing and legs by now." />
+            <textevent timeoffset="55" message="That's good. You want to lock into those sensations, breathe deep and stay focused." />
+            <textevent timeoffset="90" message="30 seconds to go, remember to drink." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.88" pace="0">
+            <textevent timeoffset="0" message="This intensity is around your Sustainable Aerobic Capacity." />
+            <textevent timeoffset="60" message="Stay smooth, keep your body still, pedal from the legs." />
+            <textevent timeoffset="110" message="At this intensity, control is everything." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.98000002" pace="0">
+            <textevent timeoffset="0" message="Hold the power and cadence nice and steady here." />
+            <textevent timeoffset="10" message="A cadence of around 85-90 RPM is typically a comfortable average." />
+            <textevent timeoffset="20" message="But optimal cadence is unique to everyone. Find the pace that is most comfortable for you." />
+            <textevent timeoffset="45" message="This is about being in control of the effort and being comfortable with the intensity." />
+            <textevent timeoffset="75" message="45 seconds to go. A 60-second recovery is coming up." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="A good chance to get on top of the effort, grab a quick drink before the final part of our warm-up." />
+            <textevent timeoffset="30" message="30 seconds to go until the last big effort. You'll be on the race course soon." />
+            <textevent timeoffset="50" message="Start increasing your cadence. We're ramping up the power at the next arch." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.1799999" pace="0">
+            <textevent timeoffset="0" message="Up above your FTP here, only for 60 seconds." />
+            <textevent timeoffset="10" message="This effort will get you primed and ready for your race." />
+            <textevent timeoffset="30" message="Halfway now. Drive this one all the way to the end." />
+            <textevent timeoffset="40" message="This effort will consolidate your warm-up, open the legs and lungs!" />
+        </SteadyState>
+        <Cooldown Duration="120.00001" PowerLow="0.55000001" PowerHigh="0.34999996" pace="0">
+            <textevent timeoffset="0" message="Nice work! Way to show up here!" />
+            <textevent timeoffset="10" message="Your legs are ready for your next activity." />
+            <textevent timeoffset="20" message="Let's cool down and focus on controlling our breathing." />
+            <textevent timeoffset="30" message="You can always come back to this warm up to prepare for future activities." />
+            <textevent timeoffset="90" message="Head to the starting line-- you're race ready!" />
+            <textevent timeoffset="100" message="See you again soon!" />
+            <textevent timeoffset="110" message="Ride On." />
+        </Cooldown>
+    </workout>
+</workout_file>

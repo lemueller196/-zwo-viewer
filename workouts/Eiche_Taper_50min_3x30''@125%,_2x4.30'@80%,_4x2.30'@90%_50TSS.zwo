@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Zwift</author>
+    <name>Eiche_Taper_50min_3x30''@125%, 2x4.30'@80%, 4x2.30'@90%_50TSS</name>
+    <description>The hard work is done! It is time to TAPER! Keep your muscles firing as we back off the load to let you recover and freshen up for the big day!</description>
+    <sportType>bike</sportType>
+    <tags>
+        <tag name="Zwift" />
+        <tag name="Fondo," />
+        <tag name="taper" />
+    </tags>
+    <workout>
+        <Warmup Duration="300" PowerLow="0.55449998" PowerHigh="0.75450003" pace="0">
+            <textevent timeoffset="60" message="It is the week of the BIG EVENT for all you Zwift Fondo folks!" />
+            <textevent timeoffset="120" message="This week's workouts are designed to help you freshen up..." />
+            <textevent timeoffset="135" message="WITHOUT leaving you feeling flat!" />
+            <textevent timeoffset="180" message="A bit of uptempo and some power to keep things firing." />
+            <textevent timeoffset="240" message="Let's get on to the workout!" />
+        </Warmup>
+        <SteadyState Duration="270" Power="0.75449997" pace="0">
+            <textevent timeoffset="15" message="Little bit of steady state here at 75%." />
+            <textevent timeoffset="180" message="Just nice and smooth here." />
+            <textevent timeoffset="250" message="Getting ready to fire those legs" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.2544999" pace="0" />
+        <SteadyState Duration="150" Power="0.65449995" pace="0">
+            <textevent timeoffset="15" message="And easy now..." />
+            <textevent timeoffset="120" message="And let's bring it back up." />
+        </SteadyState>
+        <SteadyState Duration="270" Power="0.80449992" pace="0">
+            <textevent timeoffset="15" message="And here we go. Little bit firmer now. Still light though." />
+            <textevent timeoffset="180" message="Easy and smooth rhythm on those pedals" />
+            <textevent timeoffset="250" message="and ready to make that jump..." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.2544999" pace="0" />
+        <SteadyState Duration="150" Power="0.65449995" pace="0">
+            <textevent timeoffset="15" message="And easy now. Spin it out." />
+            <textevent timeoffset="120" message="And one more round to go..." />
+        </SteadyState>
+        <SteadyState Duration="270" Power="0.85449994" pace="0">
+            <textevent timeoffset="15" message="Last one so right up to 85%" />
+            <textevent timeoffset="180" message="And nice strong tempo here..." />
+            <textevent timeoffset="250" message="Ready to jump..." />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="1.25" pace="0" />
+        <IntervalsT Repeat="4" OnDuration="150" OffDuration="150" OnPower="0.55449998" OffPower="0.90449989" pace="0">
+            <textevent timeoffset="15" message="Nice and light on this one..." />
+            <textevent timeoffset="222" message="Steady intervals here in the sub-threshold zone keeping the legs firing." />
+            <textevent timeoffset="815" message="Let's bring the power back on now." />
+            <textevent timeoffset="964" message="And a touch of recovery here." />
+            <textevent timeoffset="1114" message="And last one here. Make it a good one!" />
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.55449998" PowerHigh="0.25450003" pace="0">
+            <textevent timeoffset="30" message="Great work. Cooling down now. Keep the legs up if you can this week." />
+            <textevent timeoffset="180" message="Looking forward to a great day on Sunday! #RideOn" />
+        </Cooldown>
+    </workout>
+</workout_file>

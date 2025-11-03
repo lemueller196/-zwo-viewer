@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Shayne Gaffney | GC Coaching</author>
+    <name>Eiche_Z3-4_60min_8x(3'@80%+1'@95%+1'@55%)_56TSS</name>
+    <description>The kind of workout that "sneaks" up on you, especially that last interval.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="300" PowerLow="0.39999998" PowerHigh="0.60000002" pace="0">
+            <textevent timeoffset="0" message="Welcome, friend!  Let's start with a 10 minute warm-up.  Ideal cadence is 85-95 RPM here." />
+            <textevent timeoffset="180" message="Bring up that cadence closer to 95 RPM if you're not already there." />
+        </Warmup>
+        <SteadyState Duration="300" Power="0.60000002" pace="0" Cadence="95">
+            <textevent timeoffset="0" message="5 minutes into the warm-up.  Let's talk a bit about today's workout..." />
+            <textevent timeoffset="10" message="...We are going to be doing 8x (3 minutes Z3, 1 minute Z4, and 1 minute Z1)..." />
+            <textevent timeoffset="20" message="...The cadence is also going to alternate between 90 RPM and 60 RPM..." />
+            <textevent timeoffset="30" message="...Having these changes in cadence will help you become a more well-rounded cyclist!" />
+            <textevent timeoffset="40" message="...For now though, let's continue to warm those legs up!" />
+            <textevent timeoffset="240" message="1  more minute to go..." />
+            <textevent timeoffset="250" message="...We are going to start off @90 RPM for the entire interval rep (not just the 3 minute portion)..." />
+            <textevent timeoffset="290" message="Ready?" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="All righty, settle into this effort here, keep the cadence around 90 RPM.  Nice and steady for this workout." />
+            <textevent timeoffset="170" message="In 10 seconds, we're going up to just below FTP, but keeping the same cadence." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.94999999" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="Bring up the effort a bit more now, same cadence." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Good work!  Now, bring it down for a minute easy." />
+            <textevent timeoffset="50" message="This next one is going to be at 60 RPM...Push, scrape, pull those pedals!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" Cadence="60">
+            <textevent timeoffset="0" message="Focus on the push down phase here and really using those quads and glutes.  This is where you develop the most power while pedaling." />
+            <textevent timeoffset="170" message="Increasing the effort again in 10 seconds, keep that cadence low!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.94999999" pace="0" Cadence="60">
+            <textevent timeoffset="0" message="Little more effort here..." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Great work!  Rest again for another minute.  6 more of those to go :-)" />
+            <textevent timeoffset="50" message="Back up to 90 RPM for this next rep." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="Bring up the effort and the cadence again here..." />
+            <textevent timeoffset="10" message="...Notice how your heart rate changes based on your cadence..." />
+            <textevent timeoffset="20" message="...Pedaling with a faster cadence results in greater metabolic demand, and thus increased heart rate :-)" />
+            <textevent timeoffset="170" message="In 10 seconds, we're going up to Z4 again." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.94999999" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="Hit it!  Keep that cadence steady ~90." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="3 down, 5 to go.  We're getting there!" />
+            <textevent timeoffset="50" message="60 RPM for this next rep..." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" Cadence="60">
+            <textevent timeoffset="0" message="Push, scrape, pull..." />
+            <textevent timeoffset="10" message="...Where is most of your power coming from?  Focus on the &quot;push&quot; phase here!" />
+            <textevent timeoffset="170" message="Get ready to increase the effort a bit more again..." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.94999999" pace="0" Cadence="60">
+            <textevent timeoffset="0" message="Bring it up!  Remember, focus on that &quot;push&quot; of the pedal stroke phase here." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Halfway done with this one!  You are looking GREAT!" />
+            <textevent timeoffset="50" message="90 RPM coming up next..." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="#5 of 8 reps here.  Settle back into it!" />
+            <textevent timeoffset="90" message="Stay in control and focused here.  This is when this workout can start to sting a little bit :-)" />
+            <textevent timeoffset="170" message="Z4 coming up in 10 seconds..." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.94999999" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="Bring it up!  Keep that cadence strong here!  You got it!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Only 3 more to go...Breathe!" />
+            <textevent timeoffset="50" message="Back to 60 RPM again for the next one, ready?" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" Cadence="60">
+            <textevent timeoffset="0" message="Effort up, cadence down!  Push it!" />
+            <textevent timeoffset="90" message="How's your position in the saddle?  Bum should be planted, no rocking / lurching either.  Strong core!" />
+            <textevent timeoffset="170" message="Ramping it up in 10 seconds, stay with it!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.94999999" pace="0" Cadence="60">
+            <textevent timeoffset="0" message="Bring it up!  Finish this interval rep strong!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Only a couple left, focus on your breathing...Recover quickly!" />
+            <textevent timeoffset="50" message="Back up to 90 RPM again for this next rep." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="We're spinning again, this is the second to last one, let's get it!" />
+            <textevent timeoffset="170" message="Going up again :-) ..." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.94999999" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="Bring it back up again!  Stay STRONG!" />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Phew!  Only 1 more to go...This one features a nice little surprise at the end :-)" />
+            <textevent timeoffset="50" message="Ready?  Starting at 60 RPM..." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.80000001" pace="0" Cadence="60">
+            <textevent timeoffset="0" message="Bring that cadence down...Push, scrape, pull!" />
+            <textevent timeoffset="170" message="In 10 seconds, bring your cadence up to 100+ RPM...Get ready to ramp up that effort too!" />
+        </SteadyState>
+        <SteadyState Duration="30.000002" Power="0.94999999" pace="0" Cadence="100">
+            <textevent timeoffset="0" message="Faster feet!  Ramp up that effort!" />
+            <textevent timeoffset="20" message="Get ready...About to get hot in here!" />
+        </SteadyState>
+        <Ramp Duration="30.000002" PowerLow="0.95000005" PowerHigh="1.2" pace="0">
+            <textevent timeoffset="0" message="LET'S GO!  Faster feet, more POWER!" />
+        </Ramp>
+        <SteadyState Duration="60.000004" Power="0.55000001" pace="0" Cadence="85">
+            <textevent timeoffset="0" message="Aww yeah!  Great work with that last one!!!" />
+            <textevent timeoffset="10" message="Recover up, just 5 more minutes at Z2, then we cool down :-)" />
+        </SteadyState>
+        <SteadyState Duration="300" Power="0.60000002" pace="0" Cadence="90">
+            <textevent timeoffset="0" message="Let's keep that cadence comfortable here, just spinning out and getting a little more training stress on the day..." />
+            <textevent timeoffset="10" message="...Make sure that form stays perfect here too, especially now that you're fatigued..." />
+            <textevent timeoffset="20" message="...Shoulders down, elbows bent, light grip on the bars..." />
+            <textevent timeoffset="150" message="Halfway, keep everything solid here." />
+            <textevent timeoffset="240" message="Last minute!" />
+        </SteadyState>
+        <Cooldown Duration="300" PowerLow="0.60000002" PowerHigh="0.39999998" pace="0">
+            <textevent timeoffset="0" message="WOOT WOOT!  Another one in the books :-) ..." />
+            <textevent timeoffset="10" message="...Great work today!  Take the next few minutes and cool down..." />
+            <textevent timeoffset="20" message="...See you next time!" />
+        </Cooldown>
+    </workout>
+</workout_file>

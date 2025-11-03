@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Kevin Poulton</author>
+    <name>Eiche_Steigerungen_55min_2x(6'@88%+3'@104%+1'@120%)_65TSS</name>
+    <description>;Opening with a 10 minute Tempo effort, you will then complete 2 x 10min Intervals that progress through Zones 3, 4 and 6.
+
+Focusing on a higher cadence today with the target rpm increasing across the 3 intervals. </description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="600" PowerLow="0.50655246" PowerHigh="0.75" pace="0">
+            <textevent timeoffset="60" message="A little harder in the warm up today. We go straight into a 10min tempo effort." />
+            <textevent timeoffset="590" message="Straight into your tempo effort." />
+        </Warmup>
+        <SteadyState Duration="600" Power="0.88449997" pace="0" Cadence="95" />
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="179" message="Target cadence of 90rpm for the 1st set." />
+        </SteadyState>
+        <SteadyState Duration="360.00003" Power="0.88449997" pace="0" Cadence="90">
+            <textevent timeoffset="82.494781" message="The power increases through the effort, but the target cadence remains the same." />
+            <textevent timeoffset="350" message="Increase in power now." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="1.0445" pace="0" Cadence="90">
+            <textevent timeoffset="169" message="Finish off with 1min above threshold." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.2045" pace="0" Cadence="90" />
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="199" message="Target cadence of 95rpm for the 2nd set." />
+        </SteadyState>
+        <SteadyState Duration="360.00003" Power="0.88449997" pace="0" Cadence="95">
+            <textevent timeoffset="39" message="Same again this set. Increasing the power, with cadence remaining steady." />
+            <textevent timeoffset="350" message="Increase in power now." />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="1.0445" pace="0" Cadence="95">
+            <textevent timeoffset="170" message="Finish with a big, above threshold effort." />
+        </SteadyState>
+        <SteadyState Duration="60.000004" Power="1.2045" pace="0" Cadence="95" />
+        <Cooldown Duration="300" PowerLow="0.75449997" PowerHigh="0.50449997" pace="0" />
+    </workout>
+</workout_file>

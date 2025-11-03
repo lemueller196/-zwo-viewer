@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Zwift</author>
+    <name>Eiche_Z2-3_67min_17x2'@70-85%_57TSS</name>
+    <description>Today we've got a nice "easy" aerobic effort for you today. The last 3 blocks will go up to 90% but just for a bit. Goal of today is to just get on the bike and put a little bit of pressure on the pedals, but not too much. 
+
+If you'd like to visualize these builds as hills and smooth and steady climbing, please do. In fact, do! Good aerobic effort is all I'm looking for, so please don't go above what is prescribed for today. More hard stuff this week to focus on.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="600" PowerLow="0.44999996" PowerHigh="0.64999998" pace="0">
+            <textevent timeoffset="0" message="We'll start our day of builds with a build!" />
+        </Warmup>
+        <SteadyState Duration="120.00001" Power="0.69999999" pace="0">
+            <textevent timeoffset="0" message="Another build coming, but not too hard, just a slight grade if you're doing that visualization. " />
+            <textevent timeoffset="10" message="As we build the intensity, you can lower your cadence, but keep 70 RPM at minimum. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="Another 2 minutes build but just to 75%. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.80000001" pace="0">
+            <textevent timeoffset="0" message="When we are doing these builds focus on keeping the same &quot;form&quot; throughout! Stay smooth!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.85000002" pace="0">
+            <textevent timeoffset="0" message="Keep the arms loose and shoulders relaxed as we build the effort. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Real easy between these blocks as if on an easy descent. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.69999999" pace="0">
+            <textevent timeoffset="0" message="Do this same build again. Nice and smooth. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="How are your RPM's? Are you staying smooth throughout your pedal stroke?" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.80000001" pace="0">
+            <textevent timeoffset="0" message="When training for gravel it's ok to let your RPM's slow a little when we hit steeper climbs. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.85000002" pace="0">
+            <textevent timeoffset="0" message="The course will MAKE us ride lower RPM's in many races, so prepare when you can!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="But find nice and high RPM's always during your recovery!" />
+        </SteadyState>
+        <SteadyState Duration="180.00002" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="A little extended recovery on this one so that we can be ready for the next blocks that are a little but tougher. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="Are you hydrating well today?  Still important to hydrate well on easier rides. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.85000002" pace="0">
+            <textevent timeoffset="0" message="Keep things smooth as you build up here. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.89999998" pace="0">
+            <textevent timeoffset="0" message="Last few minutes a little tougher on this one. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Real easy days. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="Easy days on these builds. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.85000002" pace="0">
+            <textevent timeoffset="0" message="Keep the upper body relaxed and calm as the effort increases. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.89999998" pace="0">
+            <textevent timeoffset="0" message="Important to keep your &quot;core&quot; engaged still, but we want to be relaxed in shoulders, arms, and neck. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Last recovery block during this workout. ENJOY!" />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.75" pace="0">
+            <textevent timeoffset="0" message="Get the RPM's moving here especially on the &quot;lower&quot; sections of this climb. " />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.85000002" pace="0">
+            <textevent timeoffset="0" message="Good work so far here." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.89999998" pace="0">
+            <textevent timeoffset="0" message="Almost done! Keep it up." />
+        </SteadyState>
+        <SteadyState Duration="120.00001" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="And...DONE. " />
+        </SteadyState>
+        <Cooldown Duration="600" PowerLow="0.55000001" PowerHigh="0.44999999" pace="0">
+            <textevent timeoffset="0" message="Except for this cool down. " />
+        </Cooldown>
+    </workout>
+</workout_file>

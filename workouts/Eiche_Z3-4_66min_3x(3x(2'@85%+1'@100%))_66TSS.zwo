@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workout_file>
+    <author>Zwift</author>
+    <name>Eiche_Z3-4_66min_3x(3x(2'@85%+1'@100%))_66TSS</name>
+    <description>Today we are doing a workout type that you've likely heard of before the "Over Under". Technically, this one isn't as it doesn't go "over" threshold, but just getting you warmed up as this plan moves forward. This workout will give you a fair amount of threshold time combined with some good zone 3 time as well. 
+
+Find your rhythm inside of these 3 blocks and use good cadence to get through the 100% sections. 
+
+This type of workout is great for gravel as it works that 80-85% FTP zone that I feel is often ridden in during these events. Of course the terrain will cause you to ride above that zone frequently and this workout will mimmic that delightful experiance.</description>
+    <sportType>bike</sportType>
+    <tags />
+    <workout>
+        <Warmup Duration="720.00006" PowerLow="0.44999999" PowerHigh="0.69999999" pace="0">
+            <textevent timeoffset="0" message="Nice and easy to start today as usual. " />
+            <textevent timeoffset="360" message="Get comfortable as we roll through these easy days. " />
+        </Warmup>
+        <IntervalsT Repeat="3" OnDuration="120.00001" OffDuration="120.00001" OnPower="0.80000001" OffPower="0.60000002" pace="0">
+            <textevent timeoffset="0" message="I would LOVE to see a little higher RPM's to get those legs moving and make these slightly elevated watts a little easier. " />
+            <textevent timeoffset="120" message="Find a cadence that is comfortable for you in this recovery. " />
+            <textevent timeoffset="240" message="Pick up that cadence now. " />
+            <textevent timeoffset="360" message="Easy times for you. " />
+            <textevent timeoffset="480" message="Last little bit of the warm up now, tick em over! " />
+            <textevent timeoffset="600" message="Last rest before the work. Enjoy " />
+        </IntervalsT>
+        <IntervalsT Repeat="3" OnDuration="120.00001" OffDuration="60.000004" OnPower="0.85000002" OffPower="1" pace="0" OverUnder="1">
+            <textevent timeoffset="0" message="Now into the actual work for today, find your rhythm. " />
+            <textevent timeoffset="120" message="Now bumped up to 100% of FTP. Use those efficient RPM's. " />
+            <textevent timeoffset="180" message="Find comfort coming back down to this effort. " />
+            <textevent timeoffset="300" message="Right back into FTP, be smooth, be smooth! " />
+            <textevent timeoffset="360" message="Is this effort starting to feel like recovery yet? " />
+            <textevent timeoffset="480" message="One more minute to go, great work! " />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Nice and long recovery on this one folks. Easy days. " />
+            <textevent timeoffset="111" message="Were you super smooth in the transfers between 85-100%? Try to make that transition seamless! " />
+        </SteadyState>
+        <IntervalsT Repeat="3" OnDuration="120.00001" OffDuration="60.000004" OnPower="0.85000002" OffPower="1" pace="0" OverUnder="1">
+            <textevent timeoffset="0" message="And... you are right back at it! Smooth and comfortable pedal strokes!" />
+            <textevent timeoffset="120" message="More pressure on the pedals but be &quot;light&quot; on them! Smooth. " />
+            <textevent timeoffset="180" message="Ahhh, feels easy now, right? " />
+            <textevent timeoffset="300" message="Remember that part about being seamless? " />
+            <textevent timeoffset="360" message="When I say seamless, I mean if someone was to walk in on you, they wouldn't know you changed your effort. " />
+            <textevent timeoffset="480" message="Smooth. Seamless." />
+        </IntervalsT>
+        <SteadyState Duration="300" Power="0.55000001" pace="0">
+            <textevent timeoffset="0" message="Rest time already again? Sweet!" />
+            <textevent timeoffset="200" message="Getting some good recovery in? How about hydration? " />
+        </SteadyState>
+        <IntervalsT Repeat="3" OnDuration="120.00001" OffDuration="60.000004" OnPower="0.85000002" OffPower="1" pace="0" OverUnder="1">
+            <textevent timeoffset="0" message="Last main block here. Let's make it as good as the first. " />
+            <textevent timeoffset="120" message="These minutes starting to get to you?  Maybe just a little, but I promise they will get easier!" />
+            <textevent timeoffset="180" message="When I say they will get easier, I didn't mean today, next time through though! " />
+            <textevent timeoffset="300" message="Come on now, let's go! Keep these as smooth as the first time. " />
+            <textevent timeoffset="320" message="Who am I kidding? It's never as good as the first time.  " />
+            <textevent timeoffset="360" message="Last round, let's make it the smoothest! " />
+            <textevent timeoffset="480" message="Nice smooth power! " />
+            <textevent timeoffset="512" message="Almost there now. " />
+        </IntervalsT>
+        <Cooldown Duration="300" PowerLow="0.55000001" PowerHigh="0.44999999" pace="0">
+            <textevent timeoffset="0" message="Good work! Easy cool down and you're done!" />
+            <textevent timeoffset="60" message="Nice stuff today. Did you feel like you stayed smooth? If not let's focus on that the next workout! " />
+        </Cooldown>
+    </workout>
+</workout_file>
