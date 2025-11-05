@@ -1,6 +1,6 @@
 <workout_file>
     <author></author>
-    <name>Eiche_FTP-Test_xx min_alle 30s +25W _xxTSS</name>
+    <name>Eiche_FTP-Test_xx min_TCC-Test_alle 30s +25W _xxTSS</name>
     <description></description>
     <sportType>bike</sportType>
     <tags>
@@ -45,4 +45,5 @@
         <SteadyState Duration="300" Power="0.5"/>
     </workout>
 </workout_file>
+
 
